@@ -1,0 +1,182 @@
+/* Apply a base font similar to Palatino */
+body {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.5; /* This approximates the 1.5 line spacing in LaTeX */
+    max-width: 6in;
+    margin: 0 auto; /* Center the content based on the 6in width */
+    padding: 1in; /* To create a white space border around the content */
+}
+
+/* Set the base color for hyperlinks */
+a {
+    color: #0a9396; /* This is the mygreen color defined in the LaTeX file */
+    text-decoration: none; /* Removes underline from links */
+}
+
+/* Style for external links to have the custom underline and color */
+.external-link {
+    color: rgb(155, 34, 38); /* Your specific color */
+    text-decoration: none; /* Removes the default underline */
+    border-bottom: 1px dotted rgb(155, 34, 38); /* Creates a dashed underline */
+    padding-bottom: 0.5px; /* Adds some space between the text and the underline */
+}
+
+/* Responsive layout adjustments */
+/* ... existing media queries ... */
+
+/* Set the color for citations (assuming they are a different element like <cite>) */
+cite {
+    color: #9b2226; /* This is the myred color defined in the LaTeX file */
+}
+
+/* LaTeX by default doesn't include space before titles, which is achieved with the titling package */
+h1, h2, h3, h4, h5, h6 {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/* Replicate theorem, lemma, and proposition environments */
+.theorem, .lemma, .proposition {
+    border-left: 5px solid #9b2226; /* myred color as a left border to signify importance */
+    padding: 0.5em;
+    margin: 1em 0;
+    background-color: #f8f8f8; /* A light grey background to stand out */
+}
+
+/* Style for theorems */
+.theorem {
+    border-color: #9b2226; /* Use myred for theorems */
+}
+
+/* Style for lemmas */
+.lemma {
+    border-color: #2a9d8f; /* An adjusted mygreen for lemmas */
+}
+
+/* Style for propositions */
+.proposition {
+    border-color: #264653; /* A different color to distinguish propositions */
+}
+
+/* Styling for algorithms, if applicable */
+.algorithm {
+    border: 1px solid #333; /* A simple border for algorithms */
+    padding: 1em;
+    margin: 1em 0;
+}
+
+/* If you use figures with captions */
+figure {
+    margin: 1em 0;
+    text-align: center; /* Center the image and caption */
+}
+
+figcaption {
+    margin-top: 0.5em;
+    font-style: italic;
+}
+
+/* Ensures that the tables are not wider than the container */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Borders collapse into a single line */
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Landscape sections, if needed, though this is hard to replicate in CSS */
+.landscape {
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+
+/* For mathematical typesetting, you would typically use MathJax, as mentioned earlier. */
+/* ... existing styles ... */
+
+.main-content {
+    display: flex;
+    justify-content: space-between; /* Ensures that the text and image are spaced apart */
+    align-items: center; /* Vertically aligns the items at their center */
+}
+
+.text-content {
+    flex-grow: 1; /* Allows the text content to grow and occupy the available space */
+    /* Add padding or margins as needed */
+}
+
+.main-image {
+    max-width: 40%; /* Adjust the width of the image as desired */
+    height: auto; /* Ensures the image's height automatically adjusts to maintain aspect ratio */
+    margin-left: 20px;
+    margin-top: -30px; /* Adds space between the text content and the image */
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: flex-start; /* Aligns items to the start on small screens */
+    }
+
+    .main-image {
+        max-width: 100%;
+        margin-left: 20px;
+        margin-top: 20px; /* Adds space between the image and the text when stacked */
+    }
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+.main-nav ul {
+    padding: 0;
+    list-style: none;
+    display: inline-block; /* Center the nav in the middle of the page */
+}
+
+.main-nav li {
+    display: inline;
+}
+
+.nav-button {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(79, 79, 79);
+    background-color: transparent;
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover, .nav-button:focus {
+    background-color: none;
+    color: none;
+    text-decoration: none;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 600px) {
+    .main-nav ul {
+        text-align: center;
+    }
+
+    .nav-button {
+        padding: 8px;
+        margin: 2px;
+        font-size: 0.8em; /* Adjust font size on smaller screens */
+    }
+}

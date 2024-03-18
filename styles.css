@@ -115,6 +115,12 @@ td, th {
     margin-left: 20px;
     margin-top: -30px; /* Adds space between the text content and the image */
 }
+.secondary-image {
+    max-width: 90%; /* Adjust the width of the image as desired */
+    height: auto; /* Ensures the image's height automatically adjusts to maintain aspect ratio */
+    margin-left: 0px;
+    margin-top: 0px; /* Adds space between the text content and the image */
+}
 
 /* Responsive behavior for smaller screens */
 @media (max-width: 768px) {

@@ -174,15 +174,81 @@ header h1 {
     text-decoration: none;
 }
 
-/* Responsive layout adjustments */
+/** Responsive layout adjustments for the main navigation */
 @media (max-width: 600px) {
     .main-nav ul {
-        text-align: center;
+        text-align: left; /* Align text to the left on small screens */
+        position: fixed; /* Fix position to the top */
+        width: 100%; /* Full width */
+        height: 100vh; /* Full height of the viewport */
+        background-color: #fff; /* Background color for the nav */
+        top: 0; /* Align to the top */
+        left: 0; /* Align to the left */
+        z-index: 10; /* Ensure it's above other content */
+        display: none; /* Hide by default */
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center items vertically */
+    }
+
+    .main-nav li {
+        display: block; /* Each item on its own line */
+        text-align: center; /* Center text within each item */
     }
 
     .nav-button {
-        padding: 8px;
-        margin: 2px;
-        font-size: 0.8em; /* Adjust font size on smaller screens */
+        display: block; /* Full width */
+        width: 100%;
+        text-align: center; /* Center text on the button */
     }
+
+    /* This class is toggled with JavaScript when the menu button is clicked */
+    .main-nav.active ul {
+        display: flex; /* Show the nav when active */
+    }
+}
+
+/* Add a hamburger menu button */
+.hamburger {
+    display: none; /* Hide on larger screens */
+    position: absolute; /* Positioning it relative to its parent */
+    top: 0; /* Align to the top */
+    right: 0; /* Align to the right */
+    padding: 1rem; /* Padding for touch area */
+    z-index: 15; /* Above the nav */
+}
+
+/* Show the hamburger menu button on small screens */
+@media (max-width: 600px) {
+    .hamburger {
+        display: block; /* Show the button */
+    }
+}
+
+/* Style the hamburger icon */
+.hamburger-icon {
+    display: block;
+    width: 25px; /* Width of the hamburger icon */
+    height: 3px; /* Height of the hamburger icon */
+    background-color: #333; /* Color of the hamburger icon */
+    position: relative; /* Positioning for the pseudo elements */
+    transition: background-color 0.3s; /* Transition for the icon color */
+}
+
+/* Add the top and bottom lines of the hamburger icon */
+.hamburger-icon::before,
+.hamburger-icon::after {
+    content: '';
+    position: absolute;
+    width: 25px; /* Width of the lines */
+    height: 3px; /* Height of the lines */
+    background-color: #333; /* Color of the lines */
+    transition: transform 0.3s; /* Transition for the transform */
+}
+
+.hamburger-icon::before {
+    top: -8px; /* Position the top line */
+}
+
+.hamburger-icon::after {
+    top: 8px; /* Position the bottom line */
 }

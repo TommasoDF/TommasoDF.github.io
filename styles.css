@@ -122,57 +122,6 @@ td, th {
     margin-top: 0px; /* Adds space between the text content and the image */
 }
 
-/* Responsive behavior for smaller screens */
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-        align-items: flex-start; /* Aligns items to the start on small screens */
-    }
-
-    .main-image {
-        max-width: 100%;
-        margin-left: 20px;
-        margin-top: 20px; /* Adds space between the image and the text when stacked */
-    }
-}
-
-header {
-    text-align: center;
-    margin-bottom: 1em;
-}
-
-header h1 {
-    font-size: 3em;
-    margin: 0.5em 0;
-}
-
-.main-nav ul {
-    padding: 0;
-    list-style: none;
-    display: inline-block; /* Center the nav in the middle of the page */
-}
-
-.main-nav li {
-    display: inline;
-}
-
-.nav-button {
-    display: inline-block;
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(79, 79, 79);
-    background-color: transparent;
-    padding: 8px 16px;
-    margin: 5px;
-    border: none;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.nav-button:hover, .nav-button:focus {
-    background-color: none;
-    color: none;
-    text-decoration: none;
-}
 
 /** Responsive layout adjustments for the main navigation */
 @media (max-width: 600px) {

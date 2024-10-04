@@ -4,9 +4,84 @@ body {
     color: #333;
     background-color: #fff;
     line-height: 1.5; /* This approximates the 1.5 line spacing in LaTeX */
-    max-width: 6in;
-    margin: 0 auto; /* Center the content based on the 6in width */
-    padding: 1in; /* To create a white space border around the content */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
+/* Base styles remain the same */
+
+/* Container to center content and control width */
+.container {
+    max-width: 1200px; /* Maximum width for large screens */
+    margin: 0 auto; /* Center the container */
+    padding: 1em; /* Padding around the content */
+}
+
+/* Two-column layout */
+.content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 1em;
+}
+
+/* Left column (70% width) */
+.left-column {
+    flex: 7;
+    padding-right: 1em;
+}
+
+/* Right column (30% width) */
+.right-column {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+
+/* Profile image container to maintain square aspect ratio */
+.profile-image-container {
+    width: 100%;
+    max-width: 250px; /* Adjust as needed */
+    position: relative;
+    overflow: hidden;
+}
+
+/* This pseudo-element creates a square by setting padding-top to 100% of the width */
+.profile-image-container::before {
+    content: '';
+    display: block;
+    padding-top: 100%; /* Creates a square aspect ratio */
+}
+
+/* Profile image styling */
+.profile-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border-radius: 0%; /* Use 0% for square, change to 50% for circular */
+}
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        flex: 1;
+        padding: 0;
+    }
+
+    .right-column {
+        margin-top: 1em;
+    }
+
+    .profile-image-container {
+        max-width: 100%;
+    }
 }
 
 /* Set the base color for hyperlinks */
@@ -19,30 +94,111 @@ a {
 .external-link {
     color: rgb(155, 34, 38); /* Your specific color */
     text-decoration: none; /* Removes the default underline */
-    border-bottom: 1px dotted rgb(155, 34, 38); /* Creates a dashed underline */
+    border-bottom: none; /* Creates a dotted underline */
     padding-bottom: 0.5px; /* Adds some space between the text and the underline */
 }
 
-/* Responsive layout adjustments */
-/* ... existing media queries ... */
-
-/* Set the color for citations (assuming they are a different element like <cite>) */
-cite {
-    color: #9b2226; /* This is the myred color defined in the LaTeX file */
-}
-
-/* LaTeX by default doesn't include space before titles, which is achieved with the titling package */
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
     padding-top: 0;
     margin-top: 0;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 }
 
-/* Replicate theorem, lemma, and proposition environments */
+h1 a {
+    text-decoration: none;
+    color: #333;
+}
+
+h2 {
+    color: #333;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h3 a {
+    text-decoration: none;
+    color: #000000; /* Use mygreen for paper titles */
+}
+
+h3 a:hover {
+    text-decoration: underline;
+}
+
+/* Authors */
+.authors {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 0.5em;
+}
+
+/* Abstracts */
+.abstract {
+    margin-bottom: 1em;
+}
+
+.abstract p {
+    text-align: justify;
+    text-indent: 1em; /* Indent first line like LaTeX */
+}
+
+/* Links */
+.links {
+    margin-bottom: 2em;
+}
+
+.links a {
+    color: rgb(155, 34, 38); /* Use your specific color for links */
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Layout */
+header {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.main-nav ul {
+    padding: 0;
+    list-style: none;
+    display: inline-block; /* Center the nav in the middle of the page */
+}
+
+.main-nav li {
+    display: inline;
+    margin-right: 1em;
+}
+
+.nav-button {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(79, 79, 79);
+    background-color: transparent;
+    padding: 8px 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button.active, .nav-button:hover, .nav-button:focus {
+    color: #0a9396;
+    text-decoration: underline;
+}
+
+/* Papers */
+.paper {
+    margin-bottom: 2em;
+}
+
+/* Theorem-like environments */
 .theorem, .lemma, .proposition {
-    border-left: 5px solid #9b2226; /* myred color as a left border to signify importance */
+    border-left: 5px solid #9b2226; /* myred color as a left border */
     padding: 0.5em;
     margin: 1em 0;
-    background-color: #f8f8f8; /* A light grey background to stand out */
+    background-color: #f8f8f8; /* A light grey background */
 }
 
 /* Style for theorems */
@@ -57,20 +213,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Style for propositions */
 .proposition {
-    border-color: #264653; /* A different color to distinguish propositions */
+    border-color: #264653; /* A different color for propositions */
 }
 
-/* Styling for algorithms, if applicable */
-.algorithm {
-    border: 1px solid #333; /* A simple border for algorithms */
-    padding: 1em;
-    margin: 1em 0;
-}
-
-/* If you use figures with captions */
+/* Figures */
 figure {
     margin: 1em 0;
-    text-align: center; /* Center the image and caption */
+    text-align: center;
 }
 
 figcaption {
@@ -78,10 +227,10 @@ figcaption {
     font-style: italic;
 }
 
-/* Ensures that the tables are not wider than the container */
+/* Tables */
 table {
     width: 100%;
-    border-collapse: collapse; /* Borders collapse into a single line */
+    border-collapse: collapse;
 }
 
 td, th {
@@ -89,90 +238,78 @@ td, th {
     padding: 8px;
 }
 
-/* Landscape sections, if needed, though this is hard to replicate in CSS */
-.landscape {
-    transform: rotate(-90deg);
-    transform-origin: center;
-}
-
-/* For mathematical typesetting, you would typically use MathJax, as mentioned earlier. */
-/* ... existing styles ... */
-
-.main-content {
-    display: flex;
-    justify-content: space-between; /* Ensures that the text and image are spaced apart */
-    align-items: center; /* Vertically aligns the items at their center */
-}
-
-.text-content {
-    flex-grow: 1; /* Allows the text content to grow and occupy the available space */
-    /* Add padding or margins as needed */
-}
-
+/* Images */
 .main-image {
-    max-width: 40%; /* Adjust the width of the image as desired */
-    height: auto; /* Ensures the image's height automatically adjusts to maintain aspect ratio */
+    max-width: 40%;
+    height: auto;
     margin-left: 20px;
-    margin-top: -30px; /* Adds space between the text content and the image */
+    margin-top: -30px;
 }
+
 .secondary-image {
-    max-width: 90%; /* Adjust the width of the image as desired */
-    height: auto; /* Ensures the image's height automatically adjusts to maintain aspect ratio */
+    max-width: 90%;
+    height: auto;
     margin-left: 0px;
-    margin-top: 0px; /* Adds space between the text content and the image */
+    margin-top: 0px;
 }
 
 /* Responsive behavior for smaller screens */
 @media (max-width: 768px) {
     .main-content {
         flex-direction: column;
-        align-items: flex-start; /* Aligns items to the start on small screens */
+        align-items: flex-start;
     }
 
     .main-image {
         max-width: 100%;
-        margin-left: 20px;
-        margin-top: 20px; /* Adds space between the image and the text when stacked */
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .nav-button {
+        display: block;
+        margin-bottom: 0.5em;
+    }
+
+    .main-nav li {
+        display: block;
+        margin-right: 0;
+    }
+
+    /* Reduce padding on smaller screens */
+    .container {
+        padding: 1em;
     }
 }
+/* Header content styling */
+.header-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    flex-direction: row; /* Ensure the default direction is left-to-right */
+}
 
-header {
-    text-align: center;
+.header-image {
+    max-width: 150px; /* Adjust the size as needed */
+    height: auto;
+    margin-left: 20px; /* Add space to the left of the image */
+    border-radius: 50%; /* Optional: make the image circular */
+}
+
+/* Adjust the header h1 styling if needed */
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Abstracts */
+.abstract {
     margin-bottom: 1em;
 }
 
-header h1 {
-    font-size: 3em;
-    margin: 0.5em 0;
-}
-
-.main-nav ul {
-    padding: 0;
-    list-style: none;
-    display: inline-block; /* Center the nav in the middle of the page */
-}
-.main-nav ul.open {
-    display: flex; /* Show the nav when active */
-}
-
-.main-nav li {
-    display: inline;
-}
-
-.nav-button {
-    display: inline-block;
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(79, 79, 79);
-    background-color: transparent;
-    padding: 8px 16px;
-    margin: 5px;
-    border: none;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.nav-button:hover, .nav-button:focus {
-    background-color: none;
-    color: none;
-    text-decoration: none;
+.abstract p {
+    text-align: justify;
+    text-indent: 1em; /* Indent first line like LaTeX */
+    font-style: italic; /* Make text italic */
+    font-size: 0.9em; /* Make text smaller than normal paragraphs */
 }

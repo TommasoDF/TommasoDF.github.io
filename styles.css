@@ -253,6 +253,27 @@ td, th {
     margin-top: 0px;
 }
 
+/* Hide the abstract content initially */
+.abstract-content {
+    display: none;
+}
+
+.abstract-btn {
+    background-color: white;         /* White background */
+    color:#9b2226;                    /* Black text */
+    border: 1px solid #9b2226;         /* Black border */
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 4px;              /* Optional: Add slight rounding to the corners */
+}
+
+/* Change background color on hover */
+.abstract-btn:hover {
+    background-color: #f0f0f0;       /* Light gray background on hover */
+}
+
 /* Responsive behavior for smaller screens */
 @media (max-width: 768px) {
     .main-content {

@@ -27,10 +27,11 @@
             <section class="content">
                 <h2>Job Market Paper</h2>
                 <div class="paper">
-                    <h3><a href="Sticky_Information.pdf" class="paper-title">Sticky Information across the Wealth Distribution</a></h3>
+                    <h3><a href="sticky_info.pdf" class="paper-title">Sticky Information across the Wealth Distribution</a></h3>
                     <p class="links">
                     </p>
-                    <div class="abstract">
+                    <button class="abstract-btn">Abstract</button>
+                    <div class="abstract-content">
                         <p>
                             This paper investigates the role of wealth-dependent information stickiness 
                             in the transmission of monetary policy in a Heterogeneous Agent New Keynesian (HANK) model. 
@@ -60,7 +61,9 @@
                         <a href="https://github.com/TommasoDF/Repo" class="external-link">Code</a> |
                         <a href="https://doi.org/10.21942/uva.25428238.v1" class="external-link">Data</a>
                     </p>
-                    <div class="abstract">
+                    <button class="abstract-btn">Abstract</button>
+                    <div class="abstract-content">
+                     
                         <p>
                             We study an heterogenous asset pricing model in which different classes of in-
                             vestors coexist and evolve, switching among strategies over time according to a fit-
@@ -86,7 +89,9 @@
                         with <a href="https://portalrecerca.uab.cat/en/persons/daniel-torren-peraire" class="external-link">Daniel Torren Peraire</a> |
                         <a href="https://github.com/danielTorren/Misinformation_financial_markets" class="external-link">Code</a>
                     </p>
-                    <div class="abstract">
+                    <button class="abstract-btn">Abstract</button>
+                    <div class="abstract-content">
+                     
                         <p>This paper investigates the interplay between information diffusion in social net-
                             works and its impact on financial markets with an agent based model (ABM). Agents
                             receive and exchange information about an observable stochastic component of the
@@ -118,5 +123,31 @@
             <p>&copy; 2024 Tommaso Di Francesco. All rights reserved.</p>
         </footer>
     </div>
+
+    <script>
+        // Wait until the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all abstract buttons
+            var buttons = document.querySelectorAll('.abstract-btn');
+    
+            // Add click event listener to each button
+            buttons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    // Find the corresponding abstract content
+                    var abstractContent = this.nextElementSibling;
+    
+                    // Toggle the display property
+                    if (abstractContent.style.display === 'none' || abstractContent.style.display === '') {
+                        abstractContent.style.display = 'block';
+                        this.textContent = 'Hide Abstract'; // Change button text
+                    } else {
+                        abstractContent.style.display = 'none';
+                        this.textContent = 'Abstract'; // Revert button text
+                    }
+                });
+            });
+        });
+    </script>
+    
 </body>
 </html>

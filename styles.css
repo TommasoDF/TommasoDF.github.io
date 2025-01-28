@@ -3,71 +3,167 @@ body {
     font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
     color: #333;
     background-color: #fff;
-    line-height: 1.5; /* This approximates the 1.5 line spacing in LaTeX */
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
+    line-height: 1.5; /* Matches LaTeX spacing */
+    margin: 0; /* Reset default margins */
+    padding: 0; /* Reset default padding */
 }
 
-/* Base styles remain the same */
+/* Class for italic paragraph with no top margin */
+.paragraph-italic {
+    font-style: italic; /* Italicize the text */
+    margin-top: 0; /* Remove the top margin */
+    margin-bottom: 0; /* Optional: Keep a bottom margin for spacing */
+    color: inherit; /* Ensure it uses the default text color */
+    line-height: 1.5; /* Optional: Improve readability */
+}
 
-/* Container to center content and control width */
+/* Center the content with proper margins and paddings */
 .container {
-    max-width: 1200px; /* Maximum width for large screens */
-    margin: 0 auto; /* Center the container */
-    padding: 1em; /* Padding around the content */
+    max-width: 1200px; /* Limit container width */
+    margin: 20px auto; /* Add spacing around content */
+    padding: 1em; /* Add inner padding */
+    padding-left: 2em; /* Ensure space on the left */
 }
 
-/* Two-column layout */
+/* Two-column layout with proper spacing */
 .content-container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin-top: 1em;
+    gap: 1.5em; /* Add consistent spacing between columns */
+    margin-top: 2em; /* Space above the main content */
 }
 
-/* Left column (70% width) */
+/* Left column for primary content */
 .left-column {
     flex: 7;
-    padding-right: 1em;
+    padding-right: 1.5em;
 }
 
-/* Right column (30% width) */
+/* Right column for profile or images */
 .right-column {
     flex: 3;
     display: flex;
     justify-content: center;
+    padding-left: 1em;
 }
 
-/* Profile image container to maintain square aspect ratio */
-.profile-image-container {
-    width: 100%;
-    max-width: 250px; /* Adjust as needed */
-    position: relative;
-    overflow: hidden;
+
+
+/* Headings with consistent margins */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    margin: 0 0 0.0em; /* Adjust vertical spacing */
+    color: #333;
 }
 
-/* This pseudo-element creates a square by setting padding-top to 100% of the width */
-.profile-image-container::before {
-    content: '';
-    display: block;
-    padding-top: 100%; /* Creates a square aspect ratio */
+h1 {
+    font-size: 2.5em;
+    text-align: center; /* Center the main title */
+    margin-bottom: 0.5em;
 }
 
-/* Profile image styling */
-.profile-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the container without distortion */
-    border-radius: 0%; /* Use 0% for square, change to 50% for circular */
+h2 {
+    font-size: 1.8em;
+    color: #333;
 }
 
-/* Adjustments for small screens */
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    font-size: 1.em;
+    margin-bottom: 0.0em;
+}
+
+/* Links class with reduced spacing */
+.links {
+    margin-top: 0.5em; /* Reduce spacing above the element */
+    margin-bottom: 0.5em; /* Reduce spacing below the element */
+    line-height: 0.4; /* Optional: Adjust line height for tighter spacing */
+    text-align: left; /* Ensure text alignment is consistent */
+}
+
+/* Styling for links inside `.links` */
+.links a {
+    color: #700f0f; /* Set link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.links a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #700f0f; /* Darker color on hover */
+}
+
+/* Ensure the paper title link inherits the existing style */
+.paper-title-link {
+    color: inherit; /* Use the same color as the parent element */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Add hover effect for better user experience */
+.paper-title-link:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: inherit; /* Keep the color unchanged */
+}
+
+/* Abstract styling for improved readability */
+/* Abstract styling */
+.abstract {
+    /*font-family: 'Georgia', 'Times New Roman', serif; /* Change font to a classic serif */
+    font-size: 0.95em; /* Adjust font size */
+    /*font-style: italic; /* Make the text italic for emphasis */
+    color: #555555; /* Change color to a medium gray */
+    line-height: 1.0; /* Improve readability with better line spacing */
+    margin-top: 1em; /* Add spacing above the abstract */
+    margin-bottom: 1em; /* Add spacing below the abstract */
+    padding-left: 1em; /* Add some padding on the left */
+    /*justified text*/
+    text-align: justify;
+    /*border-left: 3px solid #9b2226; /* Add a colored border to emphasize the abstract */
+}
+
+/* Optional: Styling for abstract container if needed */
+details summary {
+    font-weight: bold; /* Make the summary text bold */
+    font-size: 1.1em; /* Slightly larger font for the summary */
+    color: #333333; /* Darker gray for summary */
+}
+
+details p {
+    margin-top: 0.5em; /* Add spacing between summary and content */
+}
+
+/* Ensure links are visible and aesthetic */
+a {
+    color: #700f0f; /* Teal-like color */
+    text-decoration: none;
+    /*bold text*/
+    font-weight: bold;
+    /*border-bottom: 1px dotted #0a9396; /* Subtle underline */
+}
+
+a:hover {
+    color: #700f0f; /* Darker teal on hover */
+    text-decoration: underline;
+}
+
+/* Footer with centered content */
+footer {
+    text-align: center;
+    padding: 2em 1em;
+    background: #f8f8f8;
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* Responsive behavior for smaller screens */
 @media (max-width: 768px) {
     .content-container {
         flex-direction: column;
+        gap: 1em;
     }
 
     .left-column, .right-column {
@@ -75,262 +171,139 @@ body {
         padding: 0;
     }
 
-    .right-column {
-        margin-top: 1em;
-    }
-
     .profile-image-container {
-        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
     }
 }
 
-/* Set the base color for hyperlinks */
-a {
-    color: #0a9396; /* This is the mygreen color defined in the LaTeX file */
-    text-decoration: none; /* Removes underline from links */
+/* Custom button styling for abstracts */
+.abstract-btn {
+    background-color: #fff;
+    color: #9b2226;
+    border: 1px solid #9b2226;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-/* Style for external links to have the custom underline and color */
-.external-link {
-    color: rgb(155, 34, 38); /* Your specific color */
-    text-decoration: none; /* Removes the default underline */
-    border-bottom: none; /* Creates a dotted underline */
-    padding-bottom: 0.5px; /* Adds some space between the text and the underline */
+.abstract-btn:hover {
+    background-color: #f8f8f8;
+    color: #700f0f;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-    padding-top: 0;
-    margin-top: 0;
+/* Header container */
+header.site-header {
+    text-align: center;
+    margin-bottom: 2em;
+    padding: 1em 0;
+}
+
+/* Name at the top (centered) */
+.site-header h1 {
+    font-size: 2.5em;
+    margin: 0.5em 0;
     font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 }
 
-h1 a {
-    text-decoration: none;
-    color: #333;
-}
-
-h2 {
-    color: #333;
+/* Two-column layout for picture and contact details */
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Distribute columns */
+    align-items: center; /* Align items vertically */
     margin-top: 1em;
-    margin-bottom: 0.5em;
 }
 
-h3 a {
-    text-decoration: none;
-    color: #000000; /* Use mygreen for paper titles */
+/* Left column: Picture */
+.header-left {
+    flex: 1; /* Adjust width ratio */
+    display: flex;
+    justify-content: left; /* Center the image in its column */
 }
 
-h3 a:hover {
-    text-decoration: underline;
+/* Profile image container with increased size */
+.profile-image-container {
+    width: 220px; /* Adjust to make the picture larger */
+    max-width: 250px; /* Optional: set an upper limit */
+    aspect-ratio: 1 / 1; /* Maintain square aspect ratio */
+    border-radius: 0%; /* Circular image */
+    overflow: hidden; /* Crop overflowing parts of the image */
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Authors */
-.authors {
-    font-style: italic;
-    color: #555;
-    margin-bottom: 0.5em;
-}
-
-/* Abstracts */
-.abstract {
-    margin-bottom: 1em;
-}
-
-.abstract p {
-    text-align: justify;
-    text-indent: 1em; /* Indent first line like LaTeX */
-}
-
-/* Links */
-.links {
-    margin-bottom: 2em;
-}
-
-.links a {
-    color: rgb(155, 34, 38); /* Use your specific color for links */
-    text-decoration: none;
-    border-bottom: none;
-}
-
-.links a:hover {
-    text-decoration: underline;
-}
-
-/* Layout */
-header {
-    text-align: center;
-    margin-bottom: 1em;
-}
-
-.main-nav ul {
-    padding: 0;
-    list-style: none;
-    display: inline-block; /* Center the nav in the middle of the page */
-}
-
-.main-nav li {
-    display: inline;
-    margin-right: 1em;
-}
-
-.nav-button {
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(79, 79, 79);
-    background-color: transparent;
-    padding: 8px 16px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.nav-button.active, .nav-button:hover, .nav-button:focus {
-    color: #0a9396;
-    text-decoration: underline;
-}
-
-/* Papers */
-.paper {
-    margin-bottom: 2em;
-}
-
-/* Theorem-like environments */
-.theorem, .lemma, .proposition {
-    border-left: 5px solid #9b2226; /* myred color as a left border */
-    padding: 0.5em;
-    margin: 1em 0;
-    background-color: #f8f8f8; /* A light grey background */
-}
-
-/* Style for theorems */
-.theorem {
-    border-color: #9b2226; /* Use myred for theorems */
-}
-
-/* Style for lemmas */
-.lemma {
-    border-color: #2a9d8f; /* An adjusted mygreen for lemmas */
-}
-
-/* Style for propositions */
-.proposition {
-    border-color: #264653; /* A different color for propositions */
-}
-
-/* Figures */
-figure {
-    margin: 1em 0;
-    text-align: center;
-}
-
-figcaption {
-    margin-top: 0.5em;
-    font-style: italic;
-}
-
-/* Tables */
-table {
+/* Profile image */
+.profile-image {
     width: 100%;
-    border-collapse: collapse;
+    height: 100%;
+    object-fit: cover; /* Fill the container without distortion */
 }
 
-td, th {
-    border: 1px solid #ddd;
-    padding: 8px;
+/* Right column: Contact details */
+.header-right {
+    flex: 2; /* Adjust width ratio */
+    text-align: left; /* Align text to the left */
+    padding-left: 1em;
+    font-size: 1em;
+    color: #333;
 }
 
-/* Images */
-.main-image {
-    max-width: 40%;
-    height: auto;
-    margin-left: 20px;
-    margin-top: -30px;
+.header-right p {
+    margin: 0.5em 0; /* Add spacing between contact details */
 }
 
-.secondary-image {
-    max-width: 90%;
-    height: auto;
-    margin-left: 0px;
-    margin-top: 0px;
+/* Base styles for site-content */
+.site-content {
+    max-width: 1200px; /* Limit content width */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 1em; /* Add inner padding */
+    padding-left: 2em; /* Add consistent left margin */
+    padding-right: 2em; /* Optional: Add right margin for symmetry */
+    background-color: #fff; /* Ensure the content background is white */
+    box-sizing: border-box; /* Include padding in total width */
 }
 
-/* Hide the abstract content initially */
-.abstract-content {
-    display: none;
+/* Two-column layout within site-content */
+.content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5em; /* Add spacing between columns */
+    margin-top: 2em; /* Space above the main content */
 }
 
-.abstract-btn {
-    background-color: white;         /* White background */
-    color:#9b2226;                    /* Black text */
-    border: 1px solid #9b2226;         /* Black border */
-    padding: 8px 16px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    font-size: 16px;
-    border-radius: 4px;              /* Optional: Add slight rounding to the corners */
+/* Left column for primary content */
+.left-column {
+    flex: 7;
+    padding-right: 1.5em;
 }
 
-/* Change background color on hover */
-.abstract-btn:hover {
-    background-color: #f0f0f0;       /* Light gray background on hover */
+/* Right column for sidebar or images */
+.right-column {
+    flex: 3;
+    padding-left: 1.5em;
 }
 
 /* Responsive behavior for smaller screens */
 @media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-        align-items: flex-start;
+    .content-container {
+        flex-direction: column; /* Stack columns vertically */
+        gap: 1em; /* Adjust spacing for smaller screens */
     }
 
-    .main-image {
-        max-width: 100%;
-        margin-left: 0;
-        margin-top: 20px;
+    .left-column, .right-column {
+        flex: 1; /* Full width */
+        padding: 0; /* Remove padding for stacked layout */
     }
-
-    .nav-button {
-        display: block;
-        margin-bottom: 0.5em;
-    }
-
-    .main-nav li {
-        display: block;
-        margin-right: 0;
-    }
-
-    /* Reduce padding on smaller screens */
-    .container {
-        padding: 1em;
-    }
-}
-/* Header content styling */
-.header-content {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1em;
-    flex-direction: row; /* Ensure the default direction is left-to-right */
-}
-
-.header-image {
-    max-width: 150px; /* Adjust the size as needed */
-    height: auto;
-    margin-left: 20px; /* Add space to the left of the image */
-    border-radius: 50%; /* Optional: make the image circular */
-}
-
-/* Adjust the header h1 styling if needed */
-.header-content h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-/* Abstracts */
-.abstract {
-    margin-bottom: 1em;
-}
-
-.abstract p {
-    text-align: justify;
-    text-indent: 1em; /* Indent first line like LaTeX */
-    font-style: italic; /* Make text italic */
-    font-size: 0.9em; /* Make text smaller than normal paragraphs */
 }

@@ -154,7 +154,7 @@ a:hover {
 footer {
     text-align: center;
     padding: 2em 1em;
-    background: #f8f8f8;
+    background: #ffffff;
     font-size: 0.9em;
     color: #333;
 }
@@ -197,7 +197,7 @@ footer {
 }
 
 .abstract-btn:hover {
-    background-color: #f8f8f8;
+    background-color: #fff;
     color: #700f0f;
 }
 
@@ -217,15 +217,22 @@ header.site-header {
 
 /* Two-column layout for picture and contact details */
 .header-content {
+    max-width: 1200px; /* Limit width to match .site-content */
+    margin: 0 auto; /* Center the header content horizontally */
     display: flex;
-    justify-content: space-between; /* Distribute columns */
+    justify-content: space-between; /* Distribute columns (picture and contact details) */
     align-items: center; /* Align items vertically */
-    margin-top: 1em;
+    margin-top: 1em; /* Add spacing above the header */
+    padding-left: 2em; /* Add consistent left padding */
+    padding-right: 2em; /* Add consistent right padding */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
 /* Left column: Picture */
 .header-left {
-    flex: 1; /* Adjust width ratio */
+    margin: 0 auto; /* Center the content horizontally */
+    flex: .0; /* Adjust width ratio */
+    padding-right: 2em;
     display: flex;
     justify-content: left; /* Center the image in its column */
 }
@@ -306,4 +313,16 @@ header.site-header {
         flex: 1; /* Full width */
         padding: 0; /* Remove padding for stacked layout */
     }
+}
+
+.justify {
+    text-align: justify;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 2em 1em;
+    background: #ffffff;
+    font-size: 0.9em;
+    color: #333;
 }

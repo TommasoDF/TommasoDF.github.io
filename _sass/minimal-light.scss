@@ -1,0 +1,282 @@
+/* ============================================================
+   Minimal Light — adapted to your Palatino / LaTeX-like style
+   Targets:
+   - Serif (Palatino-like) body
+   - White background, dark gray text
+   - Dark red links (#700f0f)
+   - No dark-mode auto switching (neutralize prefers-color-scheme)
+   - Fewer “buttony” effects, more academic restraint
+   ============================================================ */
+
+:root{
+  --bg: #ffffff;
+  --text: #333333;
+  --muted: #555555;
+  --rule: #e5e5e5;
+
+  --link: #700f0f;      /* your accent */
+  --link-hover: #700f0f;
+
+  --header: #333333;    /* headings should not be blue */
+}
+
+/* ---- Core typography ---- */
+body{
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Palatino Linotype','Book Antiqua',Palatino,serif;
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- Layout width / whitespace (keep Minimal Light structure, but closer to your max-width) ---- */
+.wrapper{
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* Keep the theme’s two-column feel, but less cramped vertically */
+header, section{
+  padding-top: 4.0em;
+}
+section{
+  padding-bottom: 50px;
+}
+
+/* ---- Headings (Palatino + subdued color) ---- */
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Palatino Linotype','Book Antiqua',Palatino,serif;
+  color: var(--header);
+  font-weight: 500;
+}
+
+h1{
+  font-size: 2.2em;
+  margin: 0 0 0.5em;
+  line-height: 1.1;
+}
+
+h2{
+  font-size: 1.6em;
+  margin: 0.2em 0 0.8em;
+  font-weight: 500;
+}
+
+h3,h4,h5,h6{
+  margin: 0 0 0.8em;
+  font-weight: 600;
+}
+
+/* ---- Links (dark red, bold, understated) ---- */
+a{
+  color: var(--link);
+  text-decoration: none;
+  font-weight: 700;
+}
+a:hover{
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* “autocolor” should just inherit body text in your style */
+autocolor{
+  color: var(--text);
+}
+
+/* ---- Horizontal rules / tables / blockquotes (LaTeX-like restraint) ---- */
+hr{
+  border: 0;
+  background: var(--rule);
+  height: 1px;
+  margin: 0 0 20px;
+}
+
+blockquote{
+  border-left: 1px solid var(--rule);
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-style: italic;
+  color: var(--muted);
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td{
+  text-align: left;
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--rule);
+}
+th, dt{
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* ---- Code: only code should be mono ---- */
+code, pre{
+  font-family: "Ubuntu Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  color: #333;
+}
+pre{
+  max-width: 650px;
+  padding: 8px 15px;
+  background: #f8f8f8;
+  border-radius: 5px;
+  border: 1px solid var(--rule);
+  overflow-x: auto;
+}
+
+/* Email styling consistent with your prior site */
+email{
+  font-size: 14px;
+  font-family: "Ubuntu Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  color: var(--text);
+}
+
+/* ---- Social icons: remove “pill button” feel; keep subtle hover ---- */
+.social-icons a{
+  display: inline-block;
+  height: 2.4rem;
+  width: 2.4rem;
+  background-color: transparent;
+  color: var(--link) !important;
+  border-radius: 0;                 /* no circles */
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 2.4rem;
+  margin-right: 0.6rem;             /* tighter */
+  transition: transform 0.15s ease, text-decoration-color 0.15s ease;
+}
+.social-icons a:last-child{ margin-right: 0; }
+.social-icons a:hover{
+  background-color: transparent;
+  color: var(--link) !important;
+  transform: none;                  /* no scaling */
+  text-decoration: underline;
+}
+
+/* ---- Strong should not flip to blue; keep print-like ---- */
+strong{
+  color: #222;
+  font-weight: 700;
+}
+
+/* ---- Avatar: keep circular crop, increase seriousness (less padding) ---- */
+.image{
+  border-radius: 0.35em;
+  border: 0;
+  display: inline-block;
+  position: relative;
+}
+.image.avatar{
+  border-radius: 100%;
+}
+.image.avatar:before{ display: none; }
+.image.avatar img{
+  border-radius: 100%;
+  width: 45%;
+  padding: 12px;  /* less “framed” than default */
+}
+
+/* ---- Publications row: keep flex but align more like your old list ---- */
+.pub-row{
+  display: flex;
+  align-items: flex-start; /* more natural with text blocks */
+}
+
+/* ---- Remove all dark-mode behavior (force light) ---- */
+/* These rules intentionally override the theme’s dark-mode blocks. */
+@media (prefers-color-scheme: dark){
+  body{
+    background-color: var(--bg);
+    color: var(--text);
+  }
+  autocolor{ color: var(--text); }
+  a{ color: var(--link); }
+  h1,h2,h3,h4,h5,h6{ color: var(--header); }
+  strong{ color: #222; }
+  .social-icons a{ color: var(--link) !important; }
+  lightonly{ visibility: visible; }
+  darkonly{ visibility: hidden; }
+}
+
+/* Keep original visibility defaults */
+lightonly{ visibility: visible; }
+darkonly{ visibility: hidden; }
+
+/* ---- Fixed left header layout retained from theme ---- */
+header{
+  width: 232px;
+  float: left;
+  position: fixed;
+  padding-top: 4.0em;
+  text-align: center;
+}
+section{
+  width: 650px;
+  float: right;
+  padding-top: 4.0em;
+  padding-bottom: 50px;
+}
+footer{
+  width: 232px;
+  float: left;
+  position: fixed;
+  bottom: 30px;
+  text-align: center;
+}
+
+/* ---- Responsive tweaks (keep structure, reduce padding shocks) ---- */
+@media print, screen and (max-width: 960px){
+  div.wrapper{ width: auto; margin: 0; }
+  header, section, footer{
+    float: none;
+    position: static;
+    width: auto;
+  }
+  header{ padding-right: 320px; }
+  section{
+    border: 1px solid var(--rule);
+    border-width: 1px 0;
+    padding: 20px 0;
+    margin: 0 0 20px;
+  }
+  .image.avatar img{ width: 117px; padding: 12px; }
+}
+
+@media print, screen and (max-width: 960px){
+  body{ word-wrap: break-word; padding: 15px; }
+  header{ padding: 0; }
+  pre, code{ word-wrap: normal; }
+}
+
+@media print, screen and (max-width: 480px){
+  .pub-row{ display: block; }
+  body{ padding: 15px; }
+  .image.avatar img{ width: 95px; padding: 12px; }
+}
+
+@media print{
+  body{
+    padding: 0.4in;
+    font-size: 12pt;
+    color: #444;
+  }
+}
+
+/* Bib helpers (kept) */
+.biblink{ text-decoration:none; display:inline; margin-right:0; }
+.fakelink{ text-decoration:none; cursor:pointer; }
+.bibref{
+  font-size: 70%;
+  margin-top: 10px;
+  margin-left: 0;
+  display: none;
+  font-family: "Ubuntu Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}

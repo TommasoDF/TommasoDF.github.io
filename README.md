@@ -192,6 +192,97 @@ font: "Serif" # or "Sans Serif"
 google_analytics: UA-111540567-4
 ```
 
+### Automated Reading List (Optional)
+
+This repository includes an **optional Python script** to help maintain a personal *reading list* of recent academic papers.
+
+The script **does not affect the website build**, Jekyll configuration, or theme behavior.
+If you do not use it, you can safely ignore or delete it.
+
+#### What it does
+
+The script:
+
+* Queries **Crossref** and/or **OpenAlex** for recent publications from selected journals (by ISSN)
+* Filters results by publication date and optional keyword rules
+* **Appends new entries** to `_data/reading.yml`
+* Never deletes or modifies existing entries
+* Is fully idempotent (safe to run repeatedly)
+
+The reading list is then rendered on the site via:
+
+```
+_data/reading.yml
+_includes/reading.md
+```
+
+#### File locations
+
+```
+scripts/
+├── update_reading.py          # main ingestion script
+└── reading_sources.yml        # journals, ISSNs, filters, time window
+```
+
+The data file used by the site:
+
+```
+_data/reading.yml              # reading list (manual + automated entries)
+```
+
+#### YAML format
+
+The script assumes the following structure in `_data/reading.yml`:
+
+```yaml
+main:
+  - title: "Paper title"
+    authors: "Author A, Author B"
+    date: 2026-02
+    venue: "Journal Name"
+    url: "https://doi.org/..."
+    read: false
+```
+
+Additional internal fields (`id`, `source`) may be added automatically for deduplication.
+These fields are ignored by Jekyll unless explicitly rendered.
+
+#### Usage
+
+The script is **not run automatically** unless you configure it to do so.
+
+To run it manually:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install requests pyyaml
+python scripts/update_reading.py
+```
+
+Typical output is verbose, e.g.:
+
+```
+[Journal] American Economic Review
+  [Crossref] ISSN 0002-8282
+    → fetched 4 candidates
+  → added 2 new papers
+```
+
+If no new papers are found, the script exits without modifying any files.
+
+#### Optional automation
+
+The script can be scheduled (e.g. via GitHub Actions or cron), but this is **entirely optional** and not required for the site to function.
+
+#### Removing the feature
+
+If you do not want this functionality:
+
+* Delete the `scripts/` directory
+* Ignore or delete `_data/reading.yml`
+* Remove `{% include reading.md %}` from your layout if present
+
 ---
 
 ### Editing `index.md`

@@ -1,0 +1,34 @@
+/* _sass/_overrides.scss
+   Minimal override: ONLY change avatar shape + size.
+   No layout, no typography, no colors.
+*/
+
+/* Make avatar rectangular and larger (nearly fills header column) */
+.image.avatar{
+  border-radius: 0;
+}
+
+.image.avatar img{
+  border-radius: 0;
+  width: 95%;        /* fill most of header column */
+  max-width: 320px;  /* cap on large screens */
+  height: auto;
+  padding: 0;        /* remove the theme’s inner padding */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Mobile adjustments (optional but safe) */
+@media print, screen and (max-width: 960px){
+  .image.avatar img{
+    width: 200px;
+    max-width: 200px;
+  }
+}
+
+@media print, screen and (max-width: 480px){
+  .image.avatar img{
+    width: 160px;
+    max-width: 160px;
+  }
+}

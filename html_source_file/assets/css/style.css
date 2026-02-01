@@ -172,3 +172,27 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-
 .fakelink { text-decoration: none; cursor: pointer; }
 
 .bibref { font-size: 70%; margin-top: 10px; margin-left: 0px; display: none; font-family: monospace; }
+
+/* =========================================
+   Avatar override: rectangular, larger
+   ========================================= */
+
+.image.avatar {
+  border-radius: 0 !important;   /* remove circle */
+  width: 100% !important;        /* allow full column width */
+}
+
+.image.avatar img {
+  border-radius: 0 !important;   /* force rectangle */
+  width: 90% !important;         /* nearly fill header column */
+  max-width: 260px;              /* academic upper bound */
+  height: auto;
+  padding: 0 !important;         /* remove badge padding */
+  margin: 0 auto;
+  display: block;
+}
+
+/* neutralize header-specific shrinking */
+#header .image.avatar {
+  width: 100% !important;
+}

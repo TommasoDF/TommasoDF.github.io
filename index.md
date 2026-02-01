@@ -17,4 +17,6 @@ Behavioral Macro and Financial models, with a particular interest in expectation
 
 {% include_relative _includes/publications.md %}
 
+{% include_relative _includes/work_in_progress.md %}
+
 {% include_relative _includes/teaching.md %}

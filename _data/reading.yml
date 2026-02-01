@@ -291,14 +291,6 @@ main:
   read: false
   id: doi:10.1111/jofi.70025
   source: openalex
-- title: Front Matter
-  authors: ''
-  date: 2026-01
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.116.2.i
-  read: false
-  id: doi:10.1257/aer.116.2.i
-  source: openalex
 - title: A Theory of Supply Function Choice and Aggregate Supply
   authors: Joel P. Flynn , George Nikolakoudis , Karthik A. Sastry
   date: 2026-02

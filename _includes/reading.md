@@ -1,5 +1,12 @@
 ## Reading List
 
+<p style="font-size:0.9em; color:#555; margin-top:-10px; margin-bottom:20px;">
+This list is automatically generated using a custom script
+(<a href="https://github.com/TommasoDF/TommasoDF.github.io/tree/main/scripts/update_reading.py" target="_blank" rel="noopener">see script</a>).
+As a result, some noise may be present (e.g. front matter, replies, or non-research items).
+I am still working on the filtering.
+</p>
+
 <ul style="list-style:none; padding-left:0;">
 {% for item in site.data.reading.main %}
   <li style="margin-bottom:10px;">
@@ -16,7 +23,6 @@
     </strong><br>
     <span style="color:#555;">
       {{ item.authors }} — <em>{{ item.venue }}</em>, {{ item.date | date: "%b. %Y" }}
-
     </span>
   </li>
 {% endfor %}

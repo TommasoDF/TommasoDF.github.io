@@ -47,9 +47,14 @@ An improved vision from [@Xiao-Chenguang](https://github.com/Xiao-Chenguang):
 ```
 .
 ├── _data                    
-|   └── publications.yml                      # the YAML file for publications
+|   |── publications.yml                      # the YAML file for publications
+|   |── reading.yml                           # a YAML file that generate the reading list
+|   └── work_in_progress.yml                  # a YAML for work in progress (no draft yet)
 ├── _includes                    
 |   ├── publications.md                       # the Markdown file for publications
+|   ├── reading.md                            # the Markdown file for the reading list
+|   ├── services.md                           # the Markdown file for services to the profession
+|   ├── teaching.md                           # the Markdown file for teaching activities
 |   └── services.md                           # the Markdown file for services
 ├── _layouts                  
 |   └── homepage.html                         # the HTML template for the homepage 

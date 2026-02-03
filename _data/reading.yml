@@ -4,7 +4,8 @@ main:
   date: 2026-01
   venue: Journal of Monetary Economics
   url: https://doi.org/10.1016/j.jmoneco.2025.103885
-  read: false
+  read: true
+  recommended: false 
   id: doi:10.1016/j.jmoneco.2025.103885
   source: openalex
 - title: The timing of shocks matters in optimal monetary policy
@@ -12,7 +13,8 @@ main:
   date: 2026-01
   venue: Journal of Monetary Economics
   url: https://doi.org/10.1016/j.jmoneco.2026.103896
-  read: false
+  read: true
+  recommended: false 
   id: doi:10.1016/j.jmoneco.2026.103896
   source: openalex
 - title: An endogenous gridpoint method for distributional dynamics
@@ -20,7 +22,8 @@ main:
   date: 2026-01
   venue: Journal of Monetary Economics
   url: https://doi.org/10.1016/j.jmoneco.2026.103895
-  read: false
+  read: true
+  recommended: true
   id: doi:10.1016/j.jmoneco.2026.103895
   source: openalex
 - title: 'The housing wealth effect: Quasi-experimental evidence'
@@ -53,6 +56,7 @@ main:
   venue: Journal of Economic Dynamics and Control
   url: https://doi.org/10.1016/j.jedc.2026.105255
   read: false
+  recommended: true
   id: doi:10.1016/j.jedc.2026.105255
   source: openalex
 - title: Welfare measurements with heterogeneous agents

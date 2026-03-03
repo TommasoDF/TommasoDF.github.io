@@ -10,7 +10,7 @@ I am a postdoctoral researcher in the Finance group of the Department of Economi
 
 Behavioral Macro and Financial models, with a particular interest in expectation formation and heterogeneous agent modelling.
 
-I am trying to mantain a reading list of recent papers in topics that interest me. Find the February list in this
+I am trying to mantain a reading list of recent papers in topics that interest me. Find the {{ site.time | date: "%B" }} list in this
 <a href="/reading.html"><autocolor>Reading list</autocolor></a>.
 
 ## News

@@ -16,6 +16,7 @@ READING_YML = REPO_ROOT / "_data" / "reading.yml"
 CONFIG_YML = REPO_ROOT / "scripts" / "reading_sources.yml"
 
 YAML_KEY = "main"
+ARCHIVE_KEY = "archive_recommended"
 
 CROSSREF_BASE = "https://api.crossref.org"
 OPENALEX_BASE = "https://api.openalex.org"
@@ -129,7 +130,6 @@ def crossref_iter_by_issn(
             "order": "desc",
             "rows": rows,
             "cursor": cursor,
-            "cursor-max": rows,
         }
 
         r = session.get(url, params=params, timeout=30)
@@ -344,9 +344,42 @@ def main() -> int:
     cap = int(cfg.get("max_new_per_journal", 30))
 
     data, items = load_yaml_list(READING_YML, YAML_KEY)
+    archive_items = data.get(ARCHIVE_KEY, [])
+    if not isinstance(archive_items, list):
+        raise ValueError(f"{READING_YML}:{ARCHIVE_KEY} must be a YAML list")
+
+    archive_seen = {
+        it.get("id") or f"url:{it.get('url')}"
+        for it in archive_items
+        if isinstance(it, dict)
+    }
+
+    active_items: List[Dict[str, Any]] = []
+    archived_now = 0
+    for it in items:
+        if not isinstance(it, dict):
+            continue
+
+        item_id = it.get("id") or f"url:{it.get('url')}"
+        is_read = bool(it.get("read"))
+        is_recommended = bool(it.get("recommended"))
+
+        if is_read:
+            if is_recommended and item_id not in archive_seen:
+                archived_item = dict(it)
+                archived_item["recommended"] = True
+                archive_items.insert(0, archived_item)
+                archive_seen.add(item_id)
+                archived_now += 1
+            continue
+
+        active_items.append(it)
+
+    items = active_items
+
     seen = {
         it.get("id") or f"url:{it.get('url')}"
-        for it in items
+        for it in items + archive_items
         if isinstance(it, dict)
     }
 
@@ -379,6 +412,7 @@ def main() -> int:
                 "venue": c.venue or "",
                 "url": c.url or "",
                 "read": False,
+                "recommended": False,
                 "id": c.id,
                 "source": c.source,
             })
@@ -392,10 +426,14 @@ def main() -> int:
         else:
             print("  → no new papers found")
 
-    if added_total:
+    changed_archive = archived_now > 0
+    if added_total or changed_archive:
         data[YAML_KEY] = items
+        data[ARCHIVE_KEY] = archive_items
         dump_yaml(READING_YML, data)
         print(f"\n[DONE] Added {added_total} total papers")
+        if changed_archive:
+            print(f"[DONE] Archived {archived_now} recommended read papers")
     else:
         print("\n[DONE] No changes")
 

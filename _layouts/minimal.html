@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #222;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+    }
+    main { width: 100%; max-width: 480px; }
+    h1 { font-size: 1.4em; font-weight: 500; margin: 0 0 6px; }
+    p.sub { font-size: 0.88em; color: #666; margin: 0 0 24px; }
+    label { display: block; margin-bottom: 4px; font-size: 0.95em; }
+    input[type=number] {
+      width: 80px;
+      font-family: inherit;
+      font-size: 1em;
+      border: 1px solid #bbb;
+      padding: 4px 8px;
+      margin-bottom: 14px;
+      outline: none;
+    }
+    input[type=number]:focus { border-color: #700f0f; }
+    #result {
+      margin-top: 20px;
+      font-size: 1.05em;
+      min-height: 1.6em;
+    }
+    #result strong { font-size: 1.3em; }
+    .secondary { color: #666; font-size: 0.9em; margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <main>
+    {{ content }}
+  </main>
+</body>
+</html>

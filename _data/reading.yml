@@ -1,3897 +1,87 @@
 main:
-- title: 'Measuring the effect of shocks on inequality: It’s all about the data'
-  authors: Marie Hogan , Laura E. Jackson , Michael T. Owyang
-  date: 2026-04
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105332
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105332
-  source: openalex
-- title: A data-driven econo-financial stress-testing framework to estimate the effect of supply chain networks
-    on financial systemic risk
-  authors: Jan Fialkowski , Christian Diem , András Borsos , Stefan Thurner
-  date: 2026-04
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105333
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105333
-  source: openalex
-- title: A dynamic model of capital investment with uncertain demand and Bayesian learning
-  authors: Laura Delaney
-  date: 2026-04
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105335
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105335
-  source: openalex
-- title: Bank liability structure under capital requirements in a regime-switching framework
-  authors: Wenli Huang , Xiang Liu , Xiang Liu , Kezhen Yang
-  date: 2026-04
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105338
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105338
-  source: openalex
-- title: Restoring existence and uniqueness at the effective lower bound with simple fiscal policy
-  authors: David Murakami , Ivan Shchapov , Yifan Zhang
-  date: 2026-04
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105336
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105336
-  source: openalex
-- title: Production and endogenous preferences
-  authors: Ilya Dergunov
-  date: 2026-05
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105346
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105346
-  source: openalex
-- title: Editorial Board
-  authors: ''
-  date: 2026-05
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/s0165-1889(26)00088-6
-  read: false
-  recommended: false
-  id: doi:10.1016/s0165-1889(26)00088-6
-  source: openalex
-- title: How do stock market experiences shape wealth inequality?
-  authors: Xiaowen Lei
-  date: 2026-05
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105337
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105337
-  source: openalex
-- title: Market-based short-rate uncertainty and time-varying expected returns
-  authors: Deshui Yu , Difang Huang , Ximing Yin
-  date: 2026-05
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105348
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105348
-  source: openalex
-- title: Bayesian estimation of a large-scale macroeconomic policy agent-based model
-  authors: Sylvain Barde
-  date: 2026-05
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105354
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105354
-  source: openalex
-- title: Consumer heterogeneity and the price-quality relationship
-  authors: Régis Y. Chenavaz , Dominika Machowska
-  date: 2026-05
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105347
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105347
-  source: openalex
-- title: Dynamic order dispersion and volatility persistence in a simple limit order book model
-  authors: Andrew Hawley , Blake LeBaron , Mark E. Paddrik , Nathan Palmer
-  date: 2026-05
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105334
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105334
-  source: openalex
-- title: 'When pandemics meet climate risk: An agent-based model of non-linear macroeconomic dynamics under compound
-    stress'
-  authors: Paola D’Orazio , Anh-Duy Pham , Son Hong Nguyen
-  date: 2026-05
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105356
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105356
-  source: openalex
-- title: 'Identifying episodes of fiscal austerity: An LLM-based approach'
-  authors: Karan Bhasin , Prakash Loungani
-  date: 2026-05
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105351
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105351
-  source: openalex
-- title: A heterogeneous agent new Keynesian model of search frictions and public sector employment
-  authors: Pavlos Balamatsias
-  date: 2026-05
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105357
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105357
-  source: openalex
-- title: Can an AI agent hit a moving target?
-  authors: Aruhan RuiShi
-  date: 2026-05
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105349
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105349
-  source: openalex
-- title: 'Energy commodity price shocks in the euro area: Evidence from a large-scale structural model'
-  authors: Beatrice Pataracchia , Philipp Pfeiffer , Marco Ratto , Jan Teresiński
-  date: 2026-05
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105350
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105350
-  source: openalex
-- title: Gradient-based reinforcement learning for dynamic quantile models
-  authors: Lukas Janasek
-  date: 2026-05
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105355
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105355
-  source: openalex
-- title: Inheritance, entrepreneurship, and estate taxation
-  authors: Yanran Guo
-  date: 2026-05
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105359
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105359
-  source: openalex
-- title: 'International reserves and firm investment: Identification through bank credit reallocation'
-  authors: Woo Jin Choi , Ju Hyun Pyun , Youngjin Yun
-  date: 2026-05
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105360
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105360
-  source: openalex
-- title: Corrigendum to “Market-based short-rate uncertainty and time-varying expected returns” [Journal of Economic
-    Dynamics and Control 188 (2026) 105348]
-  authors: Deshui Yu , Difang Huang , Ximing Yin
-  date: 2026-05
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105358
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105358
-  source: openalex
-- title: Editorial Board
-  authors: ''
-  date: 2026-05
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/s0165-1889(26)00109-0
-  read: false
-  recommended: false
-  id: doi:10.1016/s0165-1889(26)00109-0
-  source: openalex
-- title: Integrating large health shocks into life-cycle models - modelling impacts of a cancer diagnosis
-  authors: Michael Freiberger , Michael Kuhn , Stefan Wrzaczek
-  date: 2026-05
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105367
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105367
-  source: openalex
-- title: Political Pressure on the Fed
-  authors: Thomas Drechsel
-  date: 2026-04
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag030
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag030
-  source: openalex
-- title: Testing Mechanisms
-  authors: Soonwoo Kwon , Jonathan Roth
-  date: 2026-04
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag028
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag028
-  source: openalex
-- title: Identification and Estimation of Dynamic Random Coefficient Models
-  authors: Wooyong Lee
-  date: 2026-04
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag036
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag036
-  source: openalex
-- title: Local Projection-Based Inference under General Conditions
-  authors: Ke‐Li Xu
-  date: 2026-04
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag034
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag034
-  source: openalex
-- title: 'Racial Disparities in Federal Sentencing: Evidence from Drug Mandatory Minimums'
-  authors: Cody Tuttle
-  date: 2026-05
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag037
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag037
-  source: openalex
-- title: Open Rule Legislative Bargaining
-  authors: Volker Britz , Hans Gersbach
-  date: 2026-05
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag038
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag038
-  source: openalex
-- title: Counterfactual Analysis for Structural Dynamic Discrete Choice Models
-  authors: Myrto Kalouptsidi , Yuichi Kitamura , Lucas Lima , Eduardo Souza-Rodrigues
-  date: 2026-05
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag039
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag039
-  source: openalex
-- title: The Dynamics of Verification when Searching for Quality
-  authors: Zihao Li , Jonathan Libgober
-  date: 2026-05
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag040
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag040
-  source: openalex
-- title: 'Input Sourcing under Climate Risk: Evidence from U.S. Manufacturing Firms'
-  authors: Joaquin Blaum , Federico Esposito , Sebastian Heise
-  date: 2026-05
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag031
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag031
-  source: openalex
-- title: A Model of Multiple Hypothesis Testing
-  authors: Davide Viviano , Kaspar Wüthrich , Paul Niehaus
-  date: 2026-05
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag026
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag026
-  source: openalex
-- title: Catastrophes, Delays, and Learning
-  authors: Matti Liski , François Salanié
-  date: 2026-05
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag025
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag025
-  source: openalex
-- title: Markov-Perfect Equilibria in Differential Games—With an Application to Climate Policy
-  authors: Niko Jaakkola , Florian O O Wagener
-  date: 2026-05
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag045
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag045
-  source: openalex
-- title: When is TSLS Actually LATE?
-  authors: Christine Blandhol , John Bonney , Magne Mogstad , Alexander Torgovitsky
-  date: 2026-05
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag029
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag029
-  source: openalex
-- title: 'Optimal Labour Income Taxation: A Flexible Moral Hazard Approach'
-  authors: Narayana Kocherlakota
-  date: 2026-05
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag046
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag046
-  source: openalex
-- title: Monetary Policy and Endogenous Financial Crises
-  authors: Frédéric Boissay , Fabrice Collard , Jordi Gaĺı , Cristina Manea
-  date: 2026-05
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag042
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag042
-  source: openalex
-- title: 'Closing Gender Gaps Through Workplace Diversity: The Intergenerational Effects of World War I'
-  authors: Abhay Aneja , Silvia Farina , Guo Xu
-  date: 2026-05
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag048
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag048
-  source: openalex
-- title: 'The Dynamics of Internal Migration: A New Fact and its Implications'
-  authors: Greg Howard , Hansen Shao
-  date: 2026-05
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag049
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag049
-  source: openalex
-- title: Jackknife Standard Errors for Clustered Regression
-  authors: Bruce E Hansen
-  date: 2026-05
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag050
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag050
-  source: openalex
-- title: 'Technology Transfer and Early Industrial Development: Evidence from the Sino-Soviet Alliance'
-  authors: Michela Giorcelli , Bo Li
-  date: 2026-05
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag047
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag047
-  source: openalex
-- title: 'Monopsony Makes Firms Not Only Small but Also Unproductive: Why East Germany has Not Converged'
-  authors: Rüdiger Bachmann , Christian Bayer , Heiko Stueber , Felix Wellschmied
-  date: 2026-05
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag033
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag033
-  source: openalex
-- title: The Architecture of Social Networks and the Diffusion of Innovations
-  authors: Bryony Reich
-  date: 2026-05
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag052
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag052
-  source: openalex
-- title: Quantifying Supply-Side Climate Policies
-  authors: Lassi Ahlvik , Jørgen Juel Andersen , Jonas Hveding Hamang , Torfinn Harding
-  date: 2026-06
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag024
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag024
-  source: openalex
-- title: Pigovian Transport Pricing in Practice
-  authors: Beat Hintermann , Beaumont Schoeman , Joseph Molloy , Thomas Götschi , Alberto Castro , Christopher Tchervenkov
-    , Uros Tomic , Kay W. Axhausen
-  date: 2026-06
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag051
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag051
-  source: openalex
-- title: Liquidity Traps, Prudential Policies, and International Spillovers
-  authors: Javier Bianchi , Louphou Coulibaly
-  date: 2026-06
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag054
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag054
-  source: openalex
-- title: Manager Pay Inequality and Market Power
-  authors: Renjie Bao , Jan De Loecker , Jan Eeckhout
-  date: 2026-06
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag035
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag035
-  source: openalex
-- title: A Temporary VAT Cut as Unconventional Fiscal Policy
-  authors: Rüdiger Bachmann , Benjamin Born , Olga Goldfayn-Frank , Georgi Kocharkov , Ralph Luetticke , Michael
-    Weber
-  date: 2026-06
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag055
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag055
-  source: openalex
-- title: Spatial Implications of Telecommuting
-  authors: Matt Delventhal , А. И. Пархоменко
-  date: 2026-06
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag057
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag057
-  source: openalex
-- title: Peer Effects in Consideration and Preferences
-  authors: Nail Kashaev , Natalia Lazzati , Ruli Xiao
-  date: 2026-06
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag059
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag059
-  source: openalex
-- title: Competitive Advertising and Pricing
-  authors: Ilwoo Hwang , Kyungmin Kim , Raphael Boleslavsky
-  date: 2026-06
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag062
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag062
-  source: openalex
-- title: Customer Acquisition, Business Dynamism, and Aggregate Growth
-  authors: Marek Ignaszak , Petr Sedláček
-  date: 2026-06
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag060
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag060
-  source: openalex
-- title: Market Segmentation Through Information
-  authors: Matthew Elliott , Andrea Galeotti , Ae-Ran Koh , Wenhao Li
-  date: 2026-06
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag067
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag067
-  source: openalex
-- title: Private Equity and Pay Gaps Inside the Firm
-  authors: Lily H. Fang , Jim Goldman , Alexandra Roulet
-  date: 2026-04
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70043
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70043
-  source: openalex
-- title: Risk-Free Rates and Convenience Yields Around the World
-  authors: William Diamond , Peter Van Tassel
-  date: 2026-04
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70045
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70045
-  source: openalex
-- title: The Effect of Advisors' Incentives on Clients' Investments
-  authors: Diego Battistón , Jordi Blanes i Vidal , Rafael Hortalà-Vallvé , Dong Lou
-  date: 2026-04
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70041
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70041
-  source: openalex
-- title: Why Have CEO Pay Levels Become Less Diverse?
-  authors: Torsten Jochem , Gaizka Ormazábal , Anjana Rajamani
-  date: 2026-05
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70050
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70050
-  source: openalex
-- title: 'Learning in the Limit: Income Inference from Credit Extensions'
-  authors: Yin Xiao
-  date: 2026-05
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70040
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70040
-  source: openalex
-- title: Social Preferences over Ordinal Outcomes
-  authors: Sandro Ambuehl , B. Douglas Bernheim
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20211491
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20211491
-  source: openalex
-- title: Front Matter
-  authors: ''
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.116.5.i
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.116.5.i
-  source: openalex
-- title: Production and Financial Networks in Interplay
-  authors: Kenan Huremović , Gabriel Jiménez , Enrique Moral-Benito , José‐Luis Peydró , Fernando Vega-Redondo
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20201088
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20201088
-  source: openalex
-- title: Effects of Parental Death on Labor Market Outcomes
-  authors: Mathias Fjællegaard Jensen , Ning Zhang
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20240432
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20240432
-  source: openalex
-- title: The Effect of Field Training Officers on Police Use of Force
-  authors: Chandon Adger , Matthew B. Ross , CarlyWill Sloan
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20240785
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20240785
-  source: openalex
-- title: Efficiency Criteria, Income Taxation, and Heterogeneous Elasticities
-  authors: John Becko , Andre Sztutman
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20240919
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20240919
-  source: openalex
-- title: The Attention-Information Trade-Off
-  authors: Marta Serra-Garcia
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20240850
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20240850
-  source: openalex
-- title: 'Internal versus Institutional Barriers to Gender Equality: Evidence from British Politics'
-  authors: N. S. Arun Kumar , U.S. Senator Mike Lee , Matt Lowe , Olaitan Ogunnote
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20241127
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20241127
-  source: openalex
-- title: 'Conservation Priorities and Environmental Offsets: Markets for Florida Wetlands'
-  authors: Mark Aronoff , Will Rafey
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20231016
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20231016
-  source: openalex
-- title: Labor Market Competition and the Assimilation of Immigrants
-  authors: Christoph Albert , Albrecht Glitz , Joan Llull
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20220865
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20220865
-  source: openalex
-- title: 'The Gender Pay Gap: Micro Sources and Macro Consequences'
-  authors: Iacopo Morchio , Christian Moser
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20231107
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20231107
-  source: openalex
-- title: Front Matter
-  authors: ''
-  date: 2026-05
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.116.6.i
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.116.6.i
-  source: openalex
-- title: Elite Universities and the Intergenerational Transmission of Human and Social Capital
-  authors: Andrés Barrios-Fernández , Chris Neilson , Seth Zimmerman
-  date: 2026-05
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20230802
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20230802
-  source: openalex
-- title: Quota versus Quality? Long-Term Gains from an Unusual Gender Quota
-  authors: Ursina Schaede , Ville Mankki
-  date: 2026-05
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20230376
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20230376
-  source: openalex
-- title: Identifying Preference for Early Resolution from Asset Prices
-  authors: Hengjie Ai , Ravi Bansal , Hongye Guo , Amir Yaron
-  date: 2026-05
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20221351
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20221351
-  source: openalex
-- title: Report of Independent Auditor
-  authors: ''
-  date: 2026-05
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.116.6.2282
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.116.6.2282
-  source: openalex
-- title: Racial disparities in crime and wealth
-  authors: Ayşe İmrohoroğlu , Çağrı S. Kumru , Jiu Lian
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103942
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103942
-  source: openalex
-- title: 'Discussion of: “Automated credit limit increases and consumer welfare”'
-  authors: Joel P. Flynn
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103943
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103943
-  source: openalex
-- title: Staffing agencies and in-house bargaining
-  authors: Agneta Berge , Ann‐Sofie Kolm , Per Krusell
-  date: 2026-05
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103944
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103944
-  source: openalex
-- title: Bank concentration, product market competition and productivity growth
-  authors: Lei Ye
-  date: 2026-05
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103946
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103946
-  source: openalex
-- title: Comment on “The impact of AI on global knowledge work” by Enrique Ide and Eduard Talamàs
-  authors: Daniel Rock
-  date: 2026-05
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103947
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103947
-  source: openalex
-- title: Editorial Board
-  authors: ''
-  date: 2026-05
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/s0304-3932(26)00066-8
-  read: false
-  recommended: false
-  id: doi:10.1016/s0304-3932(26)00066-8
-  source: openalex
-- title: Do Voters Punish Inflation or Pay Cuts? Inflation and Real Wages in U.S. Elections
-  authors: Juan Felipe Riaño , Francesco Trebbi
-  date: 2026-06
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103977
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103977
-  source: openalex
-- title: Wasserstein worst-case scenarios and asset pricing
-  authors: Zhonghui Zhang , Fushu Luan , Chihwa Kao
-  date: 2026-06
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103955
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103955
-  source: openalex
-- title: From means-tested programs to Universal Basic Income - The role of endogenous participation in transfer
-    programs
-  authors: Fan Yang
-  date: 2026-06
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103960
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103960
-  source: openalex
-- title: Payment data, information disclosure, and privacy
-  authors: Kee-Youn Kang , Zijian Wang
-  date: 2026-06
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103957
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103957
-  source: openalex
-- title: Central bank communication by ??? The economics of monetary policy leaks
-  authors: Michael Ehrmann , Phillipp Gnan , Kilian Rieder
-  date: 2026-06
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103959
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103959
-  source: openalex
-- title: 'Beyond costs: The dominant role of strategic complementarities in pricing'
-  authors: Elías Albagli , Francesco Grigoli , Emiliano Luttini , Dagoberto Quevedo , Marco Rojas
-  date: 2026-07
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103966
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103966
-  source: openalex
-- title: Editorial Board
-  authors: ''
-  date: 2026-07
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/s0304-3932(26)00085-1
-  read: false
-  recommended: false
-  id: doi:10.1016/s0304-3932(26)00085-1
-  source: openalex
-- title: The price impact of Canadian retaliatory tariffs
-  authors: Alberto Cavallo , Olena Kostyshyna , Oleksiy Kryvtsov , Matias Vieyra
-  date: 2026-07
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103964
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103964
-  source: openalex
-- title: What is core inflation?
-  authors: Jonathan H. Wright
-  date: 2026-07
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103963
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103963
-  source: openalex
-- title: 'Geography versus income: The heterogeneous effects of carbon taxation'
-  authors: Charles Labrousse , Yann Perdereau
-  date: 2026-07
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103962
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103962
-  source: openalex
-- title: Optimal monetary policy with confounding information
-  authors: Qiushuo Ding , Yulei Luo , Gaowang Wang
-  date: 2026-07
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103965
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103965
-  source: openalex
-- title: Unconventional policy and idiosyncratic risk
-  authors: Salvatore Nisticò , Marialaura Seccareccia
-  date: 2026-07
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103973
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103973
-  source: openalex
-- title: 'Public debt in calibrated OLG models: Fiscal arithmetic versus welfare analysis'
-  authors: Johannes Brumm , Jakob Hußmann
-  date: 2026-07
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103974
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103974
-  source: openalex
-- title: Seemingly anchored inflation expectations
-  authors: Ulrike Malmendier , Stefan Nagel
-  date: 2026-08
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103979
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103979
-  source: openalex
-- title: 'The Future in Today’s Prices: Evidence from a Survey of U.S. Firms'
-  authors: Philippe Andrade , Alexander Dietrich , John Leer , Raphael Schoenle , Jenny Tang , Egon Zakrajšek
-  date: 2026-08
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103975
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103975
-  source: openalex
-- title: The effects of the secondary market for corporate loans on the real economy
-  authors: Miroslav Gabrovski , Ioannis Kospentaris , Lucie Lebeau
-  date: 2026-08
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103976
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103976
-  source: openalex
-- title: Editorial Board
-  authors: ''
-  date: 2026-08
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/s0304-3932(26)00098-x
-  read: false
-  recommended: false
-  id: doi:10.1016/s0304-3932(26)00098-x
-  source: openalex
-- title: Monetary stabilisation of export shocks, revisited
-  authors: Sushant Acharya , Edouard Challe , Giancarlo Corsetti
-  date: 2026-08
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103978
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103978
-  source: openalex
-- title: Monetary transmission with frequent policy events
-  authors: Carlo Altavilla , Refet S. Gürkaynak , Thilo Kind , Luc Laeven
-  date: 2026-08
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103986
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103986
-  source: openalex
-- title: The innovation long-run risk component
-  authors: Fabio Franceschini
-  date: 2026-08
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103987
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103987
-  source: openalex
-- title: Recessionary wage flexibility in a monetary union
-  authors: Michał L. Kobielarz , Carolin Spallek
-  date: 2026-09
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103988
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103988
-  source: openalex
-- title: Estimating the value of information in the UK mortgage market
-  authors: Mateusz Myśliwski , May Rostom
-  date: 2026-06
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105368
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105368
-  source: openalex
-- title: Preference revelation when investment is time-dependent
-  authors: Weidong Tian
-  date: 2026-06
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105369
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105369
-  source: openalex
-- title: Measuring housing market slack
-  authors: N. Kundan Kishor
-  date: 2026-06
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105370
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105370
-  source: openalex
-- title: Monetary policy and growth in an open economy with the spirit of capitalism
-  authors: Ming Yang , Minxian Sun , Chan Wang , Jingyi Wang
-  date: 2026-06
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105372
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105372
-  source: openalex
-- title: 'Heterogeneous inflation volatility in production networks: Producer vs. consumer prices'
-  authors: Kohei Hasui , Teruyoshi Kobayashi
-  date: 2026-06
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105373
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105373
-  source: openalex
-- title: 'Liquidity optimization in gross settlement systems with quantum reordering: Application to TARGET2'
-  authors: Valerio Astuti , A. Baldeschi , Luca Bastianelli , Giuseppe Bruno , Ajit Desai , Danica Marsden , Riccardo
-    Russo
-  date: 2026-06
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105385
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105385
-  source: openalex
-- title: Trading institutions, emotional arousal, and overbidding
-  authors: Brice Corgnet , Camille Cornand , Nobuyuki Hanaki
-  date: 2026-06
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105382
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105382
-  source: openalex
-- title: 'Simulating heavy-tailed economic data with quantum Boltzmann machines: Applications to downside risk in
-    firms with limited histories'
-  authors: Noorain Noorani , Valerio Astuti , Giuseppe Bruno , Lerby M. Ergun , Vladimir Skavysh
-  date: 2026-06
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105387
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105387
-  source: openalex
-- title: Editorial Board
-  authors: ''
-  date: 2026-06
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/s0165-1889(26)00122-3
-  read: false
-  recommended: false
-  id: doi:10.1016/s0165-1889(26)00122-3
-  source: openalex
-- title: Securities transaction settlement optimization on superconducting quantum devices
-  authors: Francesco Martini , Daniele Lizzio Bosco , Carlo Barbanera , Serena Bernardini , Giacomo Ranieri , Francesca
-    Cibrario , Davide Corbelletto , G. Bruno , Alessandra Di Pierro , Luca Dellantonio
-  date: 2026-06
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105384
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105384
-  source: openalex
-- title: 'Digital payments in network formation games: Theory of adoption and quantum algorithms'
-  authors: Sofia Priazhkina , Samuel Palmer , Pablo Martín-Ramiro , Román Orús , Samuel Mugel , Vladimir Skavysh
-  date: 2026-06
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105386
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105386
-  source: openalex
-- title: Special issue on quantum computing applications in economics and finance – Editor’s introduction
-  authors: Jesús Fernández-Villaverde , Éric Ghysels
-  date: 2026-07
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105383
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105383
-  source: openalex
-- title: On statistical decision-theoretical foundations of quantum measurement with an application to asset pricing
-    models
-  authors: Éric Ghysels , Jack Morgan
-  date: 2026-07
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105389
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105389
-  source: openalex
-- title: Local determinacy in incomplete-markets models
-  authors: Marcus Hagedorn
-  date: 2026-07
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105390
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105390
-  source: openalex
-- title: International remittances and intra-household risk-sharing
-  authors: Jose Mota
-  date: 2026-07
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105391
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105391
-  source: openalex
-- title: 'FX-constrained growth: Fundamentalists, contrarians, trend-extrapolators and the dynamic trade-multiplier'
-  authors: Marwil J. Dávila‐Fernández , Serena Sordi
-  date: 2026-07
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105392
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105392
-  source: openalex
-- title: Consumable data via quantum communication
-  authors: D. Gilboa , Siddhartha Jain , Jarrod R. McClean
-  date: 2026-07
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105388
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105388
-  source: openalex
-- title: The systemic impact of edges in financial networks
-  authors: Michel Alexandre , Thiago Christiano Silva , Francisco A. Rodrigues
-  date: 2026-07
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105393
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105393
-  source: openalex
-- title: A quantitative analysis of multidimensional changes in unemployment insurance policies
-  authors: Lei Fang , Jun Nie , Zoe Xie
-  date: 2026-07
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105395
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105395
-  source: openalex
-- title: An analytical heterogeneous agent macro model of concentration, markups, and falling labour shares
-  authors: Karsten Köhler , Jo Michell , Ayoze Alfageme
-  date: 2026-07
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105394
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105394
-  source: openalex
-- title: Generational War on Inflation? Optimal Inflation Rates for the Young and the Old
-  authors: Ippei Fujiwara , Shunsuke Hori , Yuichiro Waki
-  date: 2026-08
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105409
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105409
-  source: openalex
-- title: Nominal GDP targeting and the tax burden
-  authors: Michael Hatcher , Juyi Lyu
-  date: 2026-08
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105396
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105396
-  source: openalex
-- title: Worker skills, firm dynamics, and productivity
-  authors: İlhan Güner , Christian Siegel
-  date: 2026-08
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105397
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105397
-  source: openalex
-- title: Uncertain climate policy and activist investing
-  authors: 白彩全 , Bangru Shi , Bangru Shi , Zhentao Zou
-  date: 2026-08
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105398
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105398
-  source: openalex
-- title: Centralized and competitive extraction of distributed renewable resources on networks with nonlinear aggregate
-    growth
-  authors: Filippo de Feo , Giorgio Fabbri , Silvia Faggian , Giuseppe Freni
-  date: 2026-08
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105399
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105399
-  source: openalex
-- title: 'Macroeconomic effects of carbon pricing: The role of bank credit'
-  authors: Yunsang Kim , Givi Melkadze
-  date: 2026-08
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105400
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105400
-  source: openalex
-- title: Opportunistic sovereign default under a credible peg
-  authors: Joao Hernández
-  date: 2026-08
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105401
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105401
-  source: openalex
-- title: Market size, trading frictions, and selling pressure in experimental over-the-counter asset markets
-  authors: Shuze Ding
-  date: 2026-08
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105408
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105408
-  source: openalex
-- title: Editorial Board
-  authors: ''
-  date: 2026-08
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/s0165-1889(26)00150-8
-  read: false
-  recommended: false
-  id: doi:10.1016/s0165-1889(26)00150-8
-  source: openalex
-- title: 'Switching Macroeconomic Growth and Volatility: Evidence from a Mean-Variance Markov-Switching Dynamic
-    Factor Model'
-  authors: Catherine Doz , Laurent Ferrara , Pierre-Alain Pionnier
+- title: Macroeconomic stability of price level targeting in a model of heterogeneous expectations
+  authors: Tomasz Makarewicz
   date: 2026-09
   venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105410
+  url: https://doi.org/10.1016/j.jedc.2026.105415
   read: false
   recommended: false
-  id: doi:10.1016/j.jedc.2026.105410
+  id: doi:10.1016/j.jedc.2026.105415
   source: openalex
-- title: Competition in a Spatially Differentiated Product Market with Negotiated Prices
-  authors: Walter Beckert , Howard W. Smith , Yuya Takahashi
-  date: 2026-06
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag064
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag064
-  source: openalex
-- title: 'Unemployment Insurance, Starting Salaries, and Jobs: Evidence from Multi-state Firms'
-  authors: Gordon B. Dahl , Matthew Knepper
-  date: 2026-06
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag056
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag056
-  source: openalex
-- title: 'Insurer Risk and Public Risk-Sharing: Quantifying the Value of Reinsurance'
-  authors: Paul H S Kim , Anran Li
-  date: 2026-06
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag063
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag063
-  source: openalex
-- title: Skill-Replacing Technology and Bottom-Half Inequality
-  authors: Oren Danieli
-  date: 2026-06
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag068
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag068
-  source: openalex
-- title: Subjective Earnings Risk
-  authors: Andrew Caplin , Victoria Gregory , Eungik Lee , Søren Leth‐Petersen , Johan Sæverud
-  date: 2026-07
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag070
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag070
-  source: openalex
-- title: How Do People React to Income-Based Fines? Evidence from Speeding Tickets Discontinuities
-  authors: Martti Kaila
-  date: 2026-07
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag071
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag071
-  source: openalex
-- title: Structural Change in Production Networks and Economic Growth
-  authors: Paul Gaggl , Aspen Gorry , Christian vom Lehn
-  date: 2026-07
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag075
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag075
-  source: openalex
-- title: 'The Selective Disclosure of Evidence: An Experiment'
-  authors: Agata Farina , Guillaume Fréchette , Alessandro Ispano , Alessandro Lizzeri , Jacopo Perego
-  date: 2026-07
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag076
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag076
-  source: openalex
-- title: Smooth Diagnostic Expectations
-  authors: Francesco Bianchi , Cosmin Ilut , Hikaru Saijo
-  date: 2026-07
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag077
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag077
-  source: openalex
-- title: 'Industrial Clusters in the Long Run: Evidence from Million-Rouble Plants in China'
-  authors: Stephan Heblich , Marlon Seror , Hao Xu , Yanos Zylberberg
-  date: 2026-07
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag078
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag078
-  source: openalex
-- title: 'The Long Shadow of Housing Discrimination: Evidence from Racial Covenants'
-  authors: Aradhya Sood , Kevin E-Solberg
-  date: 2026-07
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag079
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag079
-  source: openalex
-- title: An Evaluation of Protected Area Policies in the European Union
-  authors: Tristan Grupp , Prakash Mishra , Mathias Reynaert , Arthur van Benthem
-  date: 2026-07
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag080
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag080
-  source: openalex
-- title: When is Separate Sales Optimal?
-  authors: Changhyun Kwak
-  date: 2026-07
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag073
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag073
-  source: openalex
-- title: Macro Shocks and Firm Dynamics with Oligopolistic Financial Intermediaries
-  authors: Alessandro T. Villa
-  date: 2026-07
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag081
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag081
-  source: openalex
-- title: 'College, Cognitive Ability, and Socioeconomic Disadvantage: Policy Lessons from the U.K. in 1960–2004'
-  authors: Andrea Ichino , Aldo Rustichini , Giulio Zanella
-  date: 2026-08
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag072
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag072
-  source: openalex
-- title: Marriage, Assortative Mating, and Wealth Inequality
-  authors: Andreas Fagereng , Luigi Guiso , Luigi Pistaferri
-  date: 2026-08
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag087
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag087
-  source: openalex
-- title: Foreign Exchange Intervention with UIP and CIP Deviations
-  authors: Philippe Bacchetta , Kenza Benhima , Brendan Berthold
-  date: 2026-08
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag085
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag085
-  source: openalex
-- title: 'How You Pay Drives What You Choose: Mental Accounting in Health Insurance Plan Choice'
-  authors: Jonathan Gruber , Mengyun Lin , Haoming Liu , Junjian Yi
-  date: 2026-08
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag086
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag086
-  source: openalex
-- title: 'Informative Certification: Screening versus Acquisition'
-  authors: Gorkem Celik , Roland Strausz
-  date: 2026-08
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag083
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag083
-  source: openalex
-- title: Capital Unemployment
-  authors: Pablo Ottonello
-  date: 2026-08
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag088
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag088
-  source: openalex
-- title: Embracing the Enemy
-  authors: Álvaro Delgado-Vega , Johannes Schneider
-  date: 2026-08
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag090
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag090
-  source: openalex
-- title: An Optimal Test for Strategic Interaction in Network Formation Games
-  authors: Andrin Pelican , Bryan S. Graham
-  date: 2026-08
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag089
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag089
-  source: openalex
-- title: 'Early-Career Discrimination: Spiralling or Self-Correcting?'
-  authors: Arjada Bardhi , Yingni Guo , Bruno Strulovici
-  date: 2026-08
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag092
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag092
-  source: openalex
-- title: Affective Polarization, Media Outlets, and Opinion Dynamics
-  authors: Sebastiano Della Lena , Luca Paolo Merlino , Yves Zénou
-  date: 2026-08
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag095
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag095
-  source: openalex
-- title: Recruiting Talent
-  authors: Simon Board , Moritz Meyer-ter-Vehn , Tomasz Sadzik
-  date: 2026-08
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag091
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag091
-  source: openalex
-- title: Labor Supply and the Pension Contribution-Benefit Link
-  authors: Eric French , Attila Lindner , Cormac O’Dea , Tom Zawisza
-  date: 2026-08
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag082
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag082
-  source: openalex
-- title: Why Veil? Religious Headscarves and the Economic Role of Women
-  authors: Naila Shofia
-  date: 2026-08
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag093
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag093
-  source: openalex
-- title: 'Paying to Match: Decentralized Markets with Information Frictions'
-  authors: Marina Agranov , Ahrash Dianat , Larry Samuelson , Leeat Yariv
-  date: 2026-08
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag094
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag094
-  source: openalex
-- title: Public Employee Pensions and Municipal Insolvency
-  authors: Sean Myers
-  date: 2026-08
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag097
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag097
-  source: openalex
-- title: Equity Frictions and Firm Ownership
-  authors: Alessandra Peter
+- title: Diagnostic expectations and cryptocurrency returns
+  authors: Weijia Xue , Chunyang Zhou
   date: 2026-09
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag098
+  venue: Journal of Economic Dynamics and Control
+  url: https://doi.org/10.1016/j.jedc.2026.105416
   read: false
   recommended: false
-  id: doi:10.1093/restud/rdag098
+  id: doi:10.1016/j.jedc.2026.105416
   source: openalex
-- title: 'The Effects of Mandatory Profit-Sharing on Workers and Firms: Evidence from France'
-  authors: Elio Nimier-David , David Sraer , David Thesmar
-  date: 2026-04
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag022
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag022
-  source: openalex
-- title: Why Doesn’t the United States Have National Health Insurance? The Political Role of the American Medical
-    Association
-  authors: Marcella Alsan , Yousra Neberai
-  date: 2026-05
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag024
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag024
-  source: openalex
-- title: Praying for Rain
-  authors: José‐Antonio Espín‐Sánchez , Salvador Gil-Guirado , Nicholas Ryan
-  date: 2026-05
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag026
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag026
-  source: openalex
-- title: The Power of Proximity to Coworkers
-  authors: Natalia Emanuel , Emma Harrington , Amanda Pallais
-  date: 2026-05
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag027
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag027
-  source: openalex
-- title: Public Services Under Private Management
-  authors: Maíra Coube , Luiz Felipe Fontes , Rudi Rocha
-  date: 2026-05
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag028
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag028
-  source: openalex
-- title: International Reserve Management Under Rollover Crises
-  authors: Mauricio Barbosa-Alves , Javier Bianchi , César Sosa‐Padilla
-  date: 2026-05
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag025
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag025
-  source: openalex
-- title: What Jobs Come to Mind? Stereotypes About Fields of Study
-  authors: John J. Conlon , Dev Patel
-  date: 2026-06
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag031
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag031
-  source: openalex
-- title: Who Pays for Unions?
-  authors: Samuel Dodini , Anna Stansbury , Alexander Willén
-  date: 2026-07
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag034
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag034
-  source: openalex
-- title: 'In Their Shoes: Empathy Through Information'
-  authors: Marianne Andries , Leonardo Bursztyn , Thomas Chaney , Milena Djourelova , Alex Imas
-  date: 2026-07
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag033
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag033
-  source: openalex
-- title: 'Correction to: A Further Augmentation of the Solow Model and the Empirics of Economic Growth for OECD
-    Countries'
-  authors: ''
-  date: 2026-07
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag036
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag036
-  source: openalex
-- title: 'Clause and Effect: Theory and Field Experimental Evidence on Noncompete Clauses'
-  authors: Bo Cowgill , Brandon Freiberg , Evan Starr
-  date: 2026-07
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag040
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag040
-  source: openalex
-- title: The Transmission of Reliable and Unreliable Information
-  authors: Thomas Graeber , Shakked Noy , Christopher Roth
-  date: 2026-07
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag037
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag037
-  source: openalex
-- title: Mental Models of the Stock Market
-  authors: Peter Andre , Philipp Schirmer , Johannes Wohlfart
-  date: 2026-07
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag039
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag039
-  source: openalex
-- title: Capital Services in Global Value Chains
-  authors: Xiang Ding
-  date: 2026-07
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag041
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag041
-  source: openalex
-- title: Fairness Across the World
-  authors: Ingvild Almås , Alexander W. Cappelen , Erik Ø. Sørensen , Bertil Tungodden
+- title: 'I think you think I think: Hierarchical belief learning and endogenous volatility dynamics'
+  authors: Tao Wang
   date: 2026-09
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag044
+  venue: Journal of Economic Dynamics and Control
+  url: https://doi.org/10.1016/j.jedc.2026.105421
   read: false
   recommended: false
-  id: doi:10.1093/qje/qjag044
+  id: doi:10.1016/j.jedc.2026.105421
   source: openalex
-- title: Partisan Entrepreneurship
-  authors: JOSEPH ENGELBERG , Jorge Guzmán , Runjing Lu , WILLIAM MULLINS
-  date: 2026-05
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70042
+- title: 'Fintech lending and bank branch closures: Evidence from 11.5 million PPP loans'
+  authors: Alina Malkova
+  date: 2026-09
+  venue: Journal of Empirical Finance
+  url: https://doi.org/10.1016/j.jempfin.2026.101773
   read: false
   recommended: false
-  id: doi:10.1111/jofi.70042
+  id: doi:10.1016/j.jempfin.2026.101773
   source: openalex
-- title: The Equilibrium Effects of Eviction Policies
-  authors: Boaz Abramson
-  date: 2026-05
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70046
+- title: Detecting lead–lag relationships in stock returns and portfolio strategies
+  authors: Álvaro Cartea , Mihai Cucuringu , Qi Jin
+  date: 2026-09
+  venue: Journal of Empirical Finance
+  url: https://doi.org/10.1016/j.jempfin.2026.101775
   read: false
   recommended: false
-  id: doi:10.1111/jofi.70046
+  id: doi:10.1016/j.jempfin.2026.101775
   source: openalex
-- title: The Drivers and Implications of Retail Margin Trading
-  authors: Jiangze Bian , Zhi Da , ZHIGUO HE , DONG LOU , Kelly Shue , HAO ZHOU
-  date: 2026-05
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70049
+- title: 'Volatility connectedness and systemic risk in U.S. housing markets: A multi-method analysis of risk transmission
+    mechanisms'
+  authors: Dominic Gasbarro , Hong Miao , Sanjay Ramchander , J. Kenton Zumwalt
+  date: 2026-09
+  venue: Journal of Empirical Finance
+  url: https://doi.org/10.1016/j.jempfin.2026.101774
   read: false
   recommended: false
-  id: doi:10.1111/jofi.70049
+  id: doi:10.1016/j.jempfin.2026.101774
   source: openalex
-- title: Consumption in Asset Returns
-  authors: Svetlana Bryzgalova , Jiantao Huang , Christian Julliard
-  date: 2026-05
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70044
+- title: Perpetual futures as predictors of Bitcoin volatility
+  authors: Da‐Hea Kim
+  date: 2026-09
+  venue: Journal of Empirical Finance
+  url: https://doi.org/10.1016/j.jempfin.2026.101779
   read: false
   recommended: false
-  id: doi:10.1111/jofi.70044
+  id: doi:10.1016/j.jempfin.2026.101779
   source: openalex
-- title: 'Investing with Purpose: Evidence from Private Foundations'
-  authors: Matteo Binfarè , KYLE E. ZIMMERSCHIED
-  date: 2026-05
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70055
+- title: Related exposures to distressed borrowers and bank lending
+  authors: Sumit D. Agarwal , Ricardo Correa , Bernardo Morais , Jessica Roldán , Claudia Ruiz‐Ortega
+  date: 2026-09
+  venue: Journal of Financial Economics
+  url: https://doi.org/10.1016/j.jfineco.2026.104376
   read: false
   recommended: false
-  id: doi:10.1111/jofi.70055
+  id: doi:10.1016/j.jfineco.2026.104376
   source: openalex
-- title: ANNOUNCEMENTS
-  authors: ''
-  date: 2026-05
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70017
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70017
-  source: openalex
-- title: ISSUE INFORMATION
-  authors: ''
-  date: 2026-05
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.13349
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.13349
-  source: openalex
-- title: AMERICAN FINANCE ASSOCIATION
-  authors: ''
-  date: 2026-05
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.13350
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.13350
-  source: openalex
-- title: ''
-  authors: ''
-  date: 2026-05
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.v81.3
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.v81.3
-  source: openalex
-- title: Detecting Informed Trading Risk from Undercutting Activity
-  authors: YASHAR H. BARARDEHI , PETER DIXON , Qiyu Liu
-  date: 2026-06
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70047
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70047
-  source: openalex
-- title: Learning to Navigate a New Financial Technology
-  authors: Emily Breza , Martin Kanz , LEORA KLAPPER
-  date: 2026-06
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70062
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70062
-  source: openalex
-- title: Jay R. Ritter
-  authors: ''
-  date: 2026-07
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70063
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70063
-  source: openalex
-- title: AMERICAN FINANCE ASSOCIATION
-  authors: ''
-  date: 2026-07
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.13352
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.13352
-  source: openalex
-- title: ISSUE INFORMATION
-  authors: ''
-  date: 2026-07
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.13351
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.13351
-  source: openalex
-- title: ANNOUNCEMENTS
-  authors: ''
-  date: 2026-07
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70018
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70018
-  source: openalex
-- title: ''
-  authors: ''
-  date: 2026-07
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.v81.4
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.v81.4
-  source: openalex
-- title: M&As, Employee Costs, and Labor Reallocation
-  authors: Spyridon Lagaras
-  date: 2026-07
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70065
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70065
-  source: openalex
-- title: The Cross‐Section of Household Preferences
-  authors: Laurent E. Calvet , JOHN Y. CAMPBELL , Francisco Gomes , Paolo Sodini
-  date: 2026-07
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70067
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70067
-  source: openalex
-- title: Do Equity and Options Markets Agree about Volatility?
-  authors: Carsten Chong , Viktor Todorov
-  date: 2026-07
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70070
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70070
-  source: openalex
-- title: 'Climate Change, Demand Uncertainty, and Firms'' Investments: Evidence from Planned Power Plants'
-  authors: Chen Lin , Thomas Schmid , Michael S. Weisbach
-  date: 2026-07
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70071
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70071
-  source: openalex
-- title: Dynamic Self‐Fulfilling Fire Sales
-  authors: PAYMON KHORRAMI , FERNANDO MENDO
-  date: 2026-07
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70069
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70069
-  source: openalex
-- title: Board Dynamics over the Startup Life Cycle
-  authors: Michael Ewens , Nadya Malenko
-  date: 2026-08
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70072
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70072
-  source: openalex
-- title: Personal Costs of Executive Turnovers
-  authors: Kasper Meisner Nielsen
-  date: 2026-08
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70064
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70064
-  source: openalex
-- title: Sequential Search for Corporate Bonds
-  authors: Mahyar Kargar , Benjamin Lester , SÉBASTIEN PLANTE , PIERRE‐OLIVIER WEILL
-  date: 2026-08
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70068
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70068
-  source: openalex
-- title: Marginal Q
-  authors: Vito Gala , João F. Gomes , TONG LIU
-  date: 2026-08
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70074
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70074
-  source: openalex
-- title: Can Small Businesses Survive Chapter 11?
-  authors: Edith Hotchkiss , Benjamin Charles Iverson , Zheng Xiang
-  date: 2026-08
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70076
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70076
-  source: openalex
-- title: 'The Unintended Consequences of #MeToo: Evidence from Research Collaborations in Economics and Finance'
-  authors: Marina Gertsberg
-  date: 2026-08
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70075
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70075
-  source: openalex
-- title: Reference‐Dependent Preferences and Sentiment‐Driven Asset Prices
-  authors: Jess Benhabib , Zhaorui Li , Xuewen Liu , Pengfei Wang
-  date: 2026-08
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70079
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70079
-  source: openalex
-- title: Longevity, Health, and Housing Risk Management in Retirement
-  authors: Pierre‐Carl Michaud , Pascal St‐Amour
-  date: 2026-08
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70077
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70077
-  source: openalex
-- title: Discretionary Announcement Timing and Stock Returns
-  authors: Kerry Back , Bruce I. Carlin , SEYED M. KAZEMPOUR , CHLOE L. XIE
+- title: 'Supranational Banking Supervision, Credit Supply, and Risk‐Taking: European Evidence from Multi‐Country
+    Credit Registers'
+  authors: Carlo Altavilla , MIGUEL BOUCINHA , Martina Jašová , JOSÉ‐LUIS PEYDRÓ , Smets Frank
   date: 2026-09
   venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70073
+  url: https://doi.org/10.1111/jofi.70091
   read: false
   recommended: false
-  id: doi:10.1111/jofi.70073
+  id: doi:10.1111/jofi.70091
   source: openalex
-- title: 'Quality Adjustment at Scale: Hedonic versus Exact Demand-Based Price Indices'
-  authors: Gabriel Ehrlich , John Haltiwanger , Ron Jarmin , David Johnson , Ed Olivares , Luke Pardue , Matthew
-    D. Shapiro , Laura Yi Zhao
-  date: 2026-05
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20230766
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20230766
-  source: openalex
-- title: Friendship Networks and Political Opinions
-  authors: Yann Algan , Nicolò Dalvit , Quoc-Anh Do , Alexis Le Chapelain , Yves Zénou
-  date: 2026-05
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20231344
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20231344
-  source: openalex
-- title: 'Mergers, Foreign Competition, and Jobs: Evidence from the US Appliance Industry'
-  authors: Felix Montag
-  date: 2026-05
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20230017
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20230017
-  source: openalex
-- title: Spatial Spillovers of Conflict in Somalia
-  authors: Marco Alfano , Thomas Cornelissen
-  date: 2026-05
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20231699
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20231699
-  source: openalex
-- title: 'Nobel Lecture: The Economics of Creative Destruction'
-  authors: Philippe Aghion
-  date: 2026-06
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.116.7.2324
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.116.7.2324
-  source: openalex
-- title: 'Nobel Lecture: Creative Destruction and Economic Growth'
-  authors: Peter Howitt
-  date: 2026-06
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.116.7.2357
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.116.7.2357
-  source: openalex
-- title: 'The Effect of High-Tech Clusters on the Productivity of Top Inventors: Comment'
-  authors: Michael Wiebe
-  date: 2026-06
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20231415
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20231415
-  source: openalex
-- title: Self-Fulfilling Fluctuations in HANK Economies
-  authors: Sushant Acharya , Jess Benhabib
-  date: 2026-06
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20240642
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20240642
-  source: openalex
-- title: The Aggregate Costs of Uninsurable Business Risk
-  authors: Corina Boar , Denis Gorea , Virgiliu Midrigan
-  date: 2026-06
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20230849
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20230849
-  source: openalex
-- title: 'Market Opacity and Fragility: Why Liquidity Evaporates When It Is Most Needed'
-  authors: Giovanni Cespa , Xavier Vives
-  date: 2026-06
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20231613
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20231613
-  source: openalex
-- title: Front Matter
-  authors: ''
-  date: 2026-06
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.116.7.i
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.116.7.i
-  source: openalex
-- title: 'Nobel Lecture: The Past and Future of Innovation: Can Progress Be Sustained?'
-  authors: Joel Mokyr
-  date: 2026-06
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.116.7.2299
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.116.7.2299
-  source: openalex
-- title: 'Understanding High-Wage Firms: Monopoly, Monopsony, and Bargaining Power'
-  authors: Horng Chern Wong
-  date: 2026-06
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20230344
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20230344
-  source: openalex
-- title: Ideological Alignment and Evidence-Based Policy Adoption
-  authors: Jorge García Hombrados , Marcel Jansen , Ángel Martínez , Berkay Özcan , Pedro Rey‐Biel , Antonio Roldán-Monés
-  date: 2026-06
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20240673
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20240673
-  source: openalex
-- title: The Effect of Omitted Variables on the Sign of Regression Coefficients
-  authors: Matthew A. Masten , Alexandre Poirier
-  date: 2026-06
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20230242
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20230242
-  source: openalex
-- title: Random Utility with Unobservable Alternatives
-  authors: Haruki Kono , Kota Saito , Alec Sandroni
-  date: 2026-07
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20240712
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20240712
-  source: openalex
-- title: 'Community Engagement and Public Safety: Evidence from Crime Enforcement Targeting Immigrants'
-  authors: Felipe Gonçalves , Elisa Jácome , Emily Weisburst
-  date: 2026-07
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20250305
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20250305
-  source: openalex
-- title: Front Matter
-  authors: ''
-  date: 2026-07
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.116.8.i
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.116.8.i
-  source: openalex
-- title: 'Additionality and Asymmetric Information in Environmental Markets: Evidence from Conservation Auctions'
-  authors: Karl M. Aspelund , Anna Russo
-  date: 2026-07
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20250295
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20250295
-  source: openalex
-- title: Energy Transitions in Regulated Markets
-  authors: Gautam Gowrisankaran , Ashley Langer , Mar Reguant
-  date: 2026-07
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20240094
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20240094
-  source: openalex
-- title: Remote Work and City Structure
-  authors: Ferdinando Monte , Charly Porcher , Esteban Rossi‐Hansberg
-  date: 2026-07
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20231414
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20231414
-  source: openalex
-- title: Talent Hoarding in Organizations
-  authors: Ingrid Haegele
-  date: 2026-07
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20220264
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20220264
-  source: openalex
-- title: The Environmental Bias of Corporate Income Taxation
-  authors: Luigi Iovino , Thorsten Martin , Julien Sauvagnat
-  date: 2026-08
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20241765
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20241765
-  source: openalex
-- title: Front Matter
-  authors: ''
-  date: 2026-08
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.116.9.i
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.116.9.i
-  source: openalex
-- title: Manipulation-Robust Prediction
-  authors: Daniel Björkegren , Blumenstock Joshua E. , Samsun Knight
-  date: 2026-08
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20241087
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20241087
-  source: openalex
-- title: Rationing by Race
-  authors: Manasvini Singh , Atheendar Venkataramani
-  date: 2026-08
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20240701
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20240701
-  source: openalex
-- title: 'Presidential Address: Neighborhood Effects and Missing Markets for Opportunity'
-  authors: Lawrence F. Katz
-  date: 2026-08
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.116.9.3197
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.116.9.3197
-  source: openalex
-- title: Corporate Tax Cuts, Firm Growth, and Workers' Earnings
-  authors: Patrick Kennedy , Christine L. Dobridge , Paul Landefeld , Jacob Mortenson
-  date: 2026-08
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20240404
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20240404
-  source: openalex
-- title: Defying Distance? The Provision of Medical Services in the Digital Age
-  authors: Amanda Dahlstrand
-  date: 2026-08
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20240756
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20240756
-  source: openalex
-- title: 'Optimal Public Transportation Networks: Evidence from the World''s Largest Bus Rapid Transit System in
-    Jakarta'
-  authors: Gabriel Kreindler , Arya Gaduh , Tilman Graff , Rema Hanna , Benjamin Olken
-  date: 2026-08
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20230768
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20230768
-  source: openalex
-- title: Monetary policy trade-offs amid global supply chain disruptions
-  authors: Luis G. Hernández-Román
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103934
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103934
-  source: openalex
-- title: Customer accumulation, returns to scale, and secular trends
-  authors: Andrea Chiavari
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103935
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103935
-  source: openalex
-- title: 'Comment on: Is it AI or data that drives market power?'
-  authors: Miao Ben Zhang
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103926
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103926
-  source: openalex
-- title: Editorial Board
-  authors: ''
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/s0304-3932(26)00054-1
-  read: false
-  recommended: false
-  id: doi:10.1016/s0304-3932(26)00054-1
-  source: crossref
-- title: A traffic-jam theory of growth
-  authors: Daria Finocchiaro , Philippe Weil
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103921
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103921
-  source: crossref
-- title: Cash or card? A structural model of payment choices
-  authors: Francesco Lippi , Elia Moracci
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103930
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103930
-  source: crossref
-- title: 'Comments on “The price of intelligence: How should socially-minded firms price and deploy AI?”'
-  authors: Philip Bond
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103925
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103925
-  source: crossref
-- title: Labor Market Shocks and Monetary Policy
-  authors: Serdar Birinci , Fatih Karahan , Yusuf Mercan , Kurt See
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103928
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103928
-  source: crossref
-- title: 'Discussion of “The rise of AI pricing: Trends, driving forces, and implications for firm performance”'
-  authors: Qiaochu Wang
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103927
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103927
-  source: crossref
-- title: Monetary policy in open economies with production networks
-  authors: Zhesheng Qiu , Yicheng Wang , Le Xu , Francesco Zanetti
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103918
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103918
-  source: crossref
-- title: 'Comment on: “Artificial Intelligence and Cognitive Inequality”'
-  authors: Karthik A. Sastry
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103923
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103923
-  source: crossref
-- title: Comment on “Artificial Intelligence and Technological Unemployment” by Wang and Wong
-  authors: J. Carter Braxton
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103924
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103924
-  source: crossref
-- title: Life-cycle worker flows and cross-country differences in aggregate employment
-  authors: Jonathan Créchet , Etienne Lalé , Linas Tarasonis
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103929
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103929
-  source: crossref
-- title: 'Explicit consumption functions with borrowing constraints: A continuous-time approach'
-  authors: Jordan Roulleau-Pasdeloup
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103919
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103919
-  source: crossref
-- title: 'Spread too thin: The impact of lean inventories'
-  authors: Julio L. Ortiz
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103932
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103932
-  source: crossref
-- title: Competition and the Phillips curve
-  authors: Ippei Fujiwara , Kiminori Matsuyama
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103920
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103920
-  source: crossref
-- title: 'Firm idiosyncratic risk and productivity investment: Macroeconomic implications'
-  authors: Galina Vereshchagina
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103931
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103931
-  source: crossref
-- title: Climate change and the macroeconomics of bank capital regulation
-  authors: Francesco Giovanardi , Matthias Kaldorf
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103907
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103907
-  source: crossref
-- title: 'Biased expectations and labor market outcomes: Evidence from German survey data and implications for the
-    East–West wage gap'
-  authors: Almut Balleer , Georg Duernecker , Susanne Forstner , Johannes Goensch
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103917
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103917
-  source: crossref
-- title: The crowding-in effects of local government debt in China
-  authors: Xiaoming Li , Zheng Liu , Yuchao Peng , Zhiwei Xu
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103922
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103922
-  source: crossref
-- title: 'FraNK: Fragmentation in the NK Model'
-  authors: Alessandro Moro , Valerio Nispi Landi
-  date: 2026-04
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103933
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103933
-  source: crossref
-- title: 'Productive public spending, knowledge spillovers and convergence: A multi-country analysis'
-  authors: Antonio Pietro Federico , Carmelo Pierpaolo Parello
-  date: 2026-03
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105314
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105314
-  source: openalex
-- title: 'From beliefs to prices: Analyzing how inflation expectations affect the inflation distribution'
-  authors: Jose Barrales-Ruiz , Azharul Islam , Mikidadu Mohammed , Irina Panovska
-  date: 2026-03
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105318
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105318
-  source: openalex
-- title: 'A tale of two families: marital formation, parental human capital investment and college attainment'
-  authors: Chao Wei
-  date: 2026-03
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105317
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105317
-  source: openalex
-- title: Designing optimal progressive taxation under hours constraints
-  authors: Kitae Cho , Eunseong Ma
-  date: 2026-03
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105316
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105316
-  source: openalex
-- title: Endogenous dispersion and volatility in stock returns
-  authors: Wukuang Cun , Junjie Xia
-  date: 2026-03
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105320
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105320
-  source: openalex
-- title: General timing games with multiple players
-  authors: Alexander Matros , Vladimir Smirnov , Andrew Wait
-  date: 2026-03
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105319
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105319
-  source: openalex
-- title: 'Public high school expansion and income inequality: Revisiting the race between education and technology'
-  authors: Jakob Madsen , Holger Strulik
-  date: 2026-03
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105321
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105321
-  source: openalex
-- title: 'Decoding news: How media risk and ambiguity shape CDS spreads'
-  authors: Amirhossein Sadoghia , Caterina Santi
-  date: 2026-04
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105322
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105322
-  source: openalex
-- title: Editorial Board
-  authors: ''
-  date: 2026-04
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/s0165-1889(26)00072-2
-  read: false
-  recommended: false
-  id: doi:10.1016/s0165-1889(26)00072-2
-  source: openalex
-- title: Risky news and credit market sentiment
-  authors: Paul Labonne , Leif Anders Thorsrud
-  date: 2026-04
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105331
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105331
-  source: crossref
-- title: Expropriations and cross-country heterogeneity in consumption volatility
-  authors: Yin Germaschewski , Jaroslav Horvath , Loris Rubini
-  date: 2026-04
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105282
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105282
-  source: crossref
-- title: Dynamic network formation with farsighted players and limited capacities
-  authors: Michel Grabisch , Elena Parilina , Agnieszka Rusinowska , Georges Zaccour
-  date: 2026-04
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105285
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105285
-  source: crossref
-- title: Editorial Board
-  authors: ''
-  date: 2026-04
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/s0165-1889(26)00051-5
-  read: false
-  recommended: false
-  id: doi:10.1016/s0165-1889(26)00051-5
-  source: crossref
-- title: 'Identifying macroeconomic shocks using firm-level data: Material shortages in the German manufacturing
-    sector'
-  authors: Friederike Fourné , Lara Zarges
-  date: 2026-04
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105330
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105330
-  source: crossref
-- title: De Gustibus and Disputes about Reference Dependence
-  authors: Pol Campos-Mercade , Lorenz Goette , Thomas Graeber , Alexandre Kellogg , Charles Sprenger
-  date: 2026-03
-  venue: Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag023
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag023
-  source: crossref
-- title: Normal Approximation in Large Network Models
-  authors: Michael P Leung , Hyungsik Roger Moon
-  date: 2026-03
-  venue: Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag022
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag022
-  source: crossref
-- title: The Confederate Diaspora
-  authors: Samuel Bazzi , Andreas Ferrara , Martin Fiszbein , Thomas Pearson , Patrick A Testa
-  date: 2026-04
-  venue: Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag027
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag027
-  source: crossref
-- title: 'MAking The Invisible Hand Visible: Managers and The Allocation of Workers to Jobs'
-  authors: Virginia Minni
-  date: 2026-03
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag017
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag017
-  source: crossref
-- title: Technology Sophistication Across Establishments
-  authors: Xavier Cirera , Diego Comin , Marcio Cruz
-  date: 2026-03
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag018
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag018
-  source: crossref
-- title: 'The Effects of Gender Integration on Men: Evidence from the U.S. Military'
-  authors: Kyle Greenberg , Melanie Wasserman , E Anna Weber
-  date: 2026-03
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag016
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag016
-  source: crossref
-- title: “Compensate the Losers?” Economic Policy and the Origins of U.S. Partisan Realignment
-  authors: Ilyana Kuziemko , Nicolas Longuet-Marx , Suresh Naidu
-  date: 2026-04
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag019
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag019
-  source: crossref
-- title: Codification, Technology Absorption, and The Globalization of the Industrial Revolution
-  authors: Réka Juhász , Shogo Sakabe , David E Weinstein
-  date: 2026-04
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag021
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag021
-  source: crossref
-- title: Collusion with Optimal Information Disclosure
-  authors: Takuo Sugaya , Alexander Wolitzky
-  date: 2026-04
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag020
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag020
-  source: crossref
-- title: ''
-  authors: ''
-  date: 2026-03
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.v81.2
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.v81.2
-  source: openalex
-- title: Consumer Choice and Corporate Bankruptcy
-  authors: SAMUEL ANTILL , MEGAN HUNTER
-  date: 2026-03
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70030
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70030
-  source: crossref
-- title: Specialization in Banking
-  authors: KRISTIAN BLICKLE , CECILIA PARLATORE , ANTHONY SAUNDERS
-  date: 2026-03
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70032
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70032
-  source: crossref
-- title: ANNOUNCEMENTS
-  authors: ''
-  date: 2026-03
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70016
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70016
-  source: crossref
-- title: ISSUE INFORMATION
-  authors: ''
-  date: 2026-03
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.13347
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.13347
-  source: crossref
-- title: AMERICAN FINANCE ASSOCIATION
-  authors: ''
-  date: 2026-03
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.13348
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.13348
-  source: crossref
-- title: The Voting Premium
-  authors: DORON LEVIT , NADYA MALENKO , ERNST MAUG
-  date: 2026-03
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70037
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70037
-  source: crossref
-- title: 'Corporate M&amp;As and Labor Market Concentration: Efficiency Gains or Power Grabs?'
-  authors: DAVID CICERO , MO SHEN , JAIDEEP SHENOY
-  date: 2026-04
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70035
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70035
-  source: crossref
-- title: Leader‐Follower Dynamics in Shareholder Activism
-  authors: DORUK CETEMEN , GONZALO CISTERNAS , AARON KOLB , S. VISWANATHAN
-  date: 2026-04
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70033
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70033
-  source: crossref
-- title: 'Size, Returns, and Value: Do Private Equity Firms Allocate Capital According to Manager Skill?'
-  authors: REINER BRAUN , NILS DORAU , TIM JENKINSON , DANIEL URBAN
-  date: 2026-04
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70036
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70036
-  source: crossref
-- title: The (Missing) Relation between Acquisition Announcement Returns and Value Creation
-  authors: ITZHAK BEN‐DAVID , UTPAL BHATTACHARYA , RUIDI HUANG , STACEY JACOBSEN
-  date: 2026-04
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70038
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70038
-  source: crossref
-- title: Deposit Franchise Runs
-  authors: ITAMAR DRECHSLER , ALEXI SAVOV , PHILIPP SCHNABL , OLIVIER WANG
-  date: 2026-04
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70034
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70034
-  source: crossref
-- title: Funding Black High‐Growth Startups
-  authors: LISA D. COOK , MATT MARX , EMMANUEL YIMFOR
-  date: 2026-04
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70039
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70039
-  source: crossref
-- title: Front Matter
-  authors: ''
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.116.4.i
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.116.4.i
-  source: crossref
-- title: Real Credit Cycles
-  authors: Pedro Bordalo , Nicola Gennaioli , Andrei Shleifer , Stephen J. Terry
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20211820
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20211820
-  source: crossref
-- title: Robust Misspecified Models
-  authors: Cuimin Ba
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20240246
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20240246
-  source: crossref
-- title: Games on Multiplex Networks
-  authors: Yves Zenou , Junjie Zhou
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20240763
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20240763
-  source: crossref
-- title: 'Abundance from Abroad: Migrant Income and Long-Run Economic Development'
-  authors: Gaurav Khanna , Emir Murathanoglu , Caroline Theoharides , Dean Yang
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20241465
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20241465
-  source: crossref
-- title: 'Making Bricks from Straw: Resources and Productivity in Health Care'
-  authors: Edward N. Okeke
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20241459
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20241459
-  source: crossref
-- title: Similarity of Information and Collective Action
-  authors: Deepal Basak , Joyee Deb , Aditya Kuvalekar
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20241056
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20241056
-  source: crossref
-- title: Negative Control Falsification Tests for Instrumental Variable Designs
-  authors: Oren Danieli , Daniel Nevo , Itai Walk , Bar Weinstein , Dan Zeltzer
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20240636
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20240636
-  source: crossref
-- title: 'Spillovers in State Capacity Building: Evidence from the Digitization of Land Records in Pakistan'
-  authors: Shan Aman-Rana , Clement Minaudier
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20240880
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20240880
-  source: crossref
-- title: A Long and a Short Leg Make for a Wobbly Equilibrium
-  authors: Nicolae Gârleanu , Stavros Panageas , Geoffery Zheng
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20211548
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20211548
-  source: crossref
-- title: Market Power and Capital Constraints
-  authors: Milena Wittwer , Jason Allen
-  date: 2026-04
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20231202
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20231202
-  source: crossref
-- title: Professional survey forecasts and expectations in DSGE models
-  authors: Yuliya Rychalovska , Sergey Slobodyan , Rafael Wouters
-  date: 2026-03
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2025.103885
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2025.103885
-  source: crossref
-- title: Distorted prices and targeted taxes in the New Keynesian Network model
-  authors: Anastasiia Antonova , Gernot J. Müller
-  date: 2026-03
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103904
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103904
-  source: crossref
-- title: Wage growth and labor market tightness
-  authors: Sebastian Heise , Jeremy Pearce , Jacob P. Weber
-  date: 2026-03
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103903
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103903
-  source: crossref
-- title: The Geography of job creation and job destruction
-  authors: Moritz Kuhn , Iourii Manovskii , Xincheng Qiu
-  date: 2026-03
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103898
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103898
-  source: crossref
-- title: Heterogeneous innovations and growth under imperfect technology spillovers
-  authors: Karam Jo , Seula Kim
-  date: 2026-03
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103899
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103899
-  source: crossref
-- title: The timing of shocks matters in optimal monetary policy
-  authors: Toyoichiro Shirota
-  date: 2026-03
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103896
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103896
-  source: crossref
-- title: Bank lending standards and the U.S. economy
-  authors: Elijah Broadbent , Huberto M. Ennis , Tyler J. Pike , Horacio Sapriza
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2025.105247
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2025.105247
-  source: crossref
-- title: Has CRMW lowered the cost of corporate debt? A structural credit risk model
-  authors: Ying Liu , Xi Wang
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2025.105239
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2025.105239
-  source: crossref
-- title: 'Stabilizing credit when nonperforming loans surge: The role of asset management companies'
-  authors: Reiner Martin , Edward O’Brien , M. Udara Peiris , Dimitrios P. Tsomocos
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2025.105249
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2025.105249
-  source: crossref
-- title: The social value of strategic public information
-  authors: Xuesong Huang , Jianhao Lin , Yifan Zhang
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2025.105250
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2025.105250
-  source: crossref
-- title: A hybrid differential game in renewable resources with sliding modes and crossing limit cycles
-  authors: Anton Bondarev , Thorsten Upmann
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2025.105248
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2025.105248
-  source: crossref
-- title: 'At home versus in a nursing home: Long-term care settings and marginal utility'
-  authors: Bertrand Achou , Philippe De Donder , Franca Glenzer , Minjoon Lee , Marie-Louise Leroux
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2025.105254
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2025.105254
-  source: crossref
-- title: Expectation traps and Neo-Fisherian policy
-  authors: Jacob A. Robbins
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2025.105246
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2025.105246
-  source: crossref
-- title: Editorial Board
-  authors: ''
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/s0165-1889(26)00016-3
-  read: false
-  recommended: false
-  id: doi:10.1016/s0165-1889(26)00016-3
-  source: crossref
-- title: Leaning against persistent financial cycles with occasional crises
-  authors: Thore Kockerols , Erling Motzfeldt Kravik , Yasin Mimir
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2025.105245
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2025.105245
-  source: crossref
-- title: Population growth, employment protection, and firm-level distortions
-  authors: Cheng Chen , Takahiro Hattori
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2025.105243
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2025.105243
-  source: crossref
-- title: 'Dancing to the wrong tune: How rational myopia, belief heterogeneity, and adjustment costs shape financial
-    bubbles'
-  authors: Elyès Jouini
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2025.105251
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2025.105251
-  source: crossref
-- title: Ambiguity overprecision and optimal capital requirements in continuous time
-  authors: Jingyuan Li , Qian Lin , Weidong Tian
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2025.105240
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2025.105240
-  source: crossref
-- title: Carbon leakage in production networks under asymmetric climate policies
-  authors: Elisa Grugni , Ivan Savin , Jeroen van den Bergh
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2025.105241
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2025.105241
-  source: crossref
-- title: 'Beyond connectivity: Stock market participation in a network'
-  authors: Anastasiia Parakhoniak , Olga Balakina , Claes Bäckman
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2025.105242
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2025.105242
-  source: crossref
-- title: Managing the inflation-output trade-off with public debt portfolios
-  authors: Boris Chafwehé , Charles de Beauffort , Rigas Oikonomou
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2025.105244
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2025.105244
-  source: crossref
-- title: The influence of fiscal and monetary policies on the shape of the yield curve
-  authors: Yoosoon Chang , Fabio Gómez-Rodríguez , Christian Matthes
-  date: 2026-03
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105276
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105276
-  source: crossref
-- title: Public investment, economic growth, and wealth distribution
-  authors: Toshiki Tamai
-  date: 2026-03
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105280
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105280
-  source: crossref
-- title: Beliefs as a means of self-control? Evidence from a dynamic student survey
-  authors: Felix Bönisch , Tobias König , Sebastian Schweighofer-Kodritsch , Georg Weizsäcker
-  date: 2026-03
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105279
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105279
-  source: crossref
-- title: 'Liquidity trap and optimal monetary policy: Evaluations for U.S. monetary policy from 2020 to 2023'
-  authors: Kohei Hasui , Tomohiro Sugo , Yuki Teranishi
-  date: 2026-03
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105274
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105274
-  source: crossref
-- title: Organizational Change and Reference-Dependent Preferences
-  authors: Klaus M Schmidt , Jonas von Wangenheim
-  date: 2026-02
-  venue: Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag009
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag009
-  source: crossref
-- title: Latent Heterogeneity in the Marginal Propensity to Consume
-  authors: Daniel Lewis , Davide Melcangi , Laura Pilossoph
-  date: 2026-02
-  venue: Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdaf102
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdaf102
-  source: crossref
-- title: Narratives about the Macroeconomy
-  authors: Peter Andre , Ingar Haaland , Christopher Roth , Mirko Wiederholt , Johannes Wohlfart
-  date: 2026-02
-  venue: Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag014
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag014
-  source: crossref
-- title: Do The Effects of Nudges Persist? Theory and Evidence from 38 Natural Field Experiments
-  authors: Alec Brandon , Paul J Ferraro , John A List , Robert D Metcalfe , Michael K Price , Florian Rundhammer
-  date: 2026-02
-  venue: Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag012
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag012
-  source: crossref
-- title: Jumpstarting an International Currency
-  authors: Saleem Bahaj , Ricardo Reis
-  date: 2026-02
-  venue: Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag011
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag011
-  source: crossref
-- title: Optimal Decision Rules when Payoffs are Partially Identified
-  authors: Timothy Christensen , Hyungsik Roger Moon , Frank Schorfheide
-  date: 2026-03
-  venue: Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag017
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag017
-  source: crossref
-- title: 'Insuring peace: Index-based livestock insurance, droughts, and conflict'
-  authors: Kai Gehring , Paul Schaudt
-  date: 2026-02
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag005
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag005
-  source: crossref
-- title: Monetary Policy and Sovereign Risk in Emerging Economies (NK-Default)
-  authors: Cristina Arellano , Yan Bai , Gabriel Mihalache
-  date: 2026-02
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag012
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag012
-  source: crossref
-- title: Front Matter
-  authors: ''
-  date: 2026-02
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.116.2.i
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.116.2.i
-  source: crossref
-- title: Why Is Workplace Sexual Harassment Underreported? The Value of Outside Options amid the Threat of Retaliation
-  authors: Gordon B. Dahl , Matthew Knepper
-  date: 2026-03
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20221703
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20221703
-  source: crossref
-- title: 'Dynamics of the Long-Term Housing Yield: Evidence from Natural Experiments'
-  authors: Verónica Bäcker-Peral , Jonathon Hazell , Atif Mian
-  date: 2026-03
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20240513
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20240513
-  source: crossref
-- title: 'The Value of Clean Water: Experimental Evidence from Rural India'
-  authors: Fiona Burlig , Amir Jina , Anant Sudarshan
-  date: 2026-03
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20250278
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20250278
-  source: crossref
-- title: Central bank reputation with noise
-  authors: Manuel Amador , Christopher Phelan
-  date: 2026-02
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103906
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103906
-  source: openalex
-- title: Firm dynamics and random search over the business cycle
-  authors: Richard Audoly
-  date: 2026-02
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103902
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103902
-  source: openalex
-- title: Artificial intelligence and technological unemployment
-  authors: Ping Wang , Tsz-Nga Wong
-  date: 2026-02
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103905
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103905
-  source: openalex
-- title: Automated credit limit increases and consumer welfare
-  authors: Vitaly M. Bord , Agnes Kovacs , Patrick Moran
-  date: 2026-02
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103901
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103901
-  source: openalex
-- title: The role of wage expectations in the labor market
-  authors: Marta García-Rodríguez
-  date: 2026-02
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103914
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jmoneco.2026.103914
-  source: openalex
-- title: Editorial Board
-  authors: ''
-  date: 2026-02
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/s0304-3932(26)00026-7
-  read: false
-  recommended: false
-  id: doi:10.1016/s0304-3932(26)00026-7
-  source: openalex
-- title: 'From Trade Reform to Trade War: A Quantitative Analysis of China’s Current Account'
-  authors: Junjie Tang , Qing Liu , Kang Shi , Juanyi Xu
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105299
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105299
-  source: openalex
-- title: US Monetary Policy Uncertainty Spillover and the Role of Exchange Rate Regime
-  authors: Soyoung Kim , Yongseung Jung , Yeonggyu Yun
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105300
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105300
-  source: openalex
-- title: Racial Unemployment Gaps and the Disparate Impact of the Inflation Tax in a New Monetarist Model
-  authors: Mohammed Ait , Garth Baughman , Hugo van Buggenum
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105275
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105275
-  source: openalex
-- title: A simple higher-order rational email-game bubble model
-  authors: Feng Liu
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105284
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105284
-  source: openalex
-- title: Proximity to the 52-week high and the risk-return trade-off
-  authors: Xingyu Chen , Zilin Chen , Jun Tu , Liyao Wang , Luying Wang , Luying Wang , Luying Wang
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105286
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105286
-  source: openalex
-- title: Solving and analyzing DSGE models in the frequency domain
-  authors: Alexander Meyer‐Gohde
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105281
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105281
-  source: openalex
-- title: 'Redistribution, growth, and inequality: Insights from experimental dynamic public good games'
-  authors: Edward Cartwright , Gergely Horváth , Friederike Mengel , Lian Xue
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105283
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105283
-  source: openalex
-- title: Hawkish or Dovish? Inferring intended monetary policy from the Fed’s dot plot
-  authors: Manuel González‐Astudillo , Rakeen Tanvir
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105294
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105294
-  source: openalex
-- title: Editorial Board
-  authors: ''
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/s0165-1889(26)00037-0
-  read: false
-  recommended: false
-  id: doi:10.1016/s0165-1889(26)00037-0
-  source: openalex
-- title: 'Rollover and insolvency risk in sovereign debt pricing: An experimental study'
-  authors: Waël Bousselmi , Oana Peia , Radu Vranceanu
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105295
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105295
-  source: openalex
-- title: 'Monetary policy and inequality: A heterogeneous agents’ approach'
-  authors: Andrea Boitani , Lorenzo Di Domenico , Giorgio Ricchiuti
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105296
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105296
-  source: openalex
-- title: 'Asymmetric effects of personal income tax changes on economic activity: Increases, cuts, and for whom'
-  authors: Sunju Hwang
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105297
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105297
-  source: openalex
-- title: 'The building blocks of inflation: The role of monetary policy and the gap between goods and services'
-  authors: Sacha Gelfer
-  date: 2026-02
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105298
-  read: false
-  recommended: false
-  id: doi:10.1016/j.jedc.2026.105298
-  source: openalex
-- title: Decision Theory for Treatment Choice Problems with Partial Identification
-  authors: José Luis Montiel Olea , Chen Qiu , Jörg Stoye
-  date: 2026-02
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag015
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag015
-  source: openalex
-- title: Coarse Bayesian Updating
-  authors: Alexander Jakobsen
-  date: 2026-02
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag016
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag016
-  source: openalex
-- title: 'Selection in Surveys: Using Randomized Incentives to Detect and Account for Nonresponse Bias'
-  authors: Deniz Dutz , Ingrid Huitfeldt , Santiago Lacouture , Magne Mogstad , Alexander Torgovitsky , Winnie van
-    Dijk
-  date: 2026-02
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag003
-  read: false
-  recommended: false
-  id: doi:10.1093/restud/rdag003
-  source: openalex
-- title: Disaggregated Economic Accounts
-  authors: Asger Andersen , Kilian Huber , Niels Johannesen , Ludwig Straub , Emil Toft Vestergaard
-  date: 2026-02
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag010
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag010
-  source: openalex
-- title: Civil War–Induced Displacement and Human Capital
-  authors: Giorgio Chiovelli , Stelios Michalopoulos , Elias Papaioannou , Sandra Sequeira
-  date: 2026-02
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag009
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag009
-  source: openalex
-- title: 'The Macroeconomic Impact of Climate Change: Global Versus Local Temperature'
-  authors: Adrien Bilal , Diego R. Känzig
-  date: 2026-02
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag011
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag011
-  source: openalex
-- title: Complete Pass-Through in Levels
-  authors: Kunal Sangani
-  date: 2026-02
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag014
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag014
-  source: openalex
-- title: 'Trust and Innovation Within the Firm: Evidence from Matched CEO-Firm Data'
-  authors: Kieu-Trang Nguyen
-  date: 2026-02
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag013
-  read: false
-  recommended: false
-  id: doi:10.1093/qje/qjag013
-  source: openalex
-- title: ANNOUNCEMENTS
-  authors: ''
-  date: 2026-02
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70015
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70015
-  source: openalex
-- title: ISSUE INFORMATION
-  authors: ''
-  date: 2026-02
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.13345
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.13345
-  source: openalex
-- title: AMERICAN FINANCE ASSOCIATION
-  authors: ''
-  date: 2026-02
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.13346
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.13346
-  source: openalex
-- title: Dynamic Trading with Realization Utility
-  authors: MIN DAI , Cong Qin , NENG WANG
-  date: 2026-02
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.13472
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.13472
-  source: openalex
-- title: ''
-  authors: ''
-  date: 2026-02
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.v81.1
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.v81.1
-  source: openalex
-- title: 'The Benefits of Access: Evidence From Private Meetings with Portfolio Firms'
-  authors: Marco Becht , Julian Franks , Hannes F. Wagner
-  date: 2026-02
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.13495
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.13495
-  source: openalex
-- title: Competition Enforcement and Accounting for Intangible Capital
-  authors: John D. Kepler , Charles McClure , Christopher R. Stewart
-  date: 2026-02
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70028
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70028
-  source: openalex
-- title: Carbon Pricing versus Green Finance
-  authors: LASSE HEJE PEDERSEN
-  date: 2026-02
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70022
-  read: false
-  recommended: false
-  id: doi:10.1111/jofi.70022
-  source: openalex
-- title: What You Don’t Know May Be Good for You
-  authors: Johannes Hörner , Larry Samuelson
-  date: 2026-02
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20250053
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20250053
-  source: openalex
-- title: Temporary Layoffs, Loss-of-Recall, and Cyclical Unemployment Dynamics
-  authors: Mark Gertler , Christopher Huckfeldt , Antonella Trigari
-  date: 2026-02
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20220749
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20220749
-  source: openalex
-- title: Sequential Cursed Equilibrium
-  authors: Shani Cohen , Shengwu Li
-  date: 2026-02
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20230309
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20230309
-  source: openalex
-- title: Zero-Sum Thinking and the Roots of US Political Differences
-  authors: Sahil Chinoy , Nathan Nunn , Sandra Sequeira , Stefanie Stantcheva
-  date: 2026-02
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20240692
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20240692
-  source: openalex
-- title: The Price of War
-  authors: Jonathan Federle , André Meier , Gernot J. Müller , Willi Mutschler , Moritz Kuhn
-  date: 2026-02
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20241355
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20241355
-  source: openalex
-- title: Equal Pay for Similar Work
-  authors: Diego Gentile Passaro , Fuhito Kojima , Bobak Pakzad-Hurson
-  date: 2026-02
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20230832
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20230832
-  source: openalex
-- title: Front Matter
-  authors: ''
-  date: 2026-02
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.116.3.i
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.116.3.i
-  source: openalex
-- title: Immigration, Innovation, and Growth
-  authors: Stephen Terry , Thomas Chaney , Konrad Burchardi , Lisa Tarquinio , Tarek A. Hassan
-  date: 2026-02
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20211601
-  read: false
-  recommended: false
-  id: doi:10.1257/aer.20211601
-  source: openalex
-- title: 'The housing wealth effect: Quasi-experimental evidence'
-  authors: Jesper Böjeryd , Roine Vestman , Björn Tyrefors , Dany Kessel
-  date: 2026-01
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103892
-  read: false
-  id: doi:10.1016/j.jmoneco.2026.103892
-  source: openalex
-- title: Motivating banks to lend? Credit spillover effects of the Main Street Lending Program
-  authors: Camelia Minoiu , Rebecca Zarutskie , Andrei Zlate
-  date: 2026-01
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103897
-  read: false
-  id: doi:10.1016/j.jmoneco.2026.103897
-  source: openalex
-- title: 'Financial shocks and leverage of financial institutions: When do they matter?'
-  authors: Kirstin Hubrich , Yves S. Schüler , Robert Tetlow
-  date: 2026-01
-  venue: Journal of Monetary Economics
-  url: https://doi.org/10.1016/j.jmoneco.2026.103900
-  read: false
-  id: doi:10.1016/j.jmoneco.2026.103900
-  source: openalex
-- title: Welfare measurements with heterogeneous agents
-  authors: Marek Weretka , Marcin Dec
-  date: 2026-01
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2025.105252
-  read: false
-  id: doi:10.1016/j.jedc.2025.105252
-  source: openalex
-- title: 'Long-term debt and the efficiency of crisis-contingent policies: Taming overborrowing externalities'
-  authors: Long Ma , Sichuang Xu
-  date: 2026-01
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2025.105253
-  read: false
-  id: doi:10.1016/j.jedc.2025.105253
-  source: openalex
-- title: 'Central bank digital currency: When price and bank stability (Don’t) collide'
-  authors: Daniel Bird , David Weiss
-  date: 2026-01
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105263
-  read: false
-  id: doi:10.1016/j.jedc.2026.105263
-  source: openalex
-- title: Optimal allocation strategies in a discrete-time bandit problem
-  authors: Audrey Hu , Liang Zou
-  date: 2026-01
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105264
-  read: false
-  id: doi:10.1016/j.jedc.2026.105264
-  source: openalex
-- title: 'Approximating around the stochastic steady state matters: rethinking uncertainty shocks in small open
-    economies'
-  authors: Guillermo Hausmann-Guil
-  date: 2026-01
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105273
-  read: false
-  id: doi:10.1016/j.jedc.2026.105273
-  source: openalex
-- title: 'Optimal insurance with information asymmetry: Nonlinear and linear pricing'
-  authors: Xia Han , B. Li , Luo Yao
-  date: 2026-01
-  venue: Journal of Economic Dynamics and Control
-  url: https://doi.org/10.1016/j.jedc.2026.105265
-  read: false
-  id: doi:10.1016/j.jedc.2026.105265
-  source: openalex
-- title: The Macroeconomics of Irreversibility
-  authors: Isaac Baley , Andrés Blanco
-  date: 2026-01
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag001
-  read: false
-  id: doi:10.1093/restud/rdag001
-  source: openalex
-- title: The Illiquidity of Water Markets
-  authors: Javier D. Donna , José‐Antonio Espín‐Sánchez
-  date: 2026-01
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag004
-  read: false
-  id: doi:10.1093/restud/rdag004
-  source: openalex
-- title: 'Correction to: Tax Policy and Lumpy Investment Behaviour: Evidence from China''s VAT Reform'
-  authors: ''
-  date: 2026-01
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag006
-  read: false
-  id: doi:10.1093/restud/rdag006
-  source: openalex
-- title: Patent Term, Innovation, and the Role of Technology Disclosure Externalities
-  authors: Fabio Bertolotti
-  date: 2026-01
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag005
-  read: false
-  id: doi:10.1093/restud/rdag005
-  source: openalex
-- title: Inference Based on Time-Varying SVARs Identified with Sign Restrictions
-  authors: Jonas E Arias , Juan F Rubio Ramírez , Minchul Shin , Daniel F Waggoner
-  date: 2026-01
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag008
-  read: false
-  id: doi:10.1093/restud/rdag008
-  source: openalex
-- title: Destabilizing Capital Flows amid Global Inflation
-  authors: Julien Bengui , Louphou Coulibaly
-  date: 2026-01
-  venue: The Review of Economic Studies
-  url: https://doi.org/10.1093/restud/rdag007
-  read: false
-  id: doi:10.1093/restud/rdag007
-  source: openalex
-- title: 'Changing Opportunity: Sociological Mechanisms Underlying Growing Class Gaps and Shrinking Race Gaps in
-    Economic Mobility'
-  authors: Raj Chetty , Will Dobbie , Benjamin Goldman , Sonya R Porter , Crystal S Yang
-  date: 2026-01
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjaf057
-  read: false
-  id: doi:10.1093/qje/qjaf057
-  source: openalex
-- title: Growth Experiences and Trust in Government
-  authors: Tim Besley , Christopher Dann , Sacha Dray
-  date: 2026-01
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjaf056
-  read: false
-  id: doi:10.1093/qje/qjaf056
-  source: openalex
-- title: Leveraging Virtual Contact and Social Networks to Foster Interethnic Harmony
-  authors: Abu Siddique , Michael Vlassopoulos , Yves Zenou
-  date: 2026-01
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag001
-  read: false
-  id: doi:10.1093/qje/qjag001
-  source: openalex
-- title: 'The Future in Mind: Aspirations and Long-Term Outcomes in Rural Ethiopia'
-  authors: Tanguy Bernard , Stefan Dercon , Kate Orkin , Giulio Schinaia , Alemayehu Seyoum Taffesse
-  date: 2026-01
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag002
-  read: false
-  id: doi:10.1093/qje/qjag002
-  source: openalex
-- title: How Do You Identify a Good Manager?
-  authors: Ben Weidmann , Joe Vecci , Farah Said , Sonia Bhalotra , Achyuta Adhvaryu , Anant Nyshadham , Jorge Tamayo
-    , David Deming
-  date: 2026-01
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag004
-  read: false
-  id: doi:10.1093/qje/qjag004
-  source: openalex
-- title: '(Not) Thinking About the Future: Financial Information and Maternal Labor Supply'
-  authors: Ana Costa-Ramón , Michaela Slotwinski , Ursina Schaede , Anne Brenøe
-  date: 2026-01
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag003
-  read: false
-  id: doi:10.1093/qje/qjag003
-  source: openalex
-- title: A Theory of How Workers Keep up with Inflation
-  authors: Hassan Afrouzi , Andres Blanco , Andres Drenik , Erik Hurst
-  date: 2026-01
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag007
-  read: false
-  id: doi:10.1093/qje/qjag007
-  source: openalex
-- title: 'Automation and Rent Dissipation: Implications for Wages, Inequality, and Productivity'
-  authors: Daron Acemoglu , Pascual Restrepo
-  date: 2026-01
-  venue: The Quarterly Journal of Economics
-  url: https://doi.org/10.1093/qje/qjag006
-  read: false
-  id: doi:10.1093/qje/qjag006
-  source: openalex
-- title: Default Risk and the Pricing of U.S. Sovereign Bonds
-  authors: Robert F. Dittmar , Alex Hsu , Guillaume Roussellet , Peter Simasek
-  date: 2026-01
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70014
-  read: false
-  id: doi:10.1111/jofi.70014
-  source: openalex
-- title: Corporate ESG Profiles and Investor Horizons
-  authors: Laura T. Starks , PARTH VENKAT , Qifei Zhu
-  date: 2026-01
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70008
-  read: false
-  id: doi:10.1111/jofi.70008
-  source: openalex
-- title: Institutional Investor Attention
-  authors: ALAN KWAN , YUKUN LIU , Yukun Liu
-  date: 2026-01
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70009
-  read: false
-  id: doi:10.1111/jofi.70009
-  source: openalex
-- title: Model Ambiguity versus Model Misspecification in Dynamic Portfolio Choice
-  authors: Pascal J. Maenhout , Hao Xing , Anne Balter
-  date: 2026-01
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70027
-  read: false
-  id: doi:10.1111/jofi.70027
-  source: openalex
-- title: 'Deposit Inflows and Outflows in Failing Banks: The Role of Deposit Insurance'
-  authors: CHRISTOPHER MARTIN , MANJU PURI , ALEXANDER UFIER
-  date: 2026-01
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70007
-  read: false
-  id: doi:10.1111/jofi.70007
-  source: openalex
-- title: Investor Composition and the Liquidity Component in the U.S. Corporate Bond Market
-  authors: Jian Li , Haiyue Yu
-  date: 2026-01
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70024
-  read: false
-  id: doi:10.1111/jofi.70024
-  source: openalex
-- title: Bank Monitoring with On‐Site Inspections
-  authors: Amanda Heitz , Christopher Martin , Alexander Ufier
-  date: 2026-01
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70026
-  read: false
-  id: doi:10.1111/jofi.70026
-  source: openalex
-- title: 'Monetary Policy, Inflation, and Crises: Evidence from History and Administrative Data'
-  authors: GABRIEL JIMÉNEZ , DMITRY KUVSHINOV , JOSÉ‐LUIS PEYDRÓ , BJÖRN RICHTER
-  date: 2026-01
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70023
-  read: false
-  id: doi:10.1111/jofi.70023
-  source: openalex
-- title: 'The Dollar during the Great Recession: The Information Channel of U.S. Monetary Policy and the “Flight
-    to Safety”'
-  authors: VANIA STAVRAKEVA , JENNY TANG
-  date: 2026-01
-  venue: The Journal of Finance
-  url: https://doi.org/10.1111/jofi.70025
-  read: false
-  id: doi:10.1111/jofi.70025
-  source: openalex
-- title: A Theory of Supply Function Choice and Aggregate Supply
-  authors: Joel P. Flynn , George Nikolakoudis , Karthik A. Sastry
-  date: 2026-02
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20240443
-  read: false
-  id: doi:10.1257/aer.20240443
-  source: crossref
-- title: 'Take the Goods and Run: Contracting Frictions and Market Power in Supply Chains'
-  authors: Felipe Brugués
-  date: 2026-02
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20230264
-  read: false
-  id: doi:10.1257/aer.20230264
-  source: crossref
-- title: 'Raising the Stakes: Physician Facility Investments and Provider Agency'
-  authors: Elizabeth L. Munnich , Michael R. Richards , Christopher M. Whaley , Xiaoxi Zhao
-  date: 2026-02
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20211324
-  read: false
-  id: doi:10.1257/aer.20211324
-  source: crossref
-- title: Gender Differences in Economics Seminars
-  authors: Pascaline Dupas , Amy Handlan , Alicia Sasser Modestino , Muriel Niederle , Mateo Seré , Haoyu Sheng
-    , Justin Wolfers
-  date: 2026-02
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20241718
-  read: false
-  id: doi:10.1257/aer.20241718
-  source: crossref
-- title: Work from Home and the Office Real Estate Apocalypse
-  authors: Arpit Gupta , Vrinda Mittal , Stijn Van Nieuwerburgh
-  date: 2026-02
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20231619
-  read: false
-  id: doi:10.1257/aer.20231619
-  source: crossref
-- title: “Potential” and the Gender Promotion Gap
-  authors: Alan Benson , Danielle Li , Kelly Shue
-  date: 2026-02
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20220831
-  read: false
-  id: doi:10.1257/aer.20220831
-  source: crossref
-- title: Competition under Incomplete Contracts and the Design of Procurement Policies
-  authors: Rodrigo Carril , Andres Gonzalez-Lira , Michael S. Walker
-  date: 2026-02
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20221345
-  read: false
-  id: doi:10.1257/aer.20221345
-  source: crossref
-- title: 'Financial Frictions: Micro versus Macro Volatility'
-  authors: Renato Faccini , Seungcheol Lee , Ralph Luetticke , Morten O. Ravn , Tobias Renkin
-  date: 2026-02
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20211219
-  read: false
-  id: doi:10.1257/aer.20211219
-  source: crossref
-- title: 'Evaluating the Impact of Urban Transit Infrastructure: Evidence from Bogotá’s TransMilenio'
-  authors: Nick Tsivanidis
-  date: 2026-02
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20190874
-  read: false
-  id: doi:10.1257/aer.20190874
-  source: crossref
-- title: 'Consumer Credit and the Incidence of Tariffs: Evidence from the Auto Industry'
-  authors: Kristine W. Hankins , Morteza Momeni , David Sovich
-  date: 2026-02
-  venue: American Economic Review
-  url: https://doi.org/10.1257/aer.20230432
-  read: false
-  id: doi:10.1257/aer.20230432
-  source: crossref
-- title: 'Financial Frictions: Micro versus Macro Volatility'
-  authors: Renato Faccini, Seungcheol Lee, Ralph Luetticke, Morten O. Ravn, and Tobias Renkin
-  date: 2026-02
-  venue: American Economic Review
-  url: https://www.aeaweb.org/articles?id=10.1257/aer.20211219
-  read: false
-- title: Work from Home and the Office Real Estate Apocalypse
-  authors: Arpit Gupta, Vrinda Mittal, and Stijn Van Nieuwerburgh
-  date: 2026-02
-  venue: American Economic Review
-  url: https://www.aeaweb.org/articles?id=10.1257/aer.20231619
-  read: false
-- title: A Theory of Supply Function Choice and Aggregate Supply
-  authors: Joel P. Flynn, George Nikolakoudis, and Karthik A. Sastry
-  date: 2026-02
-  venue: American Economic Review
-  url: https://www.aeaweb.org/articles?id=10.1257/aer.20240443
-  read: false
-- title: Long-Horizon Exchange Rate Expectations
-  authors: Lukas Kremens, Ian W. R. Martin, Liliana Varela
-  date: 2025-12
-  venue: The Journal of Finance
-  url: https://onlinelibrary.wiley.com/doi/10.1111/jofi.13504
-  read: false
-- title: 'Digital Distractions with Peer Influence: The Impact of Mobile App Usage on Academic and Labor Market
-    Outcomes'
-  authors: Panle Jia Barwick , Siyu Chen , Chao Fu , Teng Li
-  date: 2026-02
-  venue: Quarterly Journal of Economics
-  url: https://academic.oup.com/qje/article/141/1/1/8292650
-  read: false
-- title: The Price of Housing in the United States, 1890–2006
-  authors: Ronan C Lyons , Allison Shertzer , Rowena Gray , David Agorastos
-  date: 2026-02
-  venue: Quarterly Journal of Economics
-  url: https://academic.oup.com/qje/article-abstract/141/1/559/8280394?redirectedFrom=fulltext
-  read: false
-- title: A Q-Theory of Banks
-  authors: 'Juliane Begenau , Saki Bigio , Jeremy Majerovitz , Matias Vieyra '
-  date: 2026-01
-  venue: The Review of Economic Studies
-  url: https://academic.oup.com/restud/article/93/1/106/8159032
-  read: false
-- title: The U.S., Economic News, and the Global Financial Cycle
-  authors: Christoph E Boehm , T Niklas Kroner
-  date: 2026-01
-  venue: The Review of Economic Studies
-  url: https://academic.oup.com/restud/article-abstract/93/1/215/8105821?redirectedFrom=fulltext
-  read: false
-- title: 'Retractions: Updating from Complex Information'
-  authors: Duarte Gonçalves , Jonathan Libgober , Jack Willis
-  date: 2026-01
-  venue: The Review of Economic Studies
-  url: https://academic.oup.com/restud/article/93/1/476/8159675
-  read: false
-- title: 'Attention Utility: Evidence from Individual Investors'
-  authors: Edika Quispe-Torreblanca , John Gathergood , George Loewenstein , Neil Stewart
-  date: 2026-01
-  venue: The Review of Economic Studies
-  url: https://academic.oup.com/restud/article/93/1/664/8149267
-  read: false
-- title: How People Use Statistics
-  authors: Pedro Bordalo , John Conlon , Nicola Gennaioli , Spencer Kwon , Andrei Shleifer
-  date: 2026-01
-  venue: The Review of Economic Studies
-  url: https://academic.oup.com/restud/article/93/1/250/8140836
-  read: false
 archive_recommended:
 - title: Equilibrium determinacy with behavioral expectations
   authors: Jonathan J. Adams
@@ -3911,3 +101,510 @@ archive_recommended:
   recommended: true
   id: doi:10.1016/j.jmoneco.2026.103895
   source: openalex
+excluded_ids:
+- doi:10.1016/j.jedc.2025.105239
+- doi:10.1016/j.jedc.2025.105240
+- doi:10.1016/j.jedc.2025.105241
+- doi:10.1016/j.jedc.2025.105242
+- doi:10.1016/j.jedc.2025.105243
+- doi:10.1016/j.jedc.2025.105244
+- doi:10.1016/j.jedc.2025.105245
+- doi:10.1016/j.jedc.2025.105246
+- doi:10.1016/j.jedc.2025.105247
+- doi:10.1016/j.jedc.2025.105248
+- doi:10.1016/j.jedc.2025.105249
+- doi:10.1016/j.jedc.2025.105250
+- doi:10.1016/j.jedc.2025.105251
+- doi:10.1016/j.jedc.2025.105252
+- doi:10.1016/j.jedc.2025.105253
+- doi:10.1016/j.jedc.2025.105254
+- doi:10.1016/j.jedc.2026.105263
+- doi:10.1016/j.jedc.2026.105264
+- doi:10.1016/j.jedc.2026.105265
+- doi:10.1016/j.jedc.2026.105273
+- doi:10.1016/j.jedc.2026.105274
+- doi:10.1016/j.jedc.2026.105275
+- doi:10.1016/j.jedc.2026.105276
+- doi:10.1016/j.jedc.2026.105279
+- doi:10.1016/j.jedc.2026.105280
+- doi:10.1016/j.jedc.2026.105281
+- doi:10.1016/j.jedc.2026.105282
+- doi:10.1016/j.jedc.2026.105283
+- doi:10.1016/j.jedc.2026.105284
+- doi:10.1016/j.jedc.2026.105285
+- doi:10.1016/j.jedc.2026.105286
+- doi:10.1016/j.jedc.2026.105294
+- doi:10.1016/j.jedc.2026.105295
+- doi:10.1016/j.jedc.2026.105296
+- doi:10.1016/j.jedc.2026.105297
+- doi:10.1016/j.jedc.2026.105298
+- doi:10.1016/j.jedc.2026.105299
+- doi:10.1016/j.jedc.2026.105300
+- doi:10.1016/j.jedc.2026.105314
+- doi:10.1016/j.jedc.2026.105316
+- doi:10.1016/j.jedc.2026.105317
+- doi:10.1016/j.jedc.2026.105318
+- doi:10.1016/j.jedc.2026.105319
+- doi:10.1016/j.jedc.2026.105320
+- doi:10.1016/j.jedc.2026.105321
+- doi:10.1016/j.jedc.2026.105322
+- doi:10.1016/j.jedc.2026.105330
+- doi:10.1016/j.jedc.2026.105331
+- doi:10.1016/j.jedc.2026.105332
+- doi:10.1016/j.jedc.2026.105333
+- doi:10.1016/j.jedc.2026.105334
+- doi:10.1016/j.jedc.2026.105335
+- doi:10.1016/j.jedc.2026.105336
+- doi:10.1016/j.jedc.2026.105337
+- doi:10.1016/j.jedc.2026.105338
+- doi:10.1016/j.jedc.2026.105346
+- doi:10.1016/j.jedc.2026.105347
+- doi:10.1016/j.jedc.2026.105348
+- doi:10.1016/j.jedc.2026.105349
+- doi:10.1016/j.jedc.2026.105350
+- doi:10.1016/j.jedc.2026.105351
+- doi:10.1016/j.jedc.2026.105354
+- doi:10.1016/j.jedc.2026.105355
+- doi:10.1016/j.jedc.2026.105356
+- doi:10.1016/j.jedc.2026.105357
+- doi:10.1016/j.jedc.2026.105358
+- doi:10.1016/j.jedc.2026.105359
+- doi:10.1016/j.jedc.2026.105360
+- doi:10.1016/j.jedc.2026.105367
+- doi:10.1016/j.jedc.2026.105368
+- doi:10.1016/j.jedc.2026.105369
+- doi:10.1016/j.jedc.2026.105370
+- doi:10.1016/j.jedc.2026.105372
+- doi:10.1016/j.jedc.2026.105373
+- doi:10.1016/j.jedc.2026.105382
+- doi:10.1016/j.jedc.2026.105383
+- doi:10.1016/j.jedc.2026.105384
+- doi:10.1016/j.jedc.2026.105385
+- doi:10.1016/j.jedc.2026.105386
+- doi:10.1016/j.jedc.2026.105387
+- doi:10.1016/j.jedc.2026.105388
+- doi:10.1016/j.jedc.2026.105389
+- doi:10.1016/j.jedc.2026.105390
+- doi:10.1016/j.jedc.2026.105391
+- doi:10.1016/j.jedc.2026.105392
+- doi:10.1016/j.jedc.2026.105393
+- doi:10.1016/j.jedc.2026.105394
+- doi:10.1016/j.jedc.2026.105395
+- doi:10.1016/j.jedc.2026.105396
+- doi:10.1016/j.jedc.2026.105397
+- doi:10.1016/j.jedc.2026.105398
+- doi:10.1016/j.jedc.2026.105399
+- doi:10.1016/j.jedc.2026.105400
+- doi:10.1016/j.jedc.2026.105401
+- doi:10.1016/j.jedc.2026.105408
+- doi:10.1016/j.jedc.2026.105409
+- doi:10.1016/j.jedc.2026.105410
+- doi:10.1016/j.jedc.2026.105411
+- doi:10.1016/j.jedc.2026.105413
+- doi:10.1016/j.jedc.2026.105414
+- doi:10.1016/j.jedc.2026.105417
+- doi:10.1016/j.jedc.2026.105418
+- doi:10.1016/j.jedc.2026.105420
+- doi:10.1016/j.jedc.2026.105423
+- doi:10.1016/j.jedc.2026.105424
+- doi:10.1016/j.jedc.2026.105435
+- doi:10.1016/j.jempfin.2026.101767
+- doi:10.1016/j.jempfin.2026.101776
+- doi:10.1016/j.jempfin.2026.101777
+- doi:10.1016/j.jempfin.2026.101778
+- doi:10.1016/j.jfineco.2026.104350
+- doi:10.1016/j.jfineco.2026.104354
+- doi:10.1016/j.jfineco.2026.104357
+- doi:10.1016/j.jfineco.2026.104358
+- doi:10.1016/j.jfineco.2026.104360
+- doi:10.1016/j.jfineco.2026.104361
+- doi:10.1016/j.jfineco.2026.104362
+- doi:10.1016/j.jfineco.2026.104363
+- doi:10.1016/j.jfineco.2026.104364
+- doi:10.1016/j.jfineco.2026.104375
+- doi:10.1016/j.jfineco.2026.104378
+- doi:10.1016/j.jfineco.2026.104380
+- doi:10.1016/j.jmoneco.2025.103885
+- doi:10.1016/j.jmoneco.2026.103892
+- doi:10.1016/j.jmoneco.2026.103896
+- doi:10.1016/j.jmoneco.2026.103897
+- doi:10.1016/j.jmoneco.2026.103898
+- doi:10.1016/j.jmoneco.2026.103899
+- doi:10.1016/j.jmoneco.2026.103900
+- doi:10.1016/j.jmoneco.2026.103901
+- doi:10.1016/j.jmoneco.2026.103902
+- doi:10.1016/j.jmoneco.2026.103903
+- doi:10.1016/j.jmoneco.2026.103904
+- doi:10.1016/j.jmoneco.2026.103905
+- doi:10.1016/j.jmoneco.2026.103906
+- doi:10.1016/j.jmoneco.2026.103907
+- doi:10.1016/j.jmoneco.2026.103914
+- doi:10.1016/j.jmoneco.2026.103917
+- doi:10.1016/j.jmoneco.2026.103918
+- doi:10.1016/j.jmoneco.2026.103919
+- doi:10.1016/j.jmoneco.2026.103920
+- doi:10.1016/j.jmoneco.2026.103921
+- doi:10.1016/j.jmoneco.2026.103922
+- doi:10.1016/j.jmoneco.2026.103923
+- doi:10.1016/j.jmoneco.2026.103924
+- doi:10.1016/j.jmoneco.2026.103925
+- doi:10.1016/j.jmoneco.2026.103926
+- doi:10.1016/j.jmoneco.2026.103927
+- doi:10.1016/j.jmoneco.2026.103928
+- doi:10.1016/j.jmoneco.2026.103929
+- doi:10.1016/j.jmoneco.2026.103930
+- doi:10.1016/j.jmoneco.2026.103931
+- doi:10.1016/j.jmoneco.2026.103932
+- doi:10.1016/j.jmoneco.2026.103933
+- doi:10.1016/j.jmoneco.2026.103934
+- doi:10.1016/j.jmoneco.2026.103935
+- doi:10.1016/j.jmoneco.2026.103942
+- doi:10.1016/j.jmoneco.2026.103943
+- doi:10.1016/j.jmoneco.2026.103944
+- doi:10.1016/j.jmoneco.2026.103946
+- doi:10.1016/j.jmoneco.2026.103947
+- doi:10.1016/j.jmoneco.2026.103955
+- doi:10.1016/j.jmoneco.2026.103957
+- doi:10.1016/j.jmoneco.2026.103959
+- doi:10.1016/j.jmoneco.2026.103960
+- doi:10.1016/j.jmoneco.2026.103962
+- doi:10.1016/j.jmoneco.2026.103963
+- doi:10.1016/j.jmoneco.2026.103964
+- doi:10.1016/j.jmoneco.2026.103965
+- doi:10.1016/j.jmoneco.2026.103966
+- doi:10.1016/j.jmoneco.2026.103973
+- doi:10.1016/j.jmoneco.2026.103974
+- doi:10.1016/j.jmoneco.2026.103975
+- doi:10.1016/j.jmoneco.2026.103976
+- doi:10.1016/j.jmoneco.2026.103977
+- doi:10.1016/j.jmoneco.2026.103978
+- doi:10.1016/j.jmoneco.2026.103979
+- doi:10.1016/j.jmoneco.2026.103986
+- doi:10.1016/j.jmoneco.2026.103987
+- doi:10.1016/j.jmoneco.2026.103988
+- doi:10.1016/j.jmoneco.2026.103992
+- doi:10.1016/j.jmoneco.2026.103993
+- doi:10.1016/s0165-1889(26)00016-3
+- doi:10.1016/s0165-1889(26)00037-0
+- doi:10.1016/s0165-1889(26)00051-5
+- doi:10.1016/s0165-1889(26)00072-2
+- doi:10.1016/s0165-1889(26)00088-6
+- doi:10.1016/s0165-1889(26)00109-0
+- doi:10.1016/s0165-1889(26)00122-3
+- doi:10.1016/s0165-1889(26)00150-8
+- doi:10.1016/s0165-1889(26)00173-9
+- doi:10.1016/s0304-3932(26)00026-7
+- doi:10.1016/s0304-3932(26)00054-1
+- doi:10.1016/s0304-3932(26)00066-8
+- doi:10.1016/s0304-3932(26)00085-1
+- doi:10.1016/s0304-3932(26)00098-x
+- doi:10.1016/s0304-405x(26)00139-x
+- doi:10.1017/s0022109026103159
+- doi:10.1017/s0022109026103172
+- doi:10.1017/s0022109026103202
+- doi:10.1017/s0022109026103317
+- doi:10.1017/s0022109026103354
+- doi:10.1017/s0022109026103378
+- doi:10.1093/qje/qjaf056
+- doi:10.1093/qje/qjaf057
+- doi:10.1093/qje/qjag001
+- doi:10.1093/qje/qjag002
+- doi:10.1093/qje/qjag003
+- doi:10.1093/qje/qjag004
+- doi:10.1093/qje/qjag005
+- doi:10.1093/qje/qjag006
+- doi:10.1093/qje/qjag007
+- doi:10.1093/qje/qjag009
+- doi:10.1093/qje/qjag010
+- doi:10.1093/qje/qjag011
+- doi:10.1093/qje/qjag012
+- doi:10.1093/qje/qjag013
+- doi:10.1093/qje/qjag014
+- doi:10.1093/qje/qjag016
+- doi:10.1093/qje/qjag017
+- doi:10.1093/qje/qjag018
+- doi:10.1093/qje/qjag019
+- doi:10.1093/qje/qjag020
+- doi:10.1093/qje/qjag021
+- doi:10.1093/qje/qjag022
+- doi:10.1093/qje/qjag024
+- doi:10.1093/qje/qjag025
+- doi:10.1093/qje/qjag026
+- doi:10.1093/qje/qjag027
+- doi:10.1093/qje/qjag028
+- doi:10.1093/qje/qjag031
+- doi:10.1093/qje/qjag033
+- doi:10.1093/qje/qjag034
+- doi:10.1093/qje/qjag036
+- doi:10.1093/qje/qjag037
+- doi:10.1093/qje/qjag039
+- doi:10.1093/qje/qjag040
+- doi:10.1093/qje/qjag041
+- doi:10.1093/qje/qjag044
+- doi:10.1093/restud/rdaf102
+- doi:10.1093/restud/rdag001
+- doi:10.1093/restud/rdag003
+- doi:10.1093/restud/rdag004
+- doi:10.1093/restud/rdag005
+- doi:10.1093/restud/rdag006
+- doi:10.1093/restud/rdag007
+- doi:10.1093/restud/rdag008
+- doi:10.1093/restud/rdag009
+- doi:10.1093/restud/rdag011
+- doi:10.1093/restud/rdag012
+- doi:10.1093/restud/rdag014
+- doi:10.1093/restud/rdag015
+- doi:10.1093/restud/rdag016
+- doi:10.1093/restud/rdag017
+- doi:10.1093/restud/rdag022
+- doi:10.1093/restud/rdag023
+- doi:10.1093/restud/rdag024
+- doi:10.1093/restud/rdag025
+- doi:10.1093/restud/rdag026
+- doi:10.1093/restud/rdag027
+- doi:10.1093/restud/rdag028
+- doi:10.1093/restud/rdag029
+- doi:10.1093/restud/rdag030
+- doi:10.1093/restud/rdag031
+- doi:10.1093/restud/rdag033
+- doi:10.1093/restud/rdag034
+- doi:10.1093/restud/rdag035
+- doi:10.1093/restud/rdag036
+- doi:10.1093/restud/rdag037
+- doi:10.1093/restud/rdag038
+- doi:10.1093/restud/rdag039
+- doi:10.1093/restud/rdag040
+- doi:10.1093/restud/rdag042
+- doi:10.1093/restud/rdag045
+- doi:10.1093/restud/rdag046
+- doi:10.1093/restud/rdag047
+- doi:10.1093/restud/rdag048
+- doi:10.1093/restud/rdag049
+- doi:10.1093/restud/rdag050
+- doi:10.1093/restud/rdag051
+- doi:10.1093/restud/rdag052
+- doi:10.1093/restud/rdag054
+- doi:10.1093/restud/rdag055
+- doi:10.1093/restud/rdag056
+- doi:10.1093/restud/rdag057
+- doi:10.1093/restud/rdag059
+- doi:10.1093/restud/rdag060
+- doi:10.1093/restud/rdag062
+- doi:10.1093/restud/rdag063
+- doi:10.1093/restud/rdag064
+- doi:10.1093/restud/rdag067
+- doi:10.1093/restud/rdag068
+- doi:10.1093/restud/rdag070
+- doi:10.1093/restud/rdag071
+- doi:10.1093/restud/rdag072
+- doi:10.1093/restud/rdag073
+- doi:10.1093/restud/rdag075
+- doi:10.1093/restud/rdag076
+- doi:10.1093/restud/rdag077
+- doi:10.1093/restud/rdag078
+- doi:10.1093/restud/rdag079
+- doi:10.1093/restud/rdag080
+- doi:10.1093/restud/rdag081
+- doi:10.1093/restud/rdag082
+- doi:10.1093/restud/rdag083
+- doi:10.1093/restud/rdag085
+- doi:10.1093/restud/rdag086
+- doi:10.1093/restud/rdag087
+- doi:10.1093/restud/rdag088
+- doi:10.1093/restud/rdag089
+- doi:10.1093/restud/rdag090
+- doi:10.1093/restud/rdag091
+- doi:10.1093/restud/rdag092
+- doi:10.1093/restud/rdag093
+- doi:10.1093/restud/rdag094
+- doi:10.1093/restud/rdag095
+- doi:10.1093/restud/rdag097
+- doi:10.1093/restud/rdag098
+- doi:10.1093/rfs/hhag075
+- doi:10.1093/rfs/hhag081
+- doi:10.1093/rfs/hhag082
+- doi:10.1093/rfs/hhag083
+- doi:10.1093/rfs/hhag084
+- doi:10.1093/rfs/hhag086
+- doi:10.1093/rfs/hhag087
+- doi:10.1093/rfs/hhag088
+- doi:10.1093/rof/rfag037
+- doi:10.1093/rof/rfag038
+- doi:10.1093/rof/rfag040
+- doi:10.1093/rof/rfag042
+- doi:10.1093/rof/rfag043
+- doi:10.1093/rof/rfag044
+- doi:10.1111/jofi.13345
+- doi:10.1111/jofi.13346
+- doi:10.1111/jofi.13347
+- doi:10.1111/jofi.13348
+- doi:10.1111/jofi.13349
+- doi:10.1111/jofi.13350
+- doi:10.1111/jofi.13351
+- doi:10.1111/jofi.13352
+- doi:10.1111/jofi.13353
+- doi:10.1111/jofi.13354
+- doi:10.1111/jofi.13472
+- doi:10.1111/jofi.13495
+- doi:10.1111/jofi.70007
+- doi:10.1111/jofi.70008
+- doi:10.1111/jofi.70009
+- doi:10.1111/jofi.70014
+- doi:10.1111/jofi.70015
+- doi:10.1111/jofi.70016
+- doi:10.1111/jofi.70017
+- doi:10.1111/jofi.70018
+- doi:10.1111/jofi.70019
+- doi:10.1111/jofi.70022
+- doi:10.1111/jofi.70023
+- doi:10.1111/jofi.70024
+- doi:10.1111/jofi.70025
+- doi:10.1111/jofi.70026
+- doi:10.1111/jofi.70027
+- doi:10.1111/jofi.70028
+- doi:10.1111/jofi.70030
+- doi:10.1111/jofi.70032
+- doi:10.1111/jofi.70033
+- doi:10.1111/jofi.70034
+- doi:10.1111/jofi.70035
+- doi:10.1111/jofi.70036
+- doi:10.1111/jofi.70037
+- doi:10.1111/jofi.70038
+- doi:10.1111/jofi.70039
+- doi:10.1111/jofi.70040
+- doi:10.1111/jofi.70041
+- doi:10.1111/jofi.70042
+- doi:10.1111/jofi.70043
+- doi:10.1111/jofi.70044
+- doi:10.1111/jofi.70045
+- doi:10.1111/jofi.70046
+- doi:10.1111/jofi.70047
+- doi:10.1111/jofi.70049
+- doi:10.1111/jofi.70050
+- doi:10.1111/jofi.70055
+- doi:10.1111/jofi.70062
+- doi:10.1111/jofi.70063
+- doi:10.1111/jofi.70064
+- doi:10.1111/jofi.70065
+- doi:10.1111/jofi.70067
+- doi:10.1111/jofi.70068
+- doi:10.1111/jofi.70069
+- doi:10.1111/jofi.70070
+- doi:10.1111/jofi.70071
+- doi:10.1111/jofi.70072
+- doi:10.1111/jofi.70073
+- doi:10.1111/jofi.70074
+- doi:10.1111/jofi.70075
+- doi:10.1111/jofi.70076
+- doi:10.1111/jofi.70077
+- doi:10.1111/jofi.70079
+- doi:10.1111/jofi.70081
+- doi:10.1111/jofi.70087
+- doi:10.1111/jofi.70088
+- doi:10.1111/jofi.70092
+- doi:10.1111/jofi.70093
+- doi:10.1111/jofi.70094
+- doi:10.1111/jofi.v81.1
+- doi:10.1111/jofi.v81.2
+- doi:10.1111/jofi.v81.3
+- doi:10.1111/jofi.v81.4
+- doi:10.1111/jofi.v81.5
+- doi:10.1257/aer.116.10.i
+- doi:10.1257/aer.116.2.i
+- doi:10.1257/aer.116.3.i
+- doi:10.1257/aer.116.4.i
+- doi:10.1257/aer.116.5.i
+- doi:10.1257/aer.116.6.2282
+- doi:10.1257/aer.116.6.i
+- doi:10.1257/aer.116.7.2299
+- doi:10.1257/aer.116.7.2324
+- doi:10.1257/aer.116.7.2357
+- doi:10.1257/aer.116.7.i
+- doi:10.1257/aer.116.8.i
+- doi:10.1257/aer.116.9.3197
+- doi:10.1257/aer.116.9.i
+- doi:10.1257/aer.20190874
+- doi:10.1257/aer.20201088
+- doi:10.1257/aer.20211219
+- doi:10.1257/aer.20211324
+- doi:10.1257/aer.20211491
+- doi:10.1257/aer.20211548
+- doi:10.1257/aer.20211601
+- doi:10.1257/aer.20211820
+- doi:10.1257/aer.20220264
+- doi:10.1257/aer.20220749
+- doi:10.1257/aer.20220831
+- doi:10.1257/aer.20220865
+- doi:10.1257/aer.20221345
+- doi:10.1257/aer.20221351
+- doi:10.1257/aer.20221703
+- doi:10.1257/aer.20230017
+- doi:10.1257/aer.20230242
+- doi:10.1257/aer.20230264
+- doi:10.1257/aer.20230309
+- doi:10.1257/aer.20230344
+- doi:10.1257/aer.20230376
+- doi:10.1257/aer.20230432
+- doi:10.1257/aer.20230714
+- doi:10.1257/aer.20230766
+- doi:10.1257/aer.20230768
+- doi:10.1257/aer.20230802
+- doi:10.1257/aer.20230832
+- doi:10.1257/aer.20230849
+- doi:10.1257/aer.20231016
+- doi:10.1257/aer.20231107
+- doi:10.1257/aer.20231202
+- doi:10.1257/aer.20231344
+- doi:10.1257/aer.20231368
+- doi:10.1257/aer.20231414
+- doi:10.1257/aer.20231415
+- doi:10.1257/aer.20231417
+- doi:10.1257/aer.20231613
+- doi:10.1257/aer.20231619
+- doi:10.1257/aer.20231699
+- doi:10.1257/aer.20240094
+- doi:10.1257/aer.20240246
+- doi:10.1257/aer.20240404
+- doi:10.1257/aer.20240432
+- doi:10.1257/aer.20240443
+- doi:10.1257/aer.20240513
+- doi:10.1257/aer.20240636
+- doi:10.1257/aer.20240642
+- doi:10.1257/aer.20240651
+- doi:10.1257/aer.20240673
+- doi:10.1257/aer.20240692
+- doi:10.1257/aer.20240701
+- doi:10.1257/aer.20240712
+- doi:10.1257/aer.20240756
+- doi:10.1257/aer.20240763
+- doi:10.1257/aer.20240785
+- doi:10.1257/aer.20240850
+- doi:10.1257/aer.20240880
+- doi:10.1257/aer.20240919
+- doi:10.1257/aer.20241056
+- doi:10.1257/aer.20241087
+- doi:10.1257/aer.20241127
+- doi:10.1257/aer.20241355
+- doi:10.1257/aer.20241459
+- doi:10.1257/aer.20241465
+- doi:10.1257/aer.20241596
+- doi:10.1257/aer.20241718
+- doi:10.1257/aer.20241765
+- doi:10.1257/aer.20250053
+- doi:10.1257/aer.20250115
+- doi:10.1257/aer.20250206
+- doi:10.1257/aer.20250278
+- doi:10.1257/aer.20250295
+- doi:10.1257/aer.20250305
+- doi:10.1257/aer.20251879
+- url:https://academic.oup.com/qje/article-abstract/141/1/559/8280394?redirectedFrom=fulltext
+- url:https://academic.oup.com/qje/article/141/1/1/8292650
+- url:https://academic.oup.com/restud/article-abstract/93/1/215/8105821?redirectedFrom=fulltext
+- url:https://academic.oup.com/restud/article/93/1/106/8159032
+- url:https://academic.oup.com/restud/article/93/1/250/8140836
+- url:https://academic.oup.com/restud/article/93/1/476/8159675
+- url:https://academic.oup.com/restud/article/93/1/664/8149267
+- url:https://onlinelibrary.wiley.com/doi/10.1111/jofi.13504
+- url:https://www.aeaweb.org/articles?id=10.1257/aer.20211219
+- url:https://www.aeaweb.org/articles?id=10.1257/aer.20231619
+- url:https://www.aeaweb.org/articles?id=10.1257/aer.20240443

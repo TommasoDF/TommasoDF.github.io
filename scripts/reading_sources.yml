@@ -1,53 +1,82 @@
 # Journals to ingest
 journals:
-  - name: American Economic Review
-    issn: ["0002-8282", "1944-7981"]
-    providers: ["crossref", "openalex"]
-
-  - name: Econometrica
-    issn: ["0012-9682", "1468-0262"]
-    providers: ["crossref", "openalex"]
-
   - name: The Journal of Finance
     issn: ["0022-1082", "1540-6261"]
     providers: ["crossref", "openalex"]
 
-  - name: Quarterly Journal of Economics
-    issn: ["0033-5533", "1531-4650"]
+  - name: Journal of Financial Economics
+    issn: ["0304-405X", "1879-2774"]
     providers: ["crossref", "openalex"]
 
-  - name: The Review of Economic Studies
-    issn: ["0034-6527", "1467-937X"]
+  - name: The Review of Financial Studies
+    issn: ["0893-9454", "1465-7368"]
     providers: ["crossref", "openalex"]
 
-  - name: Journal of Economic Dynamics and Control
-    issn: ["0165-1889", "1873-7079"]
+  - name: Journal of Financial and Quantitative Analysis
+    issn: ["0022-1090", "1756-6916"]
+    providers: ["crossref", "openalex"]
+
+  - name: Review of Finance
+    issn: ["1572-3097", "1573-692X"]
+    providers: ["crossref", "openalex"]
+
+  - name: Journal of Empirical Finance
+    issn: ["0927-5398"]
     providers: ["crossref", "openalex"]
 
   - name: Journal of Monetary Economics
     issn: ["0304-3932", "1873-1295"]
     providers: ["crossref", "openalex"]
 
+  - name: Journal of Economic Dynamics and Control
+    issn: ["0165-1889", "1873-7079"]
+    providers: ["crossref", "openalex"]
 
-# Topic filter: keep paper if ANY pattern matches title+abstract+keywords (if available)
+  - name: American Economic Review
+    issn: ["0002-8282", "1944-7981"]
+    providers: ["crossref", "openalex"]
+
+
+# Topic filter: a candidate is kept only if (a) it matches no exclude_pattern, and
+# (b) it matches at least one include_pattern (checked against title, case-insensitive).
+# NOTE: this filter is actually applied by update_reading.py against the fetched title
+# (and abstract, when a provider supplies one) before a candidate is added.
 filter:
   include_patterns:
-    - "\\bheterogeneous expectations\\b"
-    - "\\bexpectation formation\\b"
-    - "\\bagent-based\\b|\\bagent based\\b|\\bABM\\b"
-    - "\\bsocial network\\b|\\bnetworks\\b"
-    - "\\blearning\\b|\\badaptive\\b|\\bbounded rationality\\b"
-    - "\\basset pricing\\b|\\bfinancial markets\\b"
-    - "\\bmacro-finance\\b|\\bbehavioral macro\\b"
+    - "\\basset pricing\\b"
+    - "\\bstock (returns?|market|price)\\b"
+    - "\\bequity premium\\b|\\brisk premi(um|a)\\b"
+    - "\\bportfolio (choice|selection|allocation)\\b"
+    - "\\btrading (volume|strategy|behavior)\\b"
+    - "\\b(market|funding) liquidity\\b"
+    - "\\bmutual fund(s)?\\b|\\bhedge fund(s)?\\b"
+    - "\\bbond (market|pricing|yield|spread)\\b|\\bcredit (risk|spread)\\b"
+    - "\\bhousehold finance\\b"
+    - "\\bcorporate finance\\b|\\bcapital structure\\b|\\bpayout policy\\b"
+    - "\\bIPO\\b|\\bmerger(s)?\\b|\\bacquisition(s)?\\b"
+    - "\\bfinancial intermediation\\b|\\bbank(s|ing)?\\b"
+    - "\\binvestor (behavior|sentiment|belief|expectations?)\\b"
+    - "\\bmarket efficiency\\b|\\banomal(y|ies)\\b"
+    - "\\bvolatility\\b"
+    - "\\bderivative(s)?\\b|\\boption pricing\\b"
+    - "\\bcryptocurrency\\b|\\bdigital asset(s)?\\b"
+    - "\\bheterogeneous (beliefs|expectations)\\b"
+    - "\\bmacro-finance\\b|\\bbehavioral finance\\b"
     - "\\binformation rigidity\\b|\\bsticky information\\b"
-
 
   exclude_patterns:
     - "\\bcomment\\b"
+    - "\\breply\\b"
     - "\\bcorrection\\b"
     - "\\berratum\\b"
+    - "\\bcorrigendum\\b"
     - "\\bfront matter\\b"
+    - "\\bback matter\\b"
     - "\\beditorial\\b"
+    - "\\beditorial (board|announcement)\\b"
+    - "\\backnowledg(e)?ment(s)?\\b"
+    - "\\bannual report\\b"
+    - "\\bindex to volume\\b"
 
   # optional: tags to attach when matched
   # tag_rules:

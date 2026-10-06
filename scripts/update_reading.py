@@ -17,6 +17,7 @@ CONFIG_YML = REPO_ROOT / "scripts" / "reading_sources.yml"
 
 YAML_KEY = "main"
 ARCHIVE_KEY = "archive_recommended"
+EXCLUDED_KEY = "excluded_ids"
 
 CROSSREF_BASE = "https://api.crossref.org"
 OPENALEX_BASE = "https://api.openalex.org"
@@ -72,6 +73,31 @@ def load_config(path: Path) -> Dict[str, Any]:
     if not path.exists():
         raise FileNotFoundError(f"Missing config: {path}")
     return yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+
+
+# -------------------------
+# Topic filter (include/exclude regex patterns from reading_sources.yml)
+# -------------------------
+def compile_patterns(patterns: List[str]) -> List[re.Pattern]:
+    return [re.compile(p, re.IGNORECASE) for p in (patterns or [])]
+
+
+def build_filter(cfg: Dict[str, Any]):
+    filt = cfg.get("filter") or {}
+    include_res = compile_patterns(filt.get("include_patterns") or [])
+    exclude_res = compile_patterns(filt.get("exclude_patterns") or [])
+
+    def passes(candidate: "Candidate") -> bool:
+        text = " ".join(
+            s for s in (candidate.title, candidate.abstract) if s
+        )
+        if any(p.search(text) for p in exclude_res):
+            return False
+        if include_res and not any(p.search(text) for p in include_res):
+            return False
+        return True
+
+    return passes
 
 
 # -------------------------
@@ -348,6 +374,8 @@ def main() -> int:
     if not isinstance(archive_items, list):
         raise ValueError(f"{READING_YML}:{ARCHIVE_KEY} must be a YAML list")
 
+    excluded_ids = set(data.get(EXCLUDED_KEY) or [])
+
     archive_seen = {
         it.get("id") or f"url:{it.get('url')}"
         for it in archive_items
@@ -356,6 +384,7 @@ def main() -> int:
 
     active_items: List[Dict[str, Any]] = []
     archived_now = 0
+    excluded_now = 0
     for it in items:
         if not isinstance(it, dict):
             continue
@@ -371,6 +400,11 @@ def main() -> int:
                 archive_items.insert(0, archived_item)
                 archive_seen.add(item_id)
                 archived_now += 1
+            # Every read item (recommended or not) is dropped from the active
+            # list; remember its id so it never gets re-fetched as "new".
+            if item_id not in excluded_ids:
+                excluded_ids.add(item_id)
+                excluded_now += 1
             continue
 
         active_items.append(it)
@@ -381,9 +415,11 @@ def main() -> int:
         it.get("id") or f"url:{it.get('url')}"
         for it in items + archive_items
         if isinstance(it, dict)
-    }
+    } | excluded_ids
 
+    passes_filter = build_filter(cfg)
     added_total = 0
+    filtered_out_total = 0
 
     for j in cfg.get("journals", []):
         name = j.get("name", "unknown journal")
@@ -401,8 +437,17 @@ def main() -> int:
         print(f"  total candidates: {len(candidates)}")
 
         new_here = 0
+        filtered_here = 0
         for c in candidates:
             if c.id in seen:
+                continue
+
+            if not passes_filter(c):
+                # Remember it so it isn't re-fetched and re-filtered every run.
+                seen.add(c.id)
+                excluded_ids.add(c.id)
+                filtered_here += 1
+                filtered_out_total += 1
                 continue
 
             items.insert(0, {
@@ -421,19 +466,24 @@ def main() -> int:
             new_here += 1
             added_total += 1
 
-        if new_here:
-            print(f"  → added {new_here} new papers")
+        if new_here or filtered_here:
+            print(f"  → added {new_here} new papers (filtered out {filtered_here})")
         else:
             print("  → no new papers found")
 
     changed_archive = archived_now > 0
-    if added_total or changed_archive:
+    changed_excluded = excluded_now > 0 or filtered_out_total > 0
+    if added_total or changed_archive or changed_excluded:
         data[YAML_KEY] = items
         data[ARCHIVE_KEY] = archive_items
+        data[EXCLUDED_KEY] = sorted(excluded_ids)
         dump_yaml(READING_YML, data)
         print(f"\n[DONE] Added {added_total} total papers")
         if changed_archive:
             print(f"[DONE] Archived {archived_now} recommended read papers")
+        if changed_excluded:
+            print(f"[DONE] Excluded-ids list now has {len(excluded_ids)} entries "
+                  f"(+{excluded_now} from reads, +{filtered_out_total} filtered out)")
     else:
         print("\n[DONE] No changes")
 

@@ -1,4 +1,67 @@
 main:
+- title: Inflation, households, and central banks around the world
+  authors: Francesco D’Acunto , Fiorella De Fiore , Damiano Sandri , Michael Weber
+  date: 2026-10
+  venue: Journal of Monetary Economics
+  url: https://doi.org/10.1016/j.jmoneco.2026.103996
+  read: false
+  recommended: false
+  id: doi:10.1016/j.jmoneco.2026.103996
+  source: openalex
+- title: 'Expected investment and stock returns: A machine learning approach'
+  authors: Yuan Tian
+  date: 2026-10
+  venue: Journal of Empirical Finance
+  url: https://doi.org/10.1016/j.jempfin.2026.101781
+  read: false
+  recommended: false
+  id: doi:10.1016/j.jempfin.2026.101781
+  source: openalex
+- title: Creation After Destruction? Financial Intermediation and Firm Entry After Bank Cleanups
+  authors: Nishant Kashyap , Prasanna L. Tantri
+  date: 2026-10
+  venue: Review of Finance
+  url: https://doi.org/10.1093/rof/rfag045
+  read: false
+  recommended: false
+  id: doi:10.1093/rof/rfag045
+  source: openalex
+- title: Central Bank Economic Transparency and Managerial Learning
+  authors: Oliver Binz , Elia Ferracuti , Gary Lind
+  date: 2026-10
+  venue: Review of Financial Studies
+  url: https://doi.org/10.1093/rfs/hhag089
+  read: false
+  recommended: false
+  id: doi:10.1093/rfs/hhag089
+  source: openalex
+- title: The decline of branch banking
+  authors: Rajesh P Narayanan , Dimuthu Ratnadiwakara , Philip E. Strahan
+  date: 2026-10
+  venue: Journal of Financial Economics
+  url: https://doi.org/10.1016/j.jfineco.2026.104383
+  read: false
+  recommended: false
+  id: doi:10.1016/j.jfineco.2026.104383
+  source: openalex
+- title: Heterogeneous beliefs, asset prices, and business cycles
+  authors: Saki Bigio , Dejanir Silva , Eduardo Zilberman
+  date: 2026-10
+  venue: Journal of Financial Economics
+  url: https://doi.org/10.1016/j.jfineco.2026.104382
+  read: false
+  recommended: false
+  id: doi:10.1016/j.jfineco.2026.104382
+  source: openalex
+- title: Do long-term yields help to estimate short-term risk premia?
+  authors: Andrea Berardi , Roger Brown , Stephen M. Schaefer
+  date: 2026-10
+  venue: Journal of Financial Economics
+  url: https://doi.org/10.1016/j.jfineco.2026.104386
+  read: false
+  recommended: false
+  id: doi:10.1016/j.jfineco.2026.104386
+  source: openalex
 - title: Macroeconomic stability of price level targeting in a model of heterogeneous expectations
   authors: Tomasz Makarewicz
   date: 2026-09
@@ -207,11 +270,22 @@ excluded_ids:
 - doi:10.1016/j.jedc.2026.105420
 - doi:10.1016/j.jedc.2026.105423
 - doi:10.1016/j.jedc.2026.105424
+- doi:10.1016/j.jedc.2026.105434
 - doi:10.1016/j.jedc.2026.105435
+- doi:10.1016/j.jedc.2026.105436
+- doi:10.1016/j.jedc.2026.105437
+- doi:10.1016/j.jedc.2026.105438
+- doi:10.1016/j.jedc.2026.105439
+- doi:10.1016/j.jedc.2026.105440
+- doi:10.1016/j.jedc.2026.105441
+- doi:10.1016/j.jedc.2026.105442
+- doi:10.1016/j.jedc.2026.105443
 - doi:10.1016/j.jempfin.2026.101767
 - doi:10.1016/j.jempfin.2026.101776
 - doi:10.1016/j.jempfin.2026.101777
 - doi:10.1016/j.jempfin.2026.101778
+- doi:10.1016/j.jempfin.2026.101780
+- doi:10.1016/j.jempfin.2026.101782
 - doi:10.1016/j.jfineco.2026.104350
 - doi:10.1016/j.jfineco.2026.104354
 - doi:10.1016/j.jfineco.2026.104357
@@ -221,9 +295,15 @@ excluded_ids:
 - doi:10.1016/j.jfineco.2026.104362
 - doi:10.1016/j.jfineco.2026.104363
 - doi:10.1016/j.jfineco.2026.104364
+- doi:10.1016/j.jfineco.2026.104374
 - doi:10.1016/j.jfineco.2026.104375
+- doi:10.1016/j.jfineco.2026.104377
 - doi:10.1016/j.jfineco.2026.104378
+- doi:10.1016/j.jfineco.2026.104379
 - doi:10.1016/j.jfineco.2026.104380
+- doi:10.1016/j.jfineco.2026.104385
+- doi:10.1016/j.jfineco.2026.104387
+- doi:10.1016/j.jfineco.2026.104392
 - doi:10.1016/j.jmoneco.2025.103885
 - doi:10.1016/j.jmoneco.2026.103892
 - doi:10.1016/j.jmoneco.2026.103896
@@ -284,6 +364,12 @@ excluded_ids:
 - doi:10.1016/j.jmoneco.2026.103988
 - doi:10.1016/j.jmoneco.2026.103992
 - doi:10.1016/j.jmoneco.2026.103993
+- doi:10.1016/j.jmoneco.2026.103994
+- doi:10.1016/j.jmoneco.2026.103995
+- doi:10.1016/j.jmoneco.2026.103997
+- doi:10.1016/j.jmoneco.2026.103998
+- doi:10.1016/j.jmoneco.2026.104008
+- doi:10.1016/j.jmoneco.2026.104009
 - doi:10.1016/s0165-1889(26)00016-3
 - doi:10.1016/s0165-1889(26)00037-0
 - doi:10.1016/s0165-1889(26)00051-5
@@ -298,12 +384,14 @@ excluded_ids:
 - doi:10.1016/s0304-3932(26)00066-8
 - doi:10.1016/s0304-3932(26)00085-1
 - doi:10.1016/s0304-3932(26)00098-x
+- doi:10.1016/s0304-3932(26)00117-0
 - doi:10.1016/s0304-405x(26)00139-x
 - doi:10.1017/s0022109026103159
 - doi:10.1017/s0022109026103172
 - doi:10.1017/s0022109026103202
 - doi:10.1017/s0022109026103317
 - doi:10.1017/s0022109026103354
+- doi:10.1017/s0022109026103366
 - doi:10.1017/s0022109026103378
 - doi:10.1093/qje/qjaf056
 - doi:10.1093/qje/qjaf057
@@ -428,12 +516,21 @@ excluded_ids:
 - doi:10.1093/rfs/hhag086
 - doi:10.1093/rfs/hhag087
 - doi:10.1093/rfs/hhag088
+- doi:10.1093/rfs/hhag090
+- doi:10.1093/rfs/hhag091
+- doi:10.1093/rfs/hhag092
+- doi:10.1093/rfs/hhag093
+- doi:10.1093/rof/rfag036
 - doi:10.1093/rof/rfag037
 - doi:10.1093/rof/rfag038
 - doi:10.1093/rof/rfag040
 - doi:10.1093/rof/rfag042
 - doi:10.1093/rof/rfag043
 - doi:10.1093/rof/rfag044
+- doi:10.1093/rof/rfag046
+- doi:10.1093/rof/rfag047
+- doi:10.1093/rof/rfag048
+- doi:10.1093/rof/rfag049
 - doi:10.1111/jofi.13345
 - doi:10.1111/jofi.13346
 - doi:10.1111/jofi.13347
@@ -498,12 +595,20 @@ excluded_ids:
 - doi:10.1111/jofi.70076
 - doi:10.1111/jofi.70077
 - doi:10.1111/jofi.70079
+- doi:10.1111/jofi.70080
 - doi:10.1111/jofi.70081
+- doi:10.1111/jofi.70082
+- doi:10.1111/jofi.70083
+- doi:10.1111/jofi.70085
+- doi:10.1111/jofi.70086
 - doi:10.1111/jofi.70087
 - doi:10.1111/jofi.70088
+- doi:10.1111/jofi.70089
+- doi:10.1111/jofi.70090
 - doi:10.1111/jofi.70092
 - doi:10.1111/jofi.70093
 - doi:10.1111/jofi.70094
+- doi:10.1111/jofi.70095
 - doi:10.1111/jofi.v81.1
 - doi:10.1111/jofi.v81.2
 - doi:10.1111/jofi.v81.3

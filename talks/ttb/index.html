@@ -1,0 +1,889 @@
+<title>Talking Their Book</title>
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+  /* Layout: fixed 1280x720 stage scaled to the window; single committed light look. */
+  :root {
+    --paper: #f4f5f7; --paper-2: #ffffff; --ink: #16202b; --muted: #5b6572; --rule: #d6dbe2; --wash: #e9edf2;
+    --gen: #0b5cad; --fab: #c25a00; --navy: #16202b; --on-navy: #f4f5f7;
+    --display: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --body: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+    color-scheme: light;
+  }
+  html, body { height: 100%; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body); overflow: hidden; }
+  a { color: var(--gen); }
+  #stage { position: absolute; left: 50%; top: 50%; width: 1280px; height: 720px; transform: translate(-50%, -50%); transform-origin: center center; }
+  .slide { display: none; position: absolute; left: 0; top: 0; width: 1280px; height: 720px; transform-origin: 0 0; box-sizing: border-box; padding: 50px 80px 60px; background: var(--paper); flex-direction: column; gap: 18px; font-size: 31px; line-height: 1.35; }
+  .slide.active { display: flex; }
+  .slide.measuring { display: flex; visibility: hidden; height: auto; min-height: 720px; }
+  .slide h1 { font-family: var(--display); font-weight: 600; font-size: 60px; line-height: 1.1; margin: 0; text-wrap: balance; }
+  .slide h2 { font-family: var(--display); font-weight: 600; font-size: 40px; line-height: 1.2; margin: 0; text-wrap: balance; }
+  .slide h3 { font-family: var(--body); font-weight: 600; font-size: 30px; margin: 0 0 4px; }
+  .slide p { margin: 0; }
+  .slide ul, .slide ol { margin: 0; padding-left: 1.1em; }
+  .slide li { margin: 0 0 7px; }
+  .eyebrow { font-size: 18px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+  .muted { color: var(--muted); } .small { font-size: 27px; } .gen { color: var(--gen); } .fab { color: var(--fab); }
+  .row { display: flex; gap: 30px; align-items: flex-start; } .row > * { min-width: 0; flex: 1; }
+  .box { background: var(--paper-2); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 20px; }
+  .prop { border-left: 6px solid var(--ink); background: var(--wash); padding: 12px 20px; border-radius: 0 6px 6px 0; }
+  .prop .label { font-family: var(--display); font-weight: 600; font-size: 28px; margin-bottom: 2px; }
+  .takeaway { font-family: var(--display); font-size: 34px; line-height: 1.3; text-align: center; margin-top: auto; }
+  .note { font-size: 24px; color: var(--muted); margin-top: auto; }
+  .cite { font-size: 22px; color: var(--muted); }
+  .tag { display: inline-block; font-size: 19px; font-weight: 600; letter-spacing: 0.04em; padding: 1px 8px; border-radius: 4px; background: var(--wash); color: var(--muted); vertical-align: middle; }
+  table { border-collapse: collapse; width: 100%; font-size: 27px; font-variant-numeric: tabular-nums; }
+  th { text-align: left; font-weight: 600; border-bottom: 2px solid var(--ink); padding: 6px 10px; }
+  td { padding: 6px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  td.num, th.num { text-align: right; }
+  .btns { position: absolute; right: 80px; bottom: 20px; display: flex; gap: 10px; }
+  .btn { display: inline-block; font-size: 18px; font-weight: 500; color: var(--gen); background: var(--paper-2); border: 1px solid var(--gen); border-radius: 999px; padding: 4px 14px; text-decoration: none; }
+  .btn:hover, .btn:focus-visible { background: var(--gen); color: var(--paper-2); outline: none; }
+  .title .btn, .divider .btn { color: var(--on-navy); border-color: var(--on-navy); background: transparent; }
+  .slide.divider, .slide.title { background: var(--navy); color: var(--on-navy); justify-content: center; }
+  .slide.divider h1, .slide.title h1 { color: var(--on-navy); }
+  .slide.divider .eyebrow, .slide.title .muted { color: #b8c2cf; }
+  .slide.title .author { font-size: 26px; margin-top: 40px; }
+  .timeline { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; position: relative; padding-top: 26px; }
+  .timeline::before { content: ""; position: absolute; left: 0; right: 0; top: 10px; height: 3px; background: var(--ink); }
+  .timeline > div::before { content: ""; display: block; width: 16px; height: 16px; border-radius: 50%; background: var(--ink); margin: -34px 0 10px; }
+  .timeline h3 { font-family: var(--display); font-size: 26px; }
+  .timeline p { font-size: 27px; margin-bottom: 6px; }
+  aside.notes { display: none; }
+  #notes { position: fixed; left: 0; right: 0; bottom: 0; max-height: 34vh; overflow: auto; background: #16202bee; color: #f4f5f7; font: 16px/1.45 var(--body); padding: 12px 20px 30px; box-sizing: border-box; }
+  #notes .t { color: #ffcf8a; font-weight: 600; margin-right: 8px; }
+  #counter, #timer { position: fixed; bottom: 10px; font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  #counter { right: 18px; } #timer { left: 50%; transform: translateX(-50%); }
+  #help { position: fixed; left: 18px; bottom: 10px; font-size: 14px; color: var(--muted); }
+  @page { size: 1280px 720px; margin: 0; }
+  body.print { overflow: auto; } body.print #stage { position: static; transform: none; width: auto; height: auto; }
+  body.print .slide { display: flex; position: relative; page-break-after: always; break-after: page; margin: 0 auto; }
+  body.print #counter, body.print #help, body.print #timer, body.print #notes { display: none; }
+  @media print { body { overflow: auto; } #stage { position: static; transform: none !important; width: auto; height: auto; } .slide { display: flex; position: relative; page-break-after: always; break-after: page; } #counter, #help, #timer, #notes { display: none; } }
+
+  /* ===== Theme D (21 Oct 2026): white, serif, Beamer-like structure, navy accent ===== */
+  :root { --paper: #ffffff; --paper-2: #ffffff; --wash: #f3f5f8; --accent: #16304f;
+          --body: 'Source Serif 4', Georgia, 'Times New Roman', serif; }
+  body { background: #ffffff; }
+  .slide { background: #ffffff; padding: 44px 80px 64px; }
+  .slide h2 { display: flex; align-items: baseline; gap: 18px; font-size: 41px; }
+  .slide h2::after { content: ""; flex: 1; height: 1.5px; background: var(--accent); transform: translateY(-9px); }
+  .slide h3 { font-family: var(--display); }
+  .prop { border-left: 3px solid var(--accent); background: transparent; border-radius: 0; padding: 8px 0 8px 22px; }
+  .prop .label { font-size: inherit; font-weight: 600; color: var(--ink); }
+  .box { background: var(--wash); border: 1px solid var(--rule); border-radius: 2px; }
+  th { border-bottom-color: var(--accent); }
+  .slide.title, .slide.divider { background: #ffffff; color: var(--ink); justify-content: center; align-items: center; text-align: center; }
+  .slide.title h1, .slide.divider h1 { color: var(--ink); }
+  .slide.title h1::after, .slide.divider h1::after { content: ""; display: block; width: 90px; height: 2px; background: var(--accent); margin: 30px auto 0; }
+  .slide.title h1 span { display: block; font-style: italic; font-size: 38px; color: #3b4048; margin-top: 6px; }
+  .slide.title .muted, .slide.divider .eyebrow { color: var(--muted); }
+  .title .btn, .divider .btn { color: var(--gen); border-color: var(--gen); background: #ffffff; }
+  #counter { right: auto; left: 50%; transform: translateX(-50%); font-family: 'IBM Plex Sans', Arial, sans-serif; }
+  #timer { left: auto; right: 18px; transform: none; }
+
+  .toc { list-style: none; counter-reset: sec; margin: 24px 0 0; padding: 0; display: grid; gap: 18px; font-family: var(--display); font-size: 36px; }
+  .toc li { counter-increment: sec; display: flex; gap: 22px; align-items: baseline; margin: 0; }
+  .toc li::before { content: counter(sec); color: var(--accent); font-weight: 600; min-width: 1.2em; text-align: right; }
+  .toc li.cur { color: var(--accent); font-weight: 600; }
+  .toc li.dim { color: #9aa2ad; }
+  .slide.sec { align-items: flex-start; text-align: left; padding-left: 300px; }
+  /* incremental reveal, like beamer \pause: .step elements keep their space until shown */
+  .slide .step { visibility: hidden; opacity: 0; transition: opacity .25s; }
+  .slide .step.shown, body.print .slide .step { visibility: visible; opacity: 1; }
+  .facts li { font-size: 23px; margin-bottom: 8px; }
+  .facts .src { display: block; font-size: 17px; color: #7a8a9a; margin-top: 1px; }
+  .facts.lit li { font-size: 30px; margin-bottom: 30px; }
+  .facts.lit .src { font-size: 23px; margin-top: 6px; }
+  .lit3 > div { font-size: 24px; border-top: 1.5px solid var(--accent); padding-top: 8px; }
+  .lit3 .src { display: block; font-size: 18px; color: #7a8a9a; margin-top: 6px; line-height: 1.35; }
+  .entry3 td { vertical-align: middle; border-bottom: 1px solid var(--rule); padding: 2px 10px; }
+  .entry3 td:first-child { width: 22%; font-size: 25px; }
+  .entry3 td:last-child { font-size: 25px; }
+  .entry3 .muted { font-size: 19px; margin: -6px 0 6px; }
+  .refs { columns: 2; column-gap: 34px; list-style: none; padding: 0; margin: 0; font-size: 14.5px; line-height: 1.3; }
+  .refs li { break-inside: avoid; margin: 0 0 5px; padding-left: 1.2em; text-indent: -1.2em; }
+  .refs-h { font-size: 16px; font-weight: 600; margin: 4px 0 2px; color: var(--muted); }
+</style>
+
+<main id="stage">
+
+
+
+<section class="slide title" id="start">
+  <p class="eyebrow">Lorentz Center workshop: Complexity Economics and Behaviour</p>
+  <h1>Talking Their Book<br><span style="font-weight:400">A Theory of Financial Fabrication</span></h1>
+  <p class="author">Tommaso Di Francesco<br><span class="muted">University of Bonn</span></p>
+  <p class="muted" style="font-size:22px; margin-top:18px">Lorentz Center, Leiden &#183; 28 October 2026</p>
+</section>
+
+
+
+
+<section class="slide" id="wef">
+  <h2>A Top Global Risk</h2>
+  <img src="figures/wef_global_risks_2024.jpeg" alt="World Economic Forum ranking of global risks by severity in 2024: misinformation and disinformation first over two years and fifth over ten years" style="width:80%; display:block; margin:0 auto">
+  <p class="takeaway step" style="font-size:27px; margin-top:4px">Misinformation: the <b>top global risk</b> for the next two years in 2024, and still second in 2026.</p>
+  <p class="cite" style="font-size:17px">World Economic Forum, <i>Global Risks Report 2024</i>, Figure C; <i>Global Risks Report 2026</i>.</p>
+</section>
+<section class="slide" id="fakenews">
+  <h2>The Perils of Fake News</h2>
+  <div>
+  <p style="font-size:27px; margin:4px 0 8px">The damage shows up across fields:</p>
+  <ul class="facts">
+    <li><b>Politics:</b> pro-Trump fake stories were shared about <b>30 million</b> times on Facebook before the 2016 election.<span class="src">Allcott and Gentzkow (2017, JEP)</span></li>
+    <li><b>Health:</b> exposure to COVID-19 vaccine misinformation cut stated intent to vaccinate by about <b>6 percentage points</b>.<span class="src">Loomba et al. (2021, Nature Human Behaviour)</span></li>
+    <li><b>Instigation of Violence:</b> in 2016, a man fired a rifle in a Washington pizzeria to &#8220;investigate&#8221; the Pizzagate conspiracy.<span class="src">United States v. Welch (D.D.C., 2017)</span></li>
+    <li><b>Spread:</b> on Twitter, false news diffuses <b>six times faster</b> than true news.<span class="src">Vosoughi, Roy and Aral (2018, Science)</span></li>
+  </ul>
+  </div>
+  <p class="takeaway step" style="font-size:30px; margin-top:10px">But can fake news also move financial markets?</p>
+</section>
+<section class="slide" id="pentagon">
+  <h2>Fake News Can Move Markets</h2>
+  <div class="row" style="align-items:center">
+    <div style="flex:1.1">
+      <div class="box" style="border-radius:14px; padding:14px 18px; box-shadow:0 2px 6px rgba(22,32,43,0.12)">
+        <p style="font-size:22px"><b>Bloomberg Feed</b> <span style="color:#1d9bf0">&#10004;</span> <span class="muted">@BloombergFeed · 22 May 2023</span></p>
+        <p style="font-size:26px; margin:6px 0 10px">Large Explosion near The Pentagon Complex in Washington D.C. - Initial Report</p>
+        <img src="figures/pentagon_clean.jpg" alt="AI-generated picture of smoke next to a building" style="display:block; width:100%; height:270px; object-fit:cover; object-position:center 60%; border-radius:10px">
+      </div>
+    </div>
+    <div style="flex:0.9" class="step" data-step="1">
+      <ul>
+        <li>A paid "verified" account posing as Bloomberg</li>
+        <li>Minutes after the open, the <b>S&amp;P&nbsp;500 fell about 0.3%</b></li>
+        <li>Quick rebound once officials said there was no explosion</li>
+      </ul>
+    </div>
+  </div>
+  <p class="takeaway step" data-step="2" style="font-size:30px">Fake news can move even the most liquid market and with AI they are even easier to produce.</p>
+</section>
+
+
+<section class="slide" id="cases">
+  <h2>Why Write a Fake?</h2>
+  <div class="prop" style="margin-top:4px">
+    <p style="font-size:28px">Usually for money. The writer holds a position and profits when the story moves the price: a <b>pump and dump</b>.</p>
+  </div>
+  <div class="row step" data-step="1" style="align-items:center; margin-top:18px">
+    <div style="flex:1.35">
+      <table style="font-size:24px">
+        <tr><td style="width:24%"><b>Position</b><br><span class="muted" style="font-size:18px">10 Aug 2021</span></td><td>Buys <b>282,099</b> shares of ABVC Biopharma below $4</td></tr>
+        <tr><td><b>Story</b><br><span class="muted" style="font-size:18px">11 Aug, 9:30</span></td><td>Tweets a <b>$6</b> target to 267,000 followers</td></tr>
+        <tr><td><b>Trade</b><br><span class="muted" style="font-size:18px">9:30&#8211;12:25</span></td><td>Sells into the followers&#8217; buying from <b>$4.09</b>: <b>$68,690</b> profit</td></tr>
+      </table>
+    </div>
+    <div style="flex:0.65">
+      <div class="box" style="border-radius:14px; padding:18px 22px; box-shadow:0 2px 6px rgba(22,32,43,0.12)">
+        <p style="font-size:22px"><b>@Ultra_Calls</b> <span class="muted">· 11 Aug 2021, 9:30</span></p>
+        <p style="font-size:34px; margin-top:8px">$ABVC Long $6+++</p>
+      </div>
+    </div>
+  </div>
+  <p class="takeaway step" data-step="2" style="font-size:28px">The SEC alleges that eight accounts made about $100 million this way.</p>
+  <p class="cite">Allegations in SEC v. Constantin et al., No. 4:22-cv-04306 (S.D. Tex., filed 13 Dec 2022), &#182;3, &#182;15, &#182;104&#8211;105.</p>
+  <div class="btns"><a class="btn" href="#app-cases">Other cases</a></div>
+</section>
+
+
+<section class="slide" id="contribution-q">
+  <h2>Literature and Research Question</h2>
+  <div class="row lit3" style="margin-top:6px">
+    <div><b>Noisy rational expectations</b><span class="src">Grossman and Stiglitz (1980); Hellwig (1980); Dávila and Parlatore (2026)</span></div>
+    <div><b>Misinformation and manipulation</b><span class="src">Allen and Gale (1992); Bénabou and Laroque (1992); Van Bommel (2003); Dugast and Foucault (2018); Kogan, Moskowitz and Niessner (2023); Mignot, Pellizzari and Westerhoff (2024); Gandhi, Hollenbeck and Li (2025)</span></div>
+    <div><b>Disclosure and certification</b><span class="src">Verrecchia (1983); Diamond (1985); Admati and Pfleiderer (2000); Mayzlin, Dover and Chevalier (2014)</span></div>
+  </div>
+
+  <p class="step" data-step="1" style="font-size:26px; margin-top:14px"><b>This paper:</b> a noisy rational-expectations market in which fake news is <b> endogenous</b>. The share of fake news, price informativeness, and certification are determined jointly <b>in equilibrium</b>, as functions of the cost of a fake \(c\).</p>
+</section>
+
+
+<section class="slide" id="answers">
+  <h2>Main Results</h2>
+  <ol style="font-size:30px">
+    <li><b>Fabrication limits itself.</b> Fabricators enter only if the price reacts to what they write, and the price reacts less as fake news increases. As fakes get cheaper (\(c \downarrow\)), the fake share stops at a <b>cap</b>.</li>
+    <li class="step" data-step="1"><b>Certification moves fabrication</b> onto the firms that stay uncertified, so as fakes get cheaper firms can <b>rush to certify</b>.</li>
+    <li class="step" data-step="2"><b>The rush is a coordination failure</b>: prices become more informative, yet welfare falls.</li>
+    <li class="step" data-step="3"><b>Policy</b>: catching more fakes can make prices <i>less</i> informative, because firms stop certifying.</li>
+  </ol>
+</section>
+
+
+
+
+<section class="slide" id="toc">
+  <h2>Outline</h2><ol class="toc"><li class="">The Market</li><li class="">Fabrication</li><li class="">Certification</li><li class="">Policy Implications</li><li class="">Conclusion</li></ol>
+</section>
+
+<section class="slide divider sec" id="model">
+  <ol class="toc"><li class="cur">The Market</li><li class="dim">Fabrication</li><li class="dim">Certification</li><li class="dim">Policy Implications</li><li class="dim">Conclusion</li></ol>
+</section>
+
+
+<section class="slide" id="demand">
+  <h2>Investors' Demand</h2>
+  <div class="row">
+    <div>
+      <ul>
+        <li>A <b>unit mass of firms</b>, each with its own market; investors in firm \(i\) trade only its stock.</li>
+        <li>Utility over terminal wealth:
+          \[ U(w_1) = -e^{-a w_1} \]</li>
+        <li>Riskless asset with gross return 1, or the stock at price \(p\), paying a liquidating dividend
+          \[ v \sim \mathcal N(0, \sigma_v^2) \]</li>
+      </ul>
+    </div>
+    <div class="step" style="flex:0.9">
+      <p>Wealth is \(w_1 = w_0 + x\,(v - p)\), so maximising expected utility gives</p>
+      <div class="prop" style="margin-top:12px">
+        \[ x \;=\; \frac{\mathbb E(v) - p}{a\,\mathbb V(v)} \]
+      </div>
+      <p class="small muted" style="margin-top:12px">\(\mathbb E(v)\) and \(\mathbb V(v)\) are conditional on what the investor knows: the news item they read and the price.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="slide" id="manipulators">
+  <h2>Fabricators and Supply</h2>
+  <div class="row">
+    <div>
+      <p>A mass \(N_f\) of atomistic fabricators, each holding a position in every firm:</p>
+      \[ z_{m} \;=\; \bar z + \zeta_{m}, \qquad \bar z \sim \mathcal N(0,\sigma_z^2) \]
+      <ul class="small" style="margin-top:6px">
+        <li>\(\bar z\): common to all fabricators in the firm (long or short together).</li>
+        <li>They unwind their positions at the trading date, and can pay for a story in the direction of the position: good news when long, bad news when short.</li>
+      </ul>
+    </div>
+    <div class="step" style="flex:0.85">
+      <p>Net supply is noise traders, \(u \sim \mathcal N(0,\sigma_u^2)\), plus the positions being unwound:</p>
+      <div class="prop" style="margin-top:12px">
+        \[ S \;=\; N_f\,\bar z + u \]
+      </div>
+      <p class="small muted" style="margin-top:12px">Idiosyncratic \(\zeta_m\) cancels in aggregate. Without stories, fabricators are just noise traders.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="slide" id="news">
+  <h2>News</h2>
+  <div class="row">
+    <div>
+      <p>Each investor reads one item about the stock:</p>
+      \[ s_j = \begin{cases} v + \varepsilon_j & \text{genuine, prob. } 1-\lambda \\ \phi\,\bar z + e_j & \text{fabricated, prob. } \lambda \end{cases} \]
+      <ul class="small" style="margin-top:6px">
+        <li>A genuine item is a noisy report of the dividend.</li>
+        <li>A fake follows the position (\(\phi > 0\)) and carries <b>no information about \(v\)</b>.</li>
+        <li>The investor does not know which kind they drew.<span style="display:block; font-size:18px; color:#7a8a9a; margin-top:2px">Pennycook and Rand (2019, Cognition); Assenza, Cardaci and Huber (2024)</span></li>
+      </ul>
+      <p class="note" style="margin-top:14px">For now \(\lambda\) is a parameter; it is determined in equilibrium later.</p>
+    </div>
+    <div style="flex:0.62" class="step">
+      <div class="prop">
+        <p class="label">Variance matching</p>
+        \[ \phi^2\sigma_z^2 + \sigma_e^2 \;=\; \sigma_v^2 + \sigma_\varepsilon^2 \]
+        <p class="small">Fakes and genuine items have the same variance, so the size of an item says nothing about its source. Given the noise in fakes, this pins down \(\phi\).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="slide" id="content">
+  <h2>Circulating Content</h2>
+  <p>Averaging items across investors removes everything idiosyncratic:</p>
+  \[ M \;\equiv\; \int_0^1 s_j\,dj \;=\; (1-\lambda)\,v \;+\; \lambda\,\phi\,\bar z \]
+  <ul class="small" style="margin-top:6px">
+    <li>Genuine readers contribute the dividend; fake readers contribute the position.</li>
+    <li>Aggregate demand depends on the items only through \(M\): each investor&#8217;s noise cancels when demands are added up.</li>
+  </ul>
+</section>
+
+
+<section class="slide" id="beliefs">
+  <h2>Beliefs and Price Conjecture</h2>
+  <div class="row">
+    <div style="flex:1.15">
+      <p><b>1. Conjecture</b> a price linear in the aggregate shocks:</p>
+      \[ \begin{aligned} p &= A_v\,v + A_z\,\bar z + A_u\,u \\ &= A_v\,\pi \end{aligned} \]
+      <p>with \(\pi \equiv v + g\,\bar z - h\,u\): the price in units of the dividend.</p>
+    </div>
+    <div style="flex:0.85" class="step" data-step="1">
+      <p><b>2. Beliefs</b>: best linear predictor of \(v\) given item and price:</p>
+      \[ \mathbb E_j(v) = b_s\,s_j + b_\pi\,\pi \]
+      <p class="small muted">\(\mathbb V(v)\) is the forecast-error variance, the same for every investor.</p>
+    </div>
+  </div>
+  <div class="prop step" data-step="2" style="margin-top:10px">
+    <p><b>3. Market clearing</b>: average demand equals supply,</p>
+    \[ \frac{b_s M + b_\pi \pi - p}{a\,\mathbb V(v)} \;=\; N_f\,\bar z + u , \]
+    <p class="small">which pins \(A_v, g, h\) and verifies the conjecture.</p>
+  </div>
+  <div class="btns"><a class="btn" href="#app-weights">Forecast weights</a><a class="btn" href="#app-cubiceq">The cubic</a></div>
+</section>
+
+
+<section class="slide" id="eqprice">
+  <h2>Equilibrium Price</h2>
+  <p>Market clearing gives a price linear in the shocks:</p>
+  \[ p = A_v\left(v + g\,\bar z - h\,u\right) \]
+  <ul style="font-size:25px">
+    <li>The loading on noise, \(h\), <b>rises with \(\lambda\)</b>: as items get polluted, investors trade less on them and noise moves the price more.</li>
+    <li>With no fakes (\(\lambda = 0\)) this is the Hellwig (1980) price.</li>
+  </ul>
+  <div class="prop step" style="font-size:25px; margin-top:10px">
+    <p>The loading on the common position has two parts:</p>
+    \[ g \;=\; \frac{1}{1-\lambda}\Big(\underbrace{\lambda\,\phi}_{\text{stories}} \;-\; \underbrace{N_f\,a \mathbb V(v)/b_s}_{\text{unwinding}}\Big) \]
+    <p style="font-size:22px">A long position raises the price through the stories written for it and lowers it through the shares being sold.</p>
+  </div>
+  <div class="btns"><a class="btn" href="#app-cubiceq">The cubic</a></div>
+</section>
+
+
+<section class="slide" id="defs">
+  <h2>Credulity and Informativeness</h2>
+  <p>Rewrite the equilibrium price in terms of content and net supply:</p>
+  \[ p \;=\; \Lambda\,M \;-\; A_v h\,S \]
+  <div class="row" style="margin-top:8px">
+    <div class="prop step" data-step="1">
+      <p class="label">Credulity</p>
+      \[ \Lambda \;\equiv\; \frac{\partial p}{\partial M}\Big|_{S} \;=\; \frac{A_v}{1-\lambda} \]
+      <p class="small">How far the price moves per unit of circulating content. It sets what a fake news earns.</p>
+    </div>
+    <div class="prop step" data-step="2">
+      <p class="label">Informativeness</p>
+      \[ \tau \;\equiv\; \frac{1}{g^2\sigma_z^2 + h^2\sigma_u^2} \]
+      <p class="small">How precisely the price reveals \(v\): one over the variance of the noise in \(\pi = v + \text{noise}\).</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="slide" id="solve">
+  <h2>Solving the Market</h2>
+  <p>Solving the market&#8217;s fixed point for each \(\lambda\) gives:</p>
+  <img src="figures/market_curves.svg" alt="Credulity and price informativeness both fall as the fake share rises" style="width:78%; margin:4px auto 0; display:block">
+  <div class="row" style="margin-top:4px">
+    <p class="small"><b>Credulity</b> \(\Lambda(\lambda)\): sets what a fake news earns.</p>
+    <p class="small"><b>Informativeness</b> \(\tau_U(\lambda)\): what an uncertified price reveals.</p>
+  </div>
+  <div class="btns"><a class="btn" href="#app-params">Parameters</a><a class="btn" href="#app-cubiceq">The cubic</a></div>
+</section>
+
+
+<section class="slide divider sec" id="sec-fabrication">
+  <ol class="toc"><li class="dim">The Market</li><li class="cur">Fabrication</li><li class="dim">Certification</li><li class="dim">Policy Implications</li><li class="dim">Conclusion</li></ol>
+</section>
+
+
+<section class="slide" id="entry">
+  <h2>Fabricators' Entry</h2>
+  <p class="small">So far the fake share \(\lambda\) was a parameter. Now it comes from who chooses to write.</p>
+  <table class="entry3" style="margin-top:4px">
+    <tr><td><b>What an item earns</b></td><td>
+      \[ W(\lambda) \;=\; \mathbb E\bigg[\,\underbrace{N_f\bar z}_{\text{shares unwound}}\cdot\underbrace{\Lambda\,\frac{\partial M}{\partial n}}_{\text{price move}}\Bigg] \;=\; \underbrace{N_f\sigma_z^2\,\phi}_{\text{position}\,\times\,\text{story}}\;\underbrace{\Lambda(\lambda)}_{\text{credulity}}\;\underbrace{(1-\lambda)^2}_{\text{dilution}} \]
+</td></tr>
+    <tr class="step" data-step="1"><td><b>Who writes</b></td><td>
+      \[ W(\lambda) - q\chi \;\ge\; c\,a_m \]
+      <p class="muted">\(c\): cost of a fake; writer&#8217;s cost type \(a_m \sim H_0\); a fake is caught with probability \(q\) and fined \(\chi\).</p></td></tr>
+    <tr class="step" data-step="2"><td><b>Fixed point</b></td><td>
+      \[ F(\lambda) = N_f\,H_0\!\left(\frac{W(\lambda) - q\chi}{c}\right), \qquad \lambda \;=\; \Psi(\lambda) \equiv \frac{F(\lambda)}{F(\lambda) + 1} \]
+      </td></tr>
+  </table>
+  <div class="btns"><a class="btn" href="#app-entry">The fee</a><a class="btn" href="#app-timeline">Timing</a><a class="btn" href="#app-params">Distributions</a></div>
+</section>
+
+
+<section class="slide" id="selflimit">
+  <h2>Fabrication Limits Itself</h2>
+  <div class="row">
+    <div style="flex:1.05">
+      <p class="small">More fakes &#8594; investors discount unverified news more &#8594; each item earns less &#8594; fewer writers enter.</p>
+      <div class="prop" style="margin-top:12px">
+        <p class="label">Proposition 1</p>
+        <p style="font-size:27px">As long as fakes do not track the position too closely and prices are not too precise, the fake share \(\lambda^*\) is unique and decreasing in \(c\). It is positive iff
+        \[ c \;<\; c_{\max} = \frac{W(0) - q\chi}{a_{\min}} . \]</p>
+      </div>
+    </div>
+    <div style="flex:0.95" class="step" data-step="1">
+      <img src="figures/selflimit.svg" alt="Psi of lambda falls in lambda and crosses the 45-degree line once; the crossing moves down as the cost of a fake rises" style="width:100%">
+      
+    </div>
+  </div>
+  <p class="small step" data-step="1" style="margin-top:4px">Enforcement shifts the threshold, but the limit comes from investors' scepticism.</p>
+  <div class="btns"><a class="btn" href="#app-params">Parameters</a><a class="btn" href="#app-cubic">When can investors see through fakes?</a></div>
+</section>
+
+
+<section class="slide" id="ceiling">
+  <h2>Cheap Fakes Hit a Ceiling</h2>
+  <div class="row" style="align-items:center">
+    <div style="flex:1.45"><img src="figures/ceiling.svg" alt="The equilibrium fake share rises as fakes get cheaper and flattens at a ceiling of about 0.40" style="width:100%"></div>
+    <div class="step">
+      <p class="small">As fakes become free, everyone writes whose item is worth more than its expected penalty. Entry stops at</p>
+      \[ W(\bar\lambda) = q\chi \]
+      <p class="small">The ceiling depends on <b>credulity</b> and enforcement, <b>not on the cost of a fake</b>.</p>
+    </div>
+  </div>
+  <div class="btns"><a class="btn" href="#app-params">Parameters</a></div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="slide divider sec" id="sec-certification">
+  <ol class="toc"><li class="dim">The Market</li><li class="dim">Fabrication</li><li class="cur">Certification</li><li class="dim">Policy Implications</li><li class="dim">Conclusion</li></ol>
+</section>
+
+
+<section class="slide" id="certification">
+  <h2>Certification</h2>
+  <p>A firm can invest so that fakes about it are <b>recognised fast</b>: monitoring, a verified channel, rapid denials.</p>
+  <div class="row" style="margin-top:8px">
+    <div>
+      <ul class="small">
+        <li>A certified item carries a label, so its market has no fakes: 
+          \[ \tau_C = \frac{(\tau_\varepsilon/a)^2}{\mathrm{Var}(S)} \]
+          </li>
+        <li>An uncertified firm gets \(\tau_U(\lambda) < \tau_C\): fewer investors trade on genuine news, and all of them trade more cautiously.</li>
+      </ul>
+    </div>
+    <div class="step" style="flex:0.95">
+      <div class="prop">
+        <p>Firm \(i\) values informativeness at \(\beta_i\) and certifies iff the gain covers the verification cost, normalised to 1:</p>
+        \[ \beta_i\,\big(\tau_C - \tau_U(\lambda)\big) \;\ge\; 1 \]
+        <p class="small">So the certified share \(\Theta\) <b>rises with the fake share</b>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="slide" id="pool">
+  <h2>Certification Displaces Fakes</h2>
+  <div class="row">
+    <div>
+      <ul>
+        <li>A fake about a certified firm is known to be fake and moves nothing.</li>
+        <li>So the \(F\) fakes go to the \(1-\Theta\) uncertified firms: each gets \(F/(1-\Theta)\) units of fakes per unit of genuine news.</li>
+      </ul>
+      \[ \lambda \;=\; \frac{F/(1-\Theta)}{F/(1-\Theta) + 1} \;=\; \frac{F}{F + (1-\Theta)} \]
+    </div>
+    <div class="step" style="flex:0.85">
+      <div class="prop">
+        <p>Certification takes a firm&#8217;s genuine news out of the pool and leaves the fakes in: the fake share faced by the rest <b>rises</b> with \(\Theta\).</p>
+      </div>
+      <p class="small muted" style="margin-top:12px">This widens the gap and draws more firms into certification.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="slide" id="prop3">
+  <h2>A Rush to Certify</h2>
+  <img src="figures/branches_run.svg" alt="Equilibrium fake share and certified share against the cost of a fake: a most-certify branch and a few-certify branch overlap in a shaded band, joined by an unstable branch; the most-certify branch ends at the top of the band" style="width:82%; display:block; margin:0 auto">
+  <div class="prop step" style="margin-top:6px">
+    <p style="font-size:25px"><b>Proposition 3.</b> For every \(c\) in a band, two stable equilibria coexist: few firms certify and few fakes circulate, or most certify and the pool left behind is polluted. As fakes get cheaper, the few-certify equilibrium disappears at the bottom of the band and firms rush to certify.</p>
+  </div>
+  <div class="btns"><a class="btn" href="#app-params">Parameters</a></div>
+</section>
+
+
+
+
+<section class="slide" id="welfare">
+  <h2>A Coordination Failure</h2>
+  <div class="row">
+    <div style="flex:1.25">
+      <img src="figures/policy_kappa_slides.svg" alt="Four panels against the cost of a fake: fake share, certified share, informativeness and welfare, with a jump where firms rush to certify" style="width:100%">
+    </div>
+    <div>
+      <ul style="font-size:26px">
+        <li class="step" data-step="1">As fakes get cheaper, firms <b>rush to certify</b>: the certified share jumps from 45% to 85%.</li>
+        <li class="step" data-step="2">Prices become more informative, but the <b>certification bill</b> rises by more: <b>welfare falls</b>.</li>
+        <li class="step" data-step="3">Each firm certifies to escape a pool that is polluted because other firms have certified.</li>
+      </ul>
+    </div>
+  </div>
+  <div style="font-size:24px; margin-top:-6px">\[ \mathcal W \;=\; \underbrace{\int_0^1 \beta_i\,\tau_i\,di}_{\text{value of informative prices}} \;-\; \underbrace{\Theta}_{\text{certification bill}} \;-\; \underbrace{\text{cost of writing fakes}}_{\text{resources used by fabricators}} \]</div>
+  <div class="btns"><a class="btn" href="#app-params">Parameters</a><a class="btn" href="#app-welfare">Welfare measure</a></div>
+</section>
+
+
+
+
+
+
+
+
+<section class="slide divider sec" id="sec-policy">
+  <ol class="toc"><li class="dim">The Market</li><li class="dim">Fabrication</li><li class="dim">Certification</li><li class="cur">Policy Implications</li><li class="dim">Conclusion</li></ol>
+</section>
+
+
+<section class="slide" id="policy-detection">
+  <h2>Detection Can Lower Informativeness</h2>
+  <div class="row" style="align-items:center">
+    <div style="flex:1.9"><img src="figures/policy_detection_slides.svg" alt="Left: price informativeness against the detection probability, dropping at an intermediate value before recovering. Right: welfare rising with the detection probability, faster under disgorgement." style="width:100%"></div>
+    <div>
+      <ul class="small">
+        <li>Fabrication always falls.</li>
+        <li>Cleaner unverified news <b>narrows the gap</b>: firms stop certifying.</li>
+        <li class="step" data-step="1">Informativeness falls when enough firms stop certifying; welfare still rises.</li>
+        <li class="step" data-step="1"><b>Disgorgement</b> gets there with less detection.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="btns"><a class="btn" href="#app-params">Parameters</a><a class="btn" href="#policy">Other policies</a></div>
+</section>
+
+
+<section class="slide divider sec" id="sec-conclusion">
+  <ol class="toc"><li class="dim">The Market</li><li class="dim">Fabrication</li><li class="dim">Certification</li><li class="dim">Policy Implications</li><li class="cur">Conclusion</li></ol>
+</section>
+
+
+<section class="slide" id="conclusions">
+  <h2>Conclusion</h2>
+  <div class="prop" style="margin-top:12px">
+    <p class="label" style="font-size:30px">Back to the question: what happens as fakes get cheaper?</p>
+    <ul style="font-size:29px; margin-top:8px">
+      <li><b>Fake news</b> rises, but levels off: investors grow sceptical, so each fake news earns less.</li>
+      <li><b>Prices</b> become less informative wherever news cannot be verified.</li>
+      <li><b>Firms</b> pay to be believed, and the fakes pile onto those that cannot.</li>
+    </ul>
+  </div>
+</section>
+<section class="slide title" id="thanks">
+  <h1>Thank you</h1>
+  <div class="btns"><a class="btn" href="#appendix">Appendix</a></div>
+</section>
+<section class="slide" id="references">
+  <h2>References</h2>
+  <ul class="refs">
+    <li>Admati, A. R. and P. Pfleiderer (2000). Forcing Firms to Talk: Financial Disclosure Regulation and Externalities. <i>Review of Financial Studies</i> 13(3), 479&#8211;519.</li>
+    <li>Allcott, H. and M. Gentzkow (2017). Social Media and Fake News in the 2016 Election. <i>Journal of Economic Perspectives</i> 31(2), 211&#8211;236.</li>
+    <li>Allen, F. and D. Gale (1992). Stock-Price Manipulation. <i>Review of Financial Studies</i> 5(3), 503&#8211;529.</li>
+    <li>Assenza, T., A. Cardaci and S. J. Huber (2024). Fake News: Susceptibility, Awareness and Solutions. TSE Working Paper 24-1519.</li>
+    <li>B&#233;nabou, R. and G. Laroque (1992). Using Privileged Information to Manipulate Markets: Insiders, Gurus, and Credibility. <i>Quarterly Journal of Economics</i> 107(3), 921&#8211;958.</li>
+    <li>Bond, P., A. Edmans and I. Goldstein (2012). The Real Effects of Financial Markets. <i>Annual Review of Financial Economics</i> 4, 339&#8211;360.</li>
+    <li>D&#225;vila, E. and C. Parlatore (2026). Identifying Price Informativeness. <i>Review of Financial Studies</i> 39(5), 1267&#8211;1309.</li>
+    <li>Diamond, D. W. (1985). Optimal Release of Information by Firms. <i>Journal of Finance</i> 40(4), 1071&#8211;1094.</li>
+    <li>Dugast, J. and T. Foucault (2018). Data Abundance and Asset Price Informativeness. <i>Journal of Financial Economics</i> 130(2), 367&#8211;391.</li>
+    <li>Gandhi, A., B. Hollenbeck and Z. Li (2025). Misinformation and Mistrust: The Equilibrium Effects of Fake Reviews on Amazon.com. NBER Working Paper 34161.</li>
+    <li>Grossman, S. J. and J. E. Stiglitz (1980). On the Impossibility of Informationally Efficient Markets. <i>American Economic Review</i> 70(3), 393&#8211;408.</li>
+    <li>Hellwig, M. F. (1980). On the Aggregation of Information in Competitive Markets. <i>Journal of Economic Theory</i> 22(3), 477&#8211;498.</li>
+    <li>Kogan, S., T. J. Moskowitz and M. Niessner (2023). Social Media and Financial News Manipulation. <i>Review of Finance</i> 27(4), 1229&#8211;1268.</li>
+    <li>Loomba, S., A. de Figueiredo, S. J. Piatek, K. de Graaf and H. J. Larson (2021). Measuring the Impact of COVID-19 Vaccine Misinformation on Vaccination Intent in the UK and USA. <i>Nature Human Behaviour</i> 5(3), 337&#8211;348.</li>
+    <li>Mayzlin, D., Y. Dover and J. Chevalier (2014). Promotional Reviews: An Empirical Investigation of Online Review Manipulation. <i>American Economic Review</i> 104(8), 2421&#8211;2455.</li>
+    <li>Mignot, S., P. Pellizzari and F. Westerhoff (2024). Fake News and Asset Price Dynamics. <i>Jahrb&#252;cher f&#252;r National&#246;konomie und Statistik</i> 244(4), 351&#8211;379.</li>
+    <li>Pennycook, G. and D. G. Rand (2019). Lazy, Not Biased: Susceptibility to Partisan Fake News Is Better Explained by Lack of Reasoning than by Motivated Reasoning. <i>Cognition</i> 188, 39&#8211;50.</li>
+    <li>Townsend, R. M. (1979). Optimal Contracts and Competitive Markets with Costly State Verification. <i>Journal of Economic Theory</i> 21(2), 265&#8211;293.</li>
+    <li>Van Bommel, J. (2003). Rumors. <i>Journal of Finance</i> 58(4), 1499&#8211;1520.</li>
+    <li>Verrecchia, R. E. (1983). Discretionary Disclosure. <i>Journal of Accounting and Economics</i> 5, 179&#8211;194.</li>
+    <li>Vosoughi, S., D. Roy and S. Aral (2018). The Spread of True and False News Online. <i>Science</i> 359(6380), 1146&#8211;1151.</li>
+  </ul>
+  <p class="refs-h">Other sources</p>
+  <ul class="refs">
+    <li>SEC v. Constantin et al., No. 4:22-cv-04306 (S.D. Tex., filed 13 Dec 2022).</li>
+    <li>United States v. Welch (D.D.C., 2017).</li>
+    <li>World Economic Forum, <i>Global Risks Report</i>, 2024, 2025 and 2026 editions.</li>
+    <li>OpenAI API pricing (GPT-4, 2023; GPT-4o mini, 2024).</li>
+  </ul>
+</section>
+
+
+<section class="slide divider" id="appendix">
+  <p class="eyebrow">Appendix</p>
+  <h1>Backup slides</h1>
+  <div class="btns"><a class="btn" href="#back">Back</a></div>
+</section>
+
+<section class="slide" id="app-cases">
+  <h2>Other cases</h2>
+  <table>
+    <tr><th style="width:30%">Case</th><th>What happened</th></tr>
+    <tr><td>Telegram pump groups</td><td>An organiser buys a microcap, members post "buy now", the group sells into the buying</td></tr>
+    <tr><td>Lidingo (SEC 2017)</td><td>Paid, undisclosed articles about small firms; run-up, then reversal</td></tr>
+    <tr><td>IDT, Fitbit (2016 filings)</td><td>Fake filings on EDGAR; options bought just before</td></tr>
+    <tr><td>Citron (2024)</td><td>Public long and short calls, quickly reversed (alleged)</td></tr>
+  </table>
+  <div class="btns"><a class="btn" href="#back">Back</a></div>
+</section>
+
+<section class="slide" id="app-timeline">
+  <h2>Timing</h2>
+  <div class="timeline">
+    <div>
+      <h3>\(t = 0^-\): decisions</h3>
+      <p>Writers observe their cost type and decide whether to write. Firms decide whether to certify.</p>
+    </div>
+    <div>
+      <h3>\(t = 0\): trading</h3>
+      <p>Certified items carry a label; uncertified items pool. Each investor reads one item, sees the price, trades. Positions are unwound.</p>
+    </div>
+    <div>
+      <h3>\(t = 1\): verification</h3>
+      <p>The dividend is paid. Each fake is detected with probability \(q\); its writer pays \(\chi\).</p>
+    </div>
+  </div>
+  <p class="note">Items pool at the trading date, as in the first trading round of Dugast and Foucault (2018); costly verification as in Townsend (1979).</p>
+  <div class="btns"><a class="btn" href="#back">Back</a></div>
+</section>
+
+<section class="slide" id="app-weights">
+  <h2>Forecast Weights</h2>
+  <div class="row">
+    <div style="flex:1.05">
+      <p class="small">Minimise \(\mathbb E[(v - b_s s - b_\pi \pi)^2]\). The error is uncorrelated with each signal:</p>
+      \[ \begin{aligned} \mathrm{Cov}(v,s) &= b_s\,\mathrm{Var}(s) + b_\pi\,\mathrm{Cov}(s,\pi) \\ \mathrm{Cov}(v,\pi) &= b_s\,\mathrm{Cov}(s,\pi) + b_\pi\,\mathrm{Var}(\pi) \end{aligned} \]
+      <p class="small" style="margin-top:6px">No fakes (\(\lambda = 0\)): \(b_s = \dfrac{\tau_\varepsilon}{\tau_v + \tau_\varepsilon + \tau}\), \(b_\pi = \dfrac{\tau}{\tau_v + \tau_\varepsilon + \tau}\), as in Hellwig.</p>
+    </div>
+    <div style="flex:0.95">
+      <table style="font-size:22px">
+        <tr><th>Moment</th><th>Value</th></tr>
+        <tr><td>\(\mathrm{Var}(s)\)</td><td>\(\sigma_v^2 + \sigma_\varepsilon^2\)</td></tr>
+        <tr><td>\(\mathrm{Cov}(v,s)\)</td><td>\((1-\lambda)\,\sigma_v^2\)</td></tr>
+        <tr><td>\(\mathrm{Var}(\pi)\)</td><td>\(\sigma_v^2 + g^2\sigma_z^2 + h^2\sigma_u^2\)</td></tr>
+        <tr><td>\(\mathrm{Cov}(v,\pi)\)</td><td>\(\sigma_v^2\)</td></tr>
+        <tr><td>\(\mathrm{Cov}(s,\pi)\)</td><td>\((1-\lambda)\,\sigma_v^2 + \lambda\phi g\,\sigma_z^2\)</td></tr>
+      </table>
+      <p class="small" style="margin-top:8px">The last term is new: fakes and the price share \(\bar z\).</p>
+    </div>
+  </div>
+    <div class="box" style="margin-top:6px">
+    \[ b_s = \frac{\sigma_v^2\big[(1-\lambda)\sigma_n^2 - \sigma_{sn}\big]}{\det}, \qquad b_\pi = \frac{\sigma_v^2\big[\sigma_{s|v}^2 - (1-\lambda)\sigma_{sn}\big]}{\det}, \qquad \sigma_{sn} = \lambda\phi g\,\sigma_z^2 \]
+    <p class="small muted" style="text-align:center">\(\det = \mathrm{Var}(s)\mathrm{Var}(\pi) - \mathrm{Cov}(s,\pi)^2\), \(\;\sigma_{s|v}^2 = \sigma_y^2 - (1-\lambda)^2\sigma_v^2\). The weights depend on \(g, h\), which depend on the weights given the fixed point.</p>
+  </div>
+  <div class="btns"><a class="btn" href="#back">Back</a></div>
+</section>
+
+<section class="slide" id="app-cubiceq">
+  <h2>The Cubic</h2>
+  <p>With \(\omega \equiv a\,\mathbb V(v)/b_s\), \(g\) and \(h\) are explicit in \(\omega\), and the projection gives one cubic equation:</p>
+  \[ (1-\lambda)\,\omega^2\left(\sigma_w^2\,\omega - N_f\lambda\phi\,\sigma_z^2\right) \;=\; a\left[\sigma_{s|v}^2\,\sigma_u^2\,\omega^2 + \sigma_{s|M}^2\,\sigma_z^2\left(N_f \omega - \lambda\phi\right)^2\right] \]
+  <ul class="small">
+    <li>\(\sigma_{s|v}^2 = \sigma_y^2 - (1-\lambda)^2\sigma_v^2\), \(\sigma_{s|M}^2 = \sigma_y^2 - \mathrm{Var}(M)\), \(\sigma_w^2 = \sigma_u^2 + N_f^2\sigma_z^2\).</li>
+    <li>At \(\lambda = 0\): \(\omega = a\sigma_\varepsilon^2\) and \(\tau_C = \tau_\varepsilon^2/(a^2\sigma_w^2)\), as in Hellwig (1980).</li>
+    </ul>
+  <div class="btns"><a class="btn" href="#back">Back</a></div>
+</section>
+
+<section class="slide" id="app-cubic">
+  <h2>Lemma 1</h2>
+  <p>Credulity has two channels:</p>
+  \[ \Lambda(\lambda) \;=\; \underbrace{\frac{(1-\lambda)\,\sigma_v^2}{\sigma_y^2}}_{\text{own item: always falls}} \;+\; \underbrace{\frac{R_\pi(\lambda)}{\sigma_v^2(1-\lambda)}}_{\text{price: can rise}} \]
+  <ul class="small">
+    <li>The price channel can win when prices are <b>nearly fully revealing</b> (investors barely use their item), or when fakes are <b>so adversarial</b> that the price reveals the position behind them and investors strip them out.</li>
+    <li><b>The condition</b> \(Q > 0\) at \(\lambda = 0\) rules out both: prices noisy enough, fakes not see-through. Then credulity falls with \(\lambda\).</li>
+  </ul>
+  <div class="btns"><a class="btn" href="#back">Back</a></div>
+</section>
+
+<section class="slide" id="app-entry">
+  <h2>The fee and entry</h2>
+  <ul style="font-size:26px">
+    <li>With \(n\) fakes about a firm, its fake share is \(\lambda = n/(n+1)\), and fakes raise its price by \(\Lambda\lambda\phi\bar z\). Holders unwind \(N_f\bar z\), so the sponsor gains \(N_f\Lambda\lambda\phi\sigma_z^2\) and values one more item at
+      \[ W(\lambda) = N_f\sigma_z^2\,\phi\,\Lambda(\lambda)\,(1-\lambda)^2 . \]</li>
+    <li>Writer \(m\), with cost \(c a_m\), enters iff \(W(\lambda) - q\chi \ge c a_m\); the mass written is \(F = N_f H_0(\bar a)\).</li>
+    <li>Shutdown threshold: \(c_{\max} = [W(0) - q\chi]/a_{\min}\).</li>
+  </ul>
+  <div class="btns"><a class="btn" href="#back">Back</a></div>
+</section>
+
+<section class="slide" id="app-params">
+  <h2>Distributions and Parameters</h2>
+  <table style="font-size:21px">
+    <tr><th style="width:24%">Object</th><th>Distribution</th><th class="num">Values in the illustrations</th></tr>
+    <tr><td>Dividend, news noise: \(v,\ \varepsilon\)</td><td>Normal, mean 0, independent</td><td class="num">\(\sigma_v^2 = \sigma_\varepsilon^2 = 1\)</td></tr>
+    <tr><td>Positions: \(\bar z,\ \zeta\)</td><td>Normal, mean 0; \(\bar z\) common to a firm&#8217;s fabricators</td><td class="num">\(\sigma_z^2 = 1,\ \sigma_\zeta^2 = 0\)</td></tr>
+    <tr><td>Noise supply, fake noise: \(u,\ e\)</td><td>Normal, mean 0; \(\sigma_e^2\) set by variance matching</td><td class="num">\(\sigma_u^2 = 1\)</td></tr>
+    <tr><td>Writers&#8217; cost types \(a_m\)</td><td>\(H_0\) uniform on \([a_{\min}, a_{\max}]\)</td><td class="num">\(U[0.2,\ 3.0]\)</td></tr>
+    <tr><td>Certification benefit \(\beta_i\)</td><td>Pareto: \(\Pr(\beta_i \ge x) = (B/x)^\alpha,\ x \ge B\); a share \(1-\Theta_{\max}\) cannot certify, so \(\Theta = \Theta_{\max}\min\{1, (B\Delta)^\alpha\}\)</td><td class="num">\(\alpha = 3,\ B = 20,\ \Theta_{\max} = 0.85\)</td></tr>
+    <tr><td>Other</td><td>Risk aversion; adversarialness; mass of fabricators; detection; penalty</td><td class="num">\(a = 2,\ \phi = 1,\ N_f = 1.2,\ q = 0.3,\ \chi = 0.5\)</td></tr>
+  </table>
+  <ul class="small" style="font-size:22px; margin-top:6px">
+    <li><b>Normality</b> matters only through second moments: beliefs are best linear predictors.</li>
+    <li><b>\(H_0\)</b>: self-limitation and the ceiling hold for any continuous \(H_0\); \(c_{\max}\) depends only on \(a_{\min}\).</li>
+    <li><b>\(\beta_i\)</b>: the rush needs take-up elastic enough (proved in the step limit, \(\alpha \to \infty\)); it is absent at \(B = 12\) and present at \(B = 20\).</li>
+  </ul>
+  <div class="btns"><a class="btn" href="#back">Back</a></div>
+</section>
+
+
+
+<section class="slide" id="policy">
+  <h2>Policy at a Glance</h2>
+  <table style="font-size:24px">
+    <tr><th style="width:34%">Instrument</th><th>Fakes</th><th>Informativeness</th><th>Welfare</th></tr>
+    <tr><td>Better detection, fixed fine</td><td>&#8595; always</td><td>&#8595; possible</td><td>&#8593;</td></tr>
+    <tr><td>Disgorgement (claw back the gain)</td><td>&#8595; faster</td><td>&#8595; possible</td><td>&#8593; faster</td></tr>
+    <tr ><td>Costlier fakes (provenance, watermarks)</td><td>&#8595;</td><td>&#8593;</td><td>&#8593; small</td></tr>
+    <tr ><td>Cheaper verification</td><td>&#8595;</td><td>&#8593;</td><td>&#8593; large</td></tr>
+    <tr ><td>Certification subsidy or mandate</td><td>&#8593; on firms that stay</td><td>&#8593;</td><td>&#8595;</td></tr>
+  </table>
+  <p class="small" style="margin-top:6px">Informativeness and welfare can move in <b>opposite directions</b>: informativeness ignores what certification costs.</p>
+  <div class="btns"><a class="btn" href="#back">Back</a></div>
+</section>
+<section class="slide" id="policy-costs">
+  <h2>Two Cost Levers</h2>
+  <div class="row">
+    <div>
+      <p class="small"><b>Raise the cost of fakes</b> (provenance, watermarking) or <b>lower the cost of verification</b> (faster, cheaper certified disclosure):</p>
+      <ul class="small" style="margin-top:6px">
+        <li>Both lower the fake share by the same amount when certification is at its cap.</li>
+        <li>Only cheaper verification also cuts the <b>certification bill</b>, so it raises welfare several times as much.</li>
+      </ul>
+    </div>
+    <div >
+      <div class="prop">
+        <p class="label">Subsidies and mandates backfire</p>
+        <p class="small">The market already over-certifies: each firm that certifies pushes fakes onto the firms that stay. A subsidy can tip the economy into the rush, raising informativeness and lowering welfare.</p>
+      </div>
+    </div>
+  </div>
+  <p class="takeaway" style="font-size:29px">Lower the cost of verification rather than subsidise certification.</p>
+  <div class="btns"><a class="btn" href="#back">Back</a></div>
+</section>
+<section class="slide" id="app-welfare">
+  <h2>Welfare</h2>
+  \[ \mathcal W \;=\; \int_0^1 \beta_i\,\tau_i\,di \;-\; \underbrace{\Theta}_{\text{certification bill}} \;-\; \underbrace{c N_f\!\int_{a_{\min}}^{\bar a} a\, dH_0(a)}_{\text{resources spent writing}} \]
+  <ul style="font-size:27px">
+    <li>Allocative efficiency through prices, motivated by the real effects of prices (Bond, Edmans and Goldstein 2012); penalties and trading losses are transfers.</li>
+    <li>Fakes carry no information, so the first best has no fabrication. The second-best question takes free entry as given.</li>
+  </ul>
+  <div class="btns"><a class="btn" href="#back">Back</a></div>
+</section>
+
+
+
+</main>
+
+<div id="notes" hidden></div>
+<div id="counter"></div>
+<div id="timer" hidden></div>
+<div id="help">Tommaso Di Francesco &#183; University of Bonn</div>
+
+<script>
+  window.MathJax = { tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] }, svg: { fontCache: 'local' } };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.js"></script>
+<script>
+(function () {
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var stage = document.getElementById('stage'), counter = document.getElementById('counter');
+  var notesEl = document.getElementById('notes'), timerEl = document.getElementById('timer');
+  var cur = 0, backStack = [], t0 = null, elapsed = 0, ticking = null, stepAt = 0;
+  function roman(n) {
+    var r = '', v = [[1000,'m'],[900,'cm'],[500,'d'],[400,'cd'],[100,'c'],[90,'xc'],[50,'l'],[40,'xl'],[10,'x'],[9,'ix'],[5,'v'],[4,'iv'],[1,'i']];
+    v.forEach(function (p) { while (n >= p[0]) { r += p[1]; n -= p[0]; } });
+    return r;
+  }
+  function idx(id) { for (var i = 0; i < slides.length; i++) if (slides[i].id === id) return i; return -1; }
+  function renderNotes() {
+    var a = slides[cur].querySelector('aside.notes');
+    var txt = a ? a.textContent : '(no notes for this slide)';
+    var m = txt.match(/^\s*\[([^\]]+)\]\s*/);
+    notesEl.innerHTML = '';
+    if (m) { var s = document.createElement('span'); s.className = 't'; s.textContent = m[1]; notesEl.appendChild(s); txt = txt.slice(m[0].length); }
+    notesEl.appendChild(document.createTextNode(txt));
+  }
+  // steps: elements with class "step"; data-step="k" groups several into one click, otherwise document order
+  function steps(sl) {
+    var els = Array.prototype.slice.call(sl.querySelectorAll('.step')), groups = {}, keys = [];
+    els.forEach(function (el, i) { var k = el.hasAttribute('data-step') ? parseFloat(el.getAttribute('data-step')) : i + 1; if (!groups[k]) { groups[k] = []; keys.push(k); } groups[k].push(el); });
+    keys.sort(function (a, b) { return a - b; });
+    return keys.map(function (k) { return groups[k]; });
+  }
+  function setStep(k) {
+    var g = steps(slides[cur]); stepAt = Math.max(0, Math.min(g.length, k));
+    g.forEach(function (els, i) { els.forEach(function (el) { el.classList.toggle('shown', i < stepAt); }); });
+  }
+  function next() { if (stepAt < steps(slides[cur]).length) setStep(stepAt + 1); else show(cur + 1); }
+  function prev() { if (stepAt > 0) setStep(stepAt - 1); else if (cur > 0) { show(cur - 1); setStep(Infinity); } }
+  function show(n) {
+    n = Math.max(0, Math.min(slides.length - 1, n));
+    slides[cur].classList.remove('active'); cur = n; slides[cur].classList.add('active');
+    setStep(0);
+    // main slides counted up to the appendix divider; appendix slides numbered i, ii, iii, ...
+    var nMain = idx('appendix') < 0 ? slides.length : idx('appendix');
+    counter.textContent = cur < nMain ? (cur + 1) + ' / ' + nMain : (cur === nMain ? '' : roman(cur - nMain));
+    renderNotes();
+    try { history.replaceState(null, '', '#' + (slides[cur].id || (cur + 1))); } catch (e) {}
+  }
+  function jump(id) { var n = idx(id); if (n < 0) return; backStack.push(cur); show(n); }
+  // Back: return to where the jump came from; failing that, from an appendix slide go to the main
+  // slide that links to it (or the last main slide), so Back never strands you inside the appendix.
+  function home(n) {
+    var id = slides[n].id, nMain = idx('appendix') < 0 ? slides.length : idx('appendix');
+    if (n < nMain) return n - 1;
+    for (var i = 0; i < nMain; i++) if (id && slides[i].querySelector('a[href="#' + id + '"]')) return i;
+    return nMain - 1;
+  }
+  function back() { show(backStack.length ? backStack.pop() : home(cur)); setStep(Infinity); }
+  function fit() { var s = Math.min(window.innerWidth / 1280, window.innerHeight / 720); stage.style.transform = 'translate(-50%, -50%) scale(' + s + ')'; }
+  function fitSlides() {
+    slides.forEach(function (sl) {
+      sl.style.transform = ''; sl.style.width = ''; sl.style.height = '';
+      sl.classList.add('measuring'); var h = sl.scrollHeight; sl.classList.remove('measuring');
+      if (h > 722) { var s = Math.max(0.6, 720 / h); sl.style.width = (1280 / s) + 'px'; sl.style.height = (720 / s) + 'px'; sl.style.transform = 'scale(' + s + ')'; sl.setAttribute('data-shrunk', s.toFixed(2)); }
+    });
+  }
+  function fmt(ms) { var s = Math.floor(ms / 1000); return Math.floor(s / 60) + ':' + ('0' + (s % 60)).slice(-2); }
+  function drawTimer() { var ms = elapsed + (t0 ? Date.now() - t0 : 0); timerEl.textContent = (t0 ? '● ' : '❚❚ ') + fmt(ms) + ' / 30:00'; }
+  function toggleTimer() {
+    timerEl.hidden = false;
+    if (t0) { elapsed += Date.now() - t0; t0 = null; clearInterval(ticking); }
+    else { t0 = Date.now(); ticking = setInterval(drawTimer, 500); }
+    drawTimer();
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    switch (e.key) {
+      case 'ArrowRight': case ' ': case 'PageDown': e.preventDefault(); next(); break;
+      case 'ArrowDown': e.preventDefault(); show(cur + 1); break;
+      case 'ArrowLeft': case 'PageUp': e.preventDefault(); prev(); break;
+      case 'ArrowUp': e.preventDefault(); show(cur - 1); break;
+      case 'Home': e.preventDefault(); show(0); break;
+      case 'End': e.preventDefault(); show(slides.length - 1); break;
+      case 'b': case 'B': e.preventDefault(); back(); break;
+      case 'n': case 'N': notesEl.hidden = !notesEl.hidden; break;
+      case 't': case 'T': toggleTimer(); break;
+      case 'r': case 'R': elapsed = 0; if (t0) t0 = Date.now(); timerEl.hidden = false; drawTimer(); break;
+      case 'f': case 'F':
+        if (document.fullscreenElement) { document.exitFullscreen && document.exitFullscreen(); }
+        else if (document.documentElement.requestFullscreen) { document.documentElement.requestFullscreen().catch(function () {}); }
+        break;
+      case 'P': document.body.classList.toggle('print'); fit(); break;
+    }
+  });
+  stage.addEventListener('click', function (e) {
+    var a = e.target.closest('a');
+    if (a && a.getAttribute('href') && a.getAttribute('href').charAt(0) === '#') {
+      e.preventDefault(); var id = a.getAttribute('href').slice(1); if (id === 'back') back(); else jump(id); return;
+    }
+    if (a || document.body.classList.contains('print')) return;
+    var r = stage.getBoundingClientRect(); if ((e.clientX - r.left) / r.width < 0.15) prev(); else next();
+  });
+  var tx = null;
+  document.addEventListener('touchstart', function (e) { tx = e.touches[0].clientX; }, { passive: true });
+  document.addEventListener('touchend', function (e) { if (tx === null) return; var dx = e.changedTouches[0].clientX - tx; tx = null; if (dx < -40) next(); else if (dx > 40) prev(); }, { passive: true });
+  window.addEventListener('resize', fit);
+  var h0 = (location.hash || '').slice(1), n0 = parseInt(h0, 10);
+  show(!isNaN(n0) ? n0 - 1 : Math.max(0, idx(h0)));
+  fit();
+  var ready = (window.MathJax && MathJax.startup && MathJax.startup.promise) ? MathJax.startup.promise : Promise.resolve();
+  ready.then(function () { if (document.fonts && document.fonts.ready) return document.fonts.ready; }).then(fitSlides, fitSlides);
+})();
+</script>

@@ -113,10 +113,10 @@
 
 
 <section class="slide title" id="start">
-  <p class="eyebrow">Lorentz Center workshop: Complexity Economics and Behaviour</p>
+  <p class="eyebrow">Finance Seminar, University of Bonn</p>
   <h1>Talking Their Book<br><span style="font-weight:400">A Theory of Financial Fabrication</span></h1>
   <p class="author">Tommaso Di Francesco<br><span class="muted">University of Bonn</span></p>
-  <p class="muted" style="font-size:22px; margin-top:18px">Lorentz Center, Leiden &#183; 28 October 2026</p>
+  <p class="muted" style="font-size:22px; margin-top:18px">Bonn &#183; 11 November 2026</p>
 </section>
 
 
@@ -775,26 +775,25 @@
 
 <section class="slide" id="app-inattention">
   <h2>Inattentive Investors</h2>
-  <p class="small">People often do not ask whether a story is true, and prompting them to think about accuracy cuts the sharing of false news.</p>
+  <p>So far investors know how many fakes circulate. In practice, readers <b>often do not ask</b> whether a story is true.</p>
   <p class="cite">Pennycook and Rand (2019); Pennycook et al. (2021)</p>
   <ul class="small">
-    <li>Investors weigh their item as if the fake share were \(m\lambda\), with attention \(m \in [0,1]\) (Gabaix 2014).</li>
-    <li>They know how the price loads on the shocks, and the price clears on the true content \(M\).</li>
-    <li>\(m = 1\) is the main model; \(m = 0\) treats every item as genuine.</li>
+    <li>Investors read their item as if the fake share were \(m\lambda\), where \(m\) is their <b>attention</b> to fakes (Gabaix 2014).</li>
+    <li>\(m = 1\) is the main model; with \(m = 0\) every item looks genuine.</li>
+    <li>They still know how the price is formed.</li>
   </ul>
-  <div class="prop">
-    <p class="label">Proposition 6</p>
-    <p class="small">(i) The threshold \(c_{\max}\) does not depend on \(m\). (ii) With \(m = 0\), \(\omega = a\sigma_\varepsilon^2\) at every fake share: investors trade on their item as if there were no fakes, and credulity is almost flat.</p>
+  <div class="prop step">
+    <p><b>Proposition 6.</b> Inattention does not change <b>when</b> fabrication starts: \(c_{\max}\) is the same for every \(m\). With \(m = 0\), investors trade on their item as if there were no fakes.</p>
   </div>
   <div class="btns"><a class="btn" href="#app-inattention-ceiling">Ceiling</a><a class="btn" href="#app-inattention-tau">Informativeness</a><a class="btn" href="#back">Back</a></div>
 </section>
 
 <section class="slide" id="app-inattention-ceiling">
   <h2>Inattention and the Ceiling</h2>
-  <img src="figures/inattention_ceiling.svg" alt="Credulity falls with the fake share under full attention and stays flat without attention; the fake share rises more as fakes get cheaper when attention is low" style="width:86%; margin:0 auto">
+  <img src="figures/inattention_ceiling.svg" alt="Credulity falls with the fake share under full attention and stays flat without attention; the fake share rises more as fakes get cheaper when attention is low" style="width:76%; margin:0 auto">
   <ul class="small">
-    <li>The ceiling rises from <b>0.40</b> (\(m = 1\)) to 0.45 (\(m = 0.5\)) and <b>0.51</b> (\(m = 0\)); \(c_{\max}\) is unchanged.</li>
-    <li>Fabrication still limits itself with no attention: <b>dilution</b> alone holds fakes near one half, and scepticism brings them to 0.40.</li>
+    <li class="step" data-step="1">Less attention &#8594; credulity falls less &#8594; each fake earns more: the ceiling rises from <b>0.40</b> to <b>0.51</b>.</li>
+    <li class="step" data-step="2">Even with no attention, fakes stop near one half: each new fake reaches fewer readers (<b>dilution</b>).</li>
   </ul>
   <div class="btns"><a class="btn" href="#back">Back</a></div>
 </section>
@@ -805,10 +804,12 @@
     <div style="flex:1.1"><img src="figures/inattention_tau.svg" alt="Price informativeness falls with the fake share much more slowly when investors pay no attention to fakes" style="width:100%"></div>
     <div style="flex:0.9">
       <ul class="small">
-        <li>Attentive investors discount their items as fakes spread and <b>trade less</b> on them, so noise moves the price more.</li>
-        <li>Inattentive investors keep trading on items that are still mostly genuine: at \(\lambda = 0.3\), \(\tau_U\) is 0.058 instead of 0.013.</li>
-        <li><b>Attention campaigns</b> cut fakes but lower informativeness, and push more firms to certify.</li>
+        <li class="step" data-step="1">Attentive investors trade <b>less</b> on their items as fakes spread, so noise moves the price more.</li>
+        <li class="step" data-step="2">Inattentive investors keep trading on items that are still mostly genuine, so prices stay <b>more informative</b>.</li>
       </ul>
+      <div class="prop step" data-step="3" style="margin-top:10px">
+        <p class="small">Accuracy prompts cut fakes, but make prices less informative.</p>
+      </div>
     </div>
   </div>
   <div class="btns"><a class="btn" href="#back">Back</a></div>
